@@ -1,0 +1,14 @@
+{
+  "name": "web_backend",
+  "version": "1.0.0",
+  "description": "Getting started with Node & Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yoo-SH",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
