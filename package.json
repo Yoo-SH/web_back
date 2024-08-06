@@ -2,13 +2,16 @@
   "name": "web_backend",
   "version": "1.0.0",
   "description": "Getting started with Node & Express",
-  "main": "app.js",
+  "main": "express.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon express.js"
   },
   "author": "Yoo-SH",
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }

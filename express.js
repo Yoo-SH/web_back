@@ -15,7 +15,7 @@ app.get('/currenttime', function(request, response) {  // 'function'을 올바�
 
 // localhost:3000/
 app.get('/', function(request, response) {
-    response.send('<form action="/store-user" method="POST"><label>Your Name</label><input type="text" name="username"><button>Submit</button> '); // 응답 준비를 끝내고 HTML 요소를 보냅니다.  
+    response.send('<form action="/store-user" method="POST"><label>Your Name:</label><input type="text" name="username"><button>Submit</button> '); // 응답 준비를 끝내고 HTML 요소를 보냅니다.  
 })
 
 app.get('/users', function(req,res){
