@@ -2,6 +2,7 @@ const fs = require('fs'); //file system
 const path = require('path'); //모든 os에서 작동하는 완전한 경로를 쉽게 지정
 
 const express = require('express'); // express는 http와 달리 객체가 아닌 함수
+const exp = require('constants');
 const app = express();  // express()가 객체
 
 //미들웨어 함수, 어떤 종류의 데이터가 있는지 확인 한 뒤에 해당 데이터를 추출.
@@ -22,7 +23,14 @@ app.get('/users', function(req,res){
     const fileData = fs.readFileSync(filePath);
     existingUsers = JSON.parse(fileData);
 
-    res.send(existingUsers)
+    let responseData = '<ul>';
+
+    for(const users of existingUsers)
+        responseData += '<li>' + users + '</li>'
+
+    responseData += '<ul>';
+
+    res.send(responseData)
 })
 
 app.post('/store-user', function(request, response) {
