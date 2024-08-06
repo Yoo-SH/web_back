@@ -17,7 +17,13 @@ app.get('/', function(request, response) {
     response.send('<form action="/store-user" method="POST"><label>Your Name</label><input type="text" name="username"><button>Submit</button> '); // 응답 준비를 끝내고 HTML 요소를 보냅니다.  
 })
 
+app.get('/users', function(req,res){
+    const filePath = path.join(__dirname, 'data', 'users.json');
+    const fileData = fs.readFileSync(filePath);
+    existingUsers = JSON.parse(fileData);
 
+    res.send(existingUsers)
+})
 
 app.post('/store-user', function(request, response) {
     const username = request.body.username; // 올바른 변수 참조
