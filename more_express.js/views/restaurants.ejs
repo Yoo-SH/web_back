@@ -49,6 +49,9 @@
     </aside>
     <main>
       <h1>Recommended restaurants</h1>
+      <% if (numberOfInputN === 0) { %>
+        <p>운이 없게도, 아무도 값을 입력하지 않았습니다.</p>
+      <% } else { %>
       <p>Find your next favorite restaurants with help of our other users!</p>
       <p> 사용자들이 <%= numberOfInputN %>개의 값을 입력함.</p>
       <ul id="restaurants-list">
@@ -70,6 +73,7 @@
           </article>
         </li>
         <% } %> <!-- End of loop -->
+        <% } %>
       </ul>
     </main>
   </body>
