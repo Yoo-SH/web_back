@@ -1,1 +1,16 @@
-[{"name":"asd","address":"asd2","cuisine":"asd3","website":"https://hi.com","description":"asd5ㅁㄴㅇ"},{"name":"유승현","address":"봉동","cuisine":"코리아","website":"https://h2i.com","description":"추천"}]
+[
+    {
+        "name": "asd",
+        "address": "asd2",
+        "cuisine": "asd3",
+        "website": "https://hi.com",
+        "description": "asd5ㅁㄴㅇ"
+    },
+    {
+        "name": "유승현",
+        "address": "봉동",
+        "cuisine": "코리아",
+        "website": "https://h2i.com",
+        "description": "추천"
+    }
+]
