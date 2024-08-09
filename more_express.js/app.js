@@ -1,7 +1,11 @@
 const path = require('path');
 
 const express =require('express');
+
+
 const app = express();
+app.use(express.static('public')); //모든 수신 요청에 대해 이 공용 폴더에서 찾을 수 있는 파일에 대한 요청인지 확인해야 한다고 express에게 알림.
+
 
 app.get('/', function(req,res){
     const htmlFilePath = path.join(__dirname,'views', 'index.html');
