@@ -38,7 +38,7 @@ app.get('/restaurants/:id', function(req,res) { //동적으로 url을 할당받�
         }
     }
 
-    res.render('404');
+    res.status('404').render('404');
 });
 
 
@@ -76,10 +76,10 @@ app.get('/about', function (req, res) {
 });
 
 app.use(function(req, res) { //모든 정의된 라우트와 미들웨어가 요청을 처리한 후에도 응답을 보내지 않은 경우 이 미들웨어가 실행됩니다. 즉, 요청된 URL이 정의된 라우트와 일치하지 않을 때 호출
-    res.render('404');
+    res.status(404).render('404');
 })
 
 app.use(function(error, req, res, next)  { //error 변수는 express에서 감시  
-    res.render('500');
+    res.status(500).render('500');
 })
 app.listen(3000); 
