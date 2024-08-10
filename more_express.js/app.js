@@ -79,4 +79,7 @@ app.use(function(req, res) { //모든 정의된 라우트와 미들웨어가 요
     res.render('404');
 })
 
+app.use(function(error, req, res, next)  { //error 변수는 express에서 감시  
+    res.render('500');
+})
 app.listen(3000); 
