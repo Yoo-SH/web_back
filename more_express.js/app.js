@@ -37,6 +37,8 @@ app.get('/restaurants/:id', function(req,res) { //동적으로 url을 할당받�
             return res.render('restaurant-detail', {restaurant : restaurant});
         }
     }
+
+    res.render('404');
 });
 
 
