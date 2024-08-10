@@ -75,5 +75,8 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
+app.use(function(req, res) { //모든 정의된 라우트와 미들웨어가 요청을 처리한 후에도 응답을 보내지 않은 경우 이 미들웨어가 실행됩니다. 즉, 요청된 URL이 정의된 라우트와 일치하지 않을 때 호출
+    res.render('404');
+})
 
-app.listen(3000);
+app.listen(3000); 
