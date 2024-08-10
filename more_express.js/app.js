@@ -15,6 +15,8 @@ app.get('/', function (req, res) {
     res.render('index');
 });
 
+
+
 app.get('/restaurants', function (req, res) {
 
 
@@ -24,6 +26,11 @@ app.get('/restaurants', function (req, res) {
     res.render('restaurants', { numberOfInputN: storedRestaurants.length, restaurants: storedRestaurants });
 });
 
+
+app.get('/restaurants/:id', function(req,res) { //동적으로 url을 할당받아 
+    const restaurantId = req.params.id;
+    res.render('restaurant-detail', {rid: restaurantId});
+});
 
 
 app.get('/recommend', function (req, res) {
