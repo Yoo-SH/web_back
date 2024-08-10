@@ -28,7 +28,15 @@ app.get('/restaurants', function (req, res) {
 
 app.get('/restaurants/:id', function(req,res) { //동적으로 url을 할당받아 
     const restaurantId = req.params.id;
-    res.render('restaurant-detail', {rid: restaurantId});
+    const filePath = path.join(__dirname, 'data', 'restaurants.json');
+    const fileData = fs.readFileSync(filePath);
+    const storedRestaurants = JSON.parse(fileData);
+    
+    for(const restaurant of storedRestaurants) {
+        if(restaurantId === restaurant.id){
+            return res.render('restaurant-detail', {restaurant : restaurant});
+        }
+    }
 });
 
 
