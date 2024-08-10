@@ -11,11 +11,10 @@ app.set('view engine', 'ejs');
 app.use(express.static('public')); //모든 수신 요청에 대해 이 공용 폴더에서 찾을 수 있는 파일에 대한 요청인지 확인해야 한다고 express에게 알림.
 app.use(express.urlencoded({ extended: false }));
 
+
 app.get('/', function (req, res) {
     res.render('index');
 });
-
-
 
 app.get('/restaurants', function (req, res) {
 
@@ -40,6 +39,7 @@ app.get('/recommend', function (req, res) {
 
 app.post('/recommend', function (req, res) {
     const restaurant = req.body;
+    restaurant.id = uuid.v4(); //js에서는 객체에 해당 고유속상값이 존재하지 않으면, 고유 속성값을 생성하고 추가함. id는 객체 고유 속상값에 존재 x
     const filePath = path.join(__dirname, 'data', 'restaurants.json');
 
     try {
