@@ -9,5 +9,8 @@ function getAdultYear(p)
 }
 
 
+
 console.log(getAdultYear({...person}))
 console.log(person)
+
+
