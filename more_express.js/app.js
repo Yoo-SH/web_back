@@ -26,15 +26,15 @@ app.get('/restaurants', function (req, res) {
 });
 
 
-app.get('/restaurants/:id', function(req,res) { //동적으로 url을 할당받아 
+app.get('/restaurants/:id', function (req, res) { //동적으로 url을 할당받아 
     const restaurantId = req.params.id;
     const filePath = path.join(__dirname, 'data', 'restaurants.json');
     const fileData = fs.readFileSync(filePath);
     const storedRestaurants = JSON.parse(fileData);
-    
-    for(const restaurant of storedRestaurants) {
-        if(restaurantId === restaurant.id){
-            return res.render('restaurant-detail', {restaurant : restaurant});
+
+    for (const restaurant of storedRestaurants) {
+        if (restaurantId === restaurant.id) {
+            return res.render('restaurant-detail', { restaurant: restaurant });
         }
     }
 
@@ -50,20 +50,12 @@ app.get('/recommend', function (req, res) {
 app.post('/recommend', function (req, res) {
     const restaurant = req.body;
     restaurant.id = uuid.v4(); //js에서는 객체에 해당 고유속상값이 존재하지 않으면, 고유 속성값을 생성하고 추가함. id는 객체 고유 속상값에 존재 x
-    const filePath = path.join(__dirname, 'data', 'restaurants.json');
+    const restaurants = getStoredRestaurants();
 
-    try {
-        const fileData = fs.readFileSync(filePath);
-        const storedRestaurants = JSON.parse(fileData);
+    restaurants.push(restaurant);
 
-        storedRestaurants.push(restaurant);
-
-        fs.writeFileSync(filePath, JSON.stringify(storedRestaurants));
-        res.redirect('/confirm');
-    } catch (error) {
-        console.error('Error processing file:', error);
-        res.status(500).send('Internal Server Error');
-    }
+    storedRestaurants(restaurants);
+    res.redirect('/confirm');
 
 });
 
@@ -75,11 +67,11 @@ app.get('/about', function (req, res) {
     res.render('about');
 });
 
-app.use(function(req, res) { //모든 정의된 라우트와 미들웨어가 요청을 처리한 후에도 응답을 보내지 않은 경우 이 미들웨어가 실행됩니다. 즉, 요청된 URL이 정의된 라우트와 일치하지 않을 때 호출
+app.use(function (req, res) { //모든 정의된 라우트와 미들웨어가 요청을 처리한 후에도 응답을 보내지 않은 경우 이 미들웨어가 실행됩니다. 즉, 요청된 URL이 정의된 라우트와 일치하지 않을 때 호출
     res.status(404).render('404');
 })
 
-app.use(function(error, req, res, next)  { //error 변수는 express에서 감시  
+app.use(function (error, req, res, next) { //error 변수는 express에서 감시  
     res.status(500).render('500');
 })
 app.listen(3000); 
