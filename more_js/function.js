@@ -29,6 +29,5 @@ function sumUp(...numbers){
 
 const inputNumbers = [1,4,6,7,8]
 
-console.log(sumUp(...inputNumbers));
-
 console.log(sumUp)
+console.log(sumUp(...inputNumbers));
