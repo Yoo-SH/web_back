@@ -6,3 +6,17 @@ function greetUser(geetingPrefix, user = 'Yoo-SH') //비선택적 매개변수, 
 
 greetUser('hello');
 
+
+function sumUp(...numbers){
+    let result =0;
+
+    for(const number of numbers)
+        result += number;
+
+    return result;
+}
+
+
+const inputNumbers = [1,4,6,7,8]
+
+console.log(sumUp(...inputNumbers));
