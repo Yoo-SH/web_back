@@ -28,3 +28,12 @@ const cook = new Job('cook','Mubuch', 35000)
 
 developer.describe();
 cook.describe();
+
+//객체& 배열 구조화
+
+const job2 = {title: 'developer', location: 'newYork'};
+const {title, location } = job2;
+console.log(`${title} and ${location}`); 
+
+const {title: myTitle } = job2;
+console.log(`${myTitle}`); 
