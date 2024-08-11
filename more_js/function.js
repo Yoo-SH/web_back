@@ -10,6 +10,7 @@ function greetUser(geetingPrefix, user = 'Yoo-SH') //비선택적 매개변수, 
     max`)
 
     console.log(`${geetingPrefix} ${user}!`);
+    console.log(geetingPrefix +' '+ user);
 }
 
 
