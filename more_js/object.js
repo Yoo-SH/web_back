@@ -37,3 +37,4 @@ console.log(`${title} and ${location}`);
 
 const {title: myTitle } = job2;
 console.log(`${myTitle}`); 
+
