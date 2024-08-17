@@ -1,0 +1,24 @@
+## https://pre-commit.com/
+## https://github.com/pre-commit/pre-commit.com/issues/255   2019 Understanding install vs install --install-hooks
+## don't write korean in this file - An unexpected error has occurred: UnicodeDecodeError: 'cp949' codec can't decode byte 0xbc in position 289: illegal multibyte sequence
+
+repos:
+  # 첫 번째 리포지토리는 pre-commit에서 제공하는 기본 후크들을 포함하고 있습니다.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+        # 후크가 YAML 파일의 문법을 검사합니다.
+      - id: check-json
+        # 후크가 JSON 파일의 문법을 검사합니다.
+
+  ## https://jorisroovers.com/gitlint/latest/commit_hooks/
+  # 마지막 리포지토리는 Git 커밋 메시지를 검토하는 도구인 gitlint를 포함합니다.
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1
+    hooks:
+      - id: gitlint
+        # Git 커밋 메시지의 형식을 검사합니다.
+      - id: gitlint-ci
+        # CI 환경에서 gitlint를 실행합니다.
+        # args: [--debug, --commits, mybranch] # 디버그 모드를 활성화하고, mybranch의 모든 커밋을 검사합니다.
