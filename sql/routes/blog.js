@@ -97,5 +97,14 @@ router.get('/posts/:id', async function(req, res) {
         res.redirect('/posts');
     });
 
+    router.post('/posts/:id/delete', async function(req, res) {
+        const query = `
+            DELETE FROM posts
+            WHERE id = ?
+        `; //db를 삭제하고 redict로 다시 posts로 이동하여 게시물을 삭제하는 구조
+
+        await db.query(query, [req.params.id]);
+        res.redirect('/posts');
+    });
 
 module.exports = router; // Export the router
