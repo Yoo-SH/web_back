@@ -33,9 +33,24 @@ router.post('/posts', async function(req, res) { //해당 경로를 가져올 �
     
     await db.query('INSERT INTO posts (title, summary, body, author_id) VALUES (?)',[data]); //awati는 비동기 작업이 완료될 때 까지 실행을 일시 중지하고 결과를 기다린다음 해당 결과를 반환, 오류나면 다음 코드 실행x, =>try catch로 처리
     res.redirect('/posts');
-    
+});
 
+
+//라우트가 로드된 자리에서 해당 ID자리 표시자의 구체적인 값을 추출하는 방법
+router.get('/posts/:id', async function(req, res) {
+    const query = `
+        SELECT posts.*, authors.name AS author_name, authors.email AS author_email FROM posts
+        INNER JOIN authors ON posts.author_id = authors.id
+        WHERE posts.id = ?
+    `;
+    const [posts] = await db.query(query, [req.params.id]); //db.query는 일반적으로 쿼리 결과와 메타데이터를 배열로 반환. posts[0]은 쿼리 결과에서 첫 번쨰 행(row)을 의미. posts[0]은 데이터베이스에서 조회된 첫 번째(그리고 유일한) 행을 의미합니다.
     
+    if(!posts || posts.length ===0) {  //게시물이 존재하지 않는 경우
+        res.status(404).render('404');
+        return;
+    }
+
+    res.render('post-detail', { post: posts[0] });
 });
 
 module.exports = router; // Export the router
