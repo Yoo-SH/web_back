@@ -13,11 +13,12 @@ repos:
         # 후크가 JSON 파일의 문법을 검사합니다.
 
   ## https://jorisroovers.com/gitlint/latest/commit_hooks/
-  # 마지막 리포지토리는 Git 커밋 메시지를 검토하는 도구인 gitlint를 포함합니다.
+  # 해당 리포지토리는 Git 커밋 메시지를 검토하는 도구인 gitlint를 포함합니다.
   - repo: https://github.com/jorisroovers/gitlint
     rev: v0.19.1
     hooks:
       - id: gitlint
+        args: ["--config=.gitlint"]
         # Git 커밋 메시지의 형식을 검사합니다.
       - id: gitlint-ci
         # CI 환경에서 gitlint를 실행합니다.
