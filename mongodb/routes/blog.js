@@ -118,5 +118,15 @@ router.post('/posts/:id/edit', async function (req, res) {
 
 });
 
+router.post('/posts/:id/delete', async function (req, res) {
+  const postId = req.params.id;
+  const result = await db
+  .getDb()
+  .collection('posts')
+  .deleteOne({_id: new ObjectId(postId)});
+
+  res.redirect('/posts');
+});
+
 
 module.exports = router;
