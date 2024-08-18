@@ -66,8 +66,16 @@ router.post('/posts', async function (req, res) {
     return res.status(404).render('404');
   }
 
-  console.log(post.author);
-  console.log(post.author.name);
+  
+  post.humanReadableDate = post.date.toLocaleString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  post.date = post.date.toISOString();
+
 
   res.render('post-detail', { post: post });
 
