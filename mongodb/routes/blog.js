@@ -15,7 +15,7 @@ router.get('/posts', async function (req, res) {
   const posts = await db
   .getDb()
   .collection('posts')
-  .find({} , { title: 1, summary: 1, 'author.name': 1 })   //서버의 과부하를 줄이기 위해 필요한 데이터만을 추출하도록 프로젝션을 이용함
+  .find({} , { title: 1, summary: 1, 'author.name': 1 })   //서버의 과부하를 줄이기 위해 필요한 데이터만을 추출하도록 프로젝션을 이용함 , 1은 포함 0은 미포함 지정
   .toArray(); 
  
   console.log(posts);
@@ -53,5 +53,24 @@ router.post('/posts', async function (req, res) {
   console.log(result);
   res.redirect('/posts');
 });
+
+
+ router.get('/posts/:postId', async function (req, res) {
+  const postId = req.params.postId;
+  const post = await db
+  .getDb()
+  .collection('posts')
+  .findOne({ _id: new ObjectId(postId) }, {summary: 0});
+
+  if(!post) {
+    return res.status(404).render('404');
+  }
+
+  console.log(post.author);
+  console.log(post.author.name);
+
+  res.render('post-detail', { post: post });
+
+ });
 
 module.exports = router;
