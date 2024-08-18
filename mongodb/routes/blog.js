@@ -7,37 +7,44 @@ const ObjectId = mongodb.ObjectId; //objectID 생성자 함수를 가져옴. 인
 
 const router = express.Router();
 
-router.get('/', function(req, res) {
+router.get('/', function (req, res) {
   res.redirect('/posts');
 });
 
-router.get('/posts', function(req, res) {
-  const posts = db.getDb().collection('posts').find().toArray();
-  res.render('posts-list', {posts: posts});
+router.get('/posts', async function (req, res) {
+  const posts = await db
+  .getDb()
+  .collection('posts')
+  .find({} , { title: 1, summary: 1, 'author.name': 1 })   //서버의 과부하를 줄이기 위해 필요한 데이터만을 추출하도록 프로젝션을 이용함
+  .toArray(); 
+ 
+  console.log(posts);
+  res.render('posts-list', { posts: posts });
 });
 
-router.get('/new-post', async function(req, res) {
+router.get('/new-post', async function (req, res) {
   const authors = await db.getDb().collection('authors').find().toArray();
-  res.render('create-post', {authors: authors});
+  res.render('create-post', { authors: authors });
 });
 
-router.post('/posts', async function(req, res) { 
-  
-  const authorID = new ObjectId (req.body.author);
+
+router.post('/posts', async function (req, res) {
+
+  const authorID = new ObjectId(req.body.author);
   console.log(authorID);
 
-  const author = await db.getDb().collection('authors').findOne({_id: authorID});
+  const author = await db.getDb().collection('authors').findOne({ _id: authorID });
 
   const newPost = { // form에서 받아온 데이터를 객체로 만들어서 저장
     title: req.body.title,
     content: req.body.content,
     summary: req.body.summary,
     body: req.body.content,
-    date: new Date(), 
-    author :{
+    date: new Date(),
+    author: {
       id: authorID,
       name: author,
-      email : author.email
+      email: author.email
 
     }
   }
