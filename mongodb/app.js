@@ -26,4 +26,4 @@ app.use(function (error, req, res, next) {
 db.connectToDatabase().then(function () {
   // Start the server only after the database connection has been established
   app.listen(3000);
-}
+});
