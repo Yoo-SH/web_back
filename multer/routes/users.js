@@ -1,5 +1,7 @@
 const express = require('express');
+const muter = require('multer');
 
+const upload = muter({dest : 'images'});
 const router = express.Router();
 
 router.get('/', function(req, res) {
@@ -9,5 +11,16 @@ router.get('/', function(req, res) {
 router.get('/new-user', function(req, res) {
   res.render('new-user');
 });
+
+router.post('/profiles', upload.single('image'), function(req, res) {
+ const uploadedImageFile = req.file;
+ const userData = req.body;
+
+ console.log(uploadedImageFile);
+ console.log(userData);
+
+ res.redirect('/');
+});
+
 
 module.exports = router;
