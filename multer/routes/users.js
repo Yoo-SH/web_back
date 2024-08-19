@@ -16,8 +16,9 @@ const storageConfig = muter.diskStorage({
 const upload = muter({ storage : storageConfig});
 const router = express.Router();
 
-router.get('/', function(req, res) {
-  res.render('profiles');
+router.get('/', async function(req, res) {
+  const users = await db.getDb().collection('users').find().toArray();
+  res.render('profiles', { users: users }); // users를 profiles.ejs로 전달
 });
 
 router.get('/new-user', function(req, res) {
@@ -37,6 +38,7 @@ router.post('/profiles', upload.single('image'), async function(req, res) {
   
   console.log(userData.username);
   console.log('path:', uploadedImageFile.path);
+
  res.redirect('/');
 });
 
