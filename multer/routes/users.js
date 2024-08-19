@@ -1,7 +1,17 @@
 const express = require('express');
 const muter = require('multer');
 
-const upload = muter({dest : 'images'});
+const storageConfig = muter.diskStorage({
+  destination : function(req, file, cb) {
+    cb(null, 'images');
+  },
+  filename : function(req, file, cb) {
+    cb(null, Date.now() + '-' + file.originalname); //file.originalname에는 확장자가 포함되어 있음.
+  }
+});
+
+
+const upload = muter({ storage : storageConfig});
 const router = express.Router();
 
 router.get('/', function(req, res) {
