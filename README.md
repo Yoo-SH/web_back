@@ -26,6 +26,11 @@ AJAX의 핵심은 XMLHttpRequest 객체 또는 fetch API를 통해 서버와 비
 https://whales.tistory.com/120
 ```
 
+## MiddleWear
+```
+-미들웨어 개념 및 기능
+https://velog.io/@unyoi/%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%BF%8C%EC%8B%9C%EA%B8%B01-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
+```
 ## Cookie와 Session
 ```
 -쿠키와 세션의 개념 및 기능적 특성
