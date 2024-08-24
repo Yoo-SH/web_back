@@ -25,3 +25,9 @@ AJAX의 핵심은 XMLHttpRequest 객체 또는 fetch API를 통해 서버와 비
 -get과 post 처리 기준 및 기능적 특성
 https://whales.tistory.com/120
 ```
+
+## Cookie와 Session
+```
+-쿠키와 세션의 개념 및 기능적 특성
+https://velog.io/@octo__/%EC%BF%A0%ED%82%A4Cookie-%EC%84%B8%EC%85%98Session
+```
