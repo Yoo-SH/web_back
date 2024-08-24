@@ -86,8 +86,13 @@ router.post('/login', async function (req, res) {
     return res.redirect('/login');
   }
 
-  console.log('User logged in');
-  res.redirect('/admin');
+
+  req.session.user = {id: existingUser._id, email: existingUser.email}; //세션에 유저 정보를 저장
+  req.session.isAuthenticated = true; //세션에 로그인 여부를 저장
+  req.session.save(function () { //세션을 저장
+    res.redirect('/admin');
+  });
+  
 });
 
 router.get('/admin', function (req, res) {
