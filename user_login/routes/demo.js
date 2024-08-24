@@ -16,7 +16,24 @@ router.get('/login', function (req, res) {
   res.render('login');
 });
 
-router.post('/signup', async function (req, res) {});
+router.post('/signup', async function (req, res) {
+  const userData = req.body;
+  const enteredEmail = userData.email;
+  const enteredConfirmEmail = userData['confirm-Email']; //'-'문자는 .으로 접근시 사용불가는하기에 ['']한 방법으로 대신 접근 가능하다
+  const enteredPassword = userData.password;
+
+  const user = {
+    email : enteredEmail,
+    password : enteredPassword
+
+  }
+
+  await db.getDb().collection('users').insertOne(user);
+
+  res.redirect('/login');
+
+  
+});
 
 router.post('/login', async function (req, res) {});
 
