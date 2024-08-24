@@ -1,6 +1,7 @@
 const express = require('express');
 
 const db = require('../data/database');
+const bcrypt = require('bcryptjs');
 
 const router = express.Router();
 
@@ -22,9 +23,11 @@ router.post('/signup', async function (req, res) {
   const enteredConfirmEmail = userData['confirm-Email']; //'-'문자는 .으로 접근시 사용불가는하기에 ['']한 방법으로 대신 접근 가능하다
   const enteredPassword = userData.password;
 
+  const hashedPassword = await bcrypt.hash(enteredPassword, 12);
+
   const user = {
     email : enteredEmail,
-    password : enteredPassword
+    password : hashedPassword
 
   }
 
