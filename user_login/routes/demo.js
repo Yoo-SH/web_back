@@ -36,6 +36,7 @@ router.post('/signup', async function (req, res) {
 
 
   const existingUser = await db
+
   .getDb()
   .collection('users')
   .findOne({ email : enteredEmail });
