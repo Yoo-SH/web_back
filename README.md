@@ -23,7 +23,7 @@ AJAX의 핵심은 XMLHttpRequest 객체 또는 fetch API를 통해 서버와 비
 ## Router
 
 ```
--get과 post 처리 기준 및 기능적 특성
+-get과 post 사용구분 및 기능적 특성
 https://whales.tistory.com/120
 
 -redirect와 render 사용구분
@@ -37,13 +37,26 @@ https://ssungkang.tistory.com/entry/Django-render-%EC%99%80-redirect-%EC%9D%98-%
 -미들웨어 개념 및 기능
 https://markme-inur.tistory.com/73
 https://velog.io/@unyoi/%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%BF%8C%EC%8B%9C%EA%B8%B01-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
+https://medium.com/twolinecode/13-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-middleware-%EB%9E%80-23abb33ec4f4
+
 -로컬 전역변수로 이용
 https://junspapa-itdev.tistory.com/13
 https://expressjs.com/en/5x/api.html#res.locals
 
 
+```
+
+## multer
 
 ```
+-[Node.js] express + multer로 이미지 업로드 구현하기
+https://velog.io/@mainfn/Node.js-express-multer%EB%A1%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+
+-Node.js Multer - 사용자의 파일 업로드를 처리하고 서버에 저장하기
+https://luvris2.tistory.com/756
+```
+
+
 ## Cookie와 Session
 ```
 -쿠키와 세션의 개념 
