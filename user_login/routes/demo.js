@@ -10,7 +10,20 @@ router.get('/', function (req, res) {
 });
 
 router.get('/signup', function (req, res) {
-  res.render('signup');
+  let sessionInputData = req.session.inputData;
+  
+  if(!sessionInputData) {
+    sessionInputData = {
+      hasError: false,
+      message: null,
+      email: '',
+      confirmEmail: '',
+      password: ''
+    };
+  }
+
+  
+  res.render('signup', {inputData: sessionInputData});
 });
 
 router.get('/login', function (req, res) {
@@ -30,8 +43,18 @@ router.post('/signup', async function (req, res) {
     enteredEmail !== enteredConfirmEmail ||
     !enteredEmail.includes('@')
   ) {
-    console.log('Invalid input');
-    return res.redirect('/signup');
+
+    req.session.inputData = {
+      hasError: true,
+      message: 'Invalid input - please check your input',
+      email: enteredEmail,
+      confirmEmail: enteredConfirmEmail,
+      password: enteredPassword
+    };
+
+    return req.session.save(function () {
+       res.redirect('/signup');
+    });
   }
 
 
@@ -106,7 +129,7 @@ router.get('/admin', function (req, res) {
 router.post('/logout', function (req, res) {
   req.session.user = null;
   req.session.isAuthenticated = false;
-  req.redirect('/'); //로그아웃시에 세션을 초기화하고 홈페이지로 리다이렉트(장바구니와 같은 기능을 위해 세션을 삭제하지는 않음.)
+  res.redirect('/') //로그아웃시에 세션을 초기화하고 홈페이지로 리다이렉트(장바구니와 같은 기능을 위해 세션을 삭제하지는 않음.)
  });
 
 module.exports = router;
