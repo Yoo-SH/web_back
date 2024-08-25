@@ -21,9 +21,15 @@ AJAX의 핵심은 XMLHttpRequest 객체 또는 fetch API를 통해 서버와 비
 
 
 ## Router
+
 ```
 -get과 post 처리 기준 및 기능적 특성
 https://whales.tistory.com/120
+
+-redirect와 render 사용구분
+https://dev-mht.tistory.com/73
+https://ssungkang.tistory.com/entry/Django-render-%EC%99%80-redirect-%EC%9D%98-%EC%B0%A8%EC%9D%B4
+
 ```
 
 ## MiddleWear
@@ -33,6 +39,10 @@ https://velog.io/@unyoi/%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%BF%8C%EC%8B%9C%EA%B8%B01
 ```
 ## Cookie와 Session
 ```
--쿠키와 세션의 개념 및 기능적 특성
+-쿠키와 세션의 개념 
 https://velog.io/@octo__/%EC%BF%A0%ED%82%A4Cookie-%EC%84%B8%EC%85%98Session
+
+-기능적 특성
+https://dev-coco.tistory.com/61
+
 ```
