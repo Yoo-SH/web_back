@@ -24,7 +24,7 @@ router.get('/signup', function (req, res) {
   }
 
   req.session.inputData = null;
-    
+
   res.render('signup', {inputData: sessionInputData});
 });
 
@@ -115,17 +115,35 @@ router.post('/login', async function (req, res) {
   req.session.user = {id: existingUser._id, email: existingUser.email}; //세션에 유저 정보를 저장
   req.session.isAuthenticated = true; //세션에 로그인 여부를 저장
   req.session.save(function () { //세션을 저장
-    res.redirect('/admin');
+    res.redirect('/profile');
   });
   
 });
 
 
-router.get('/admin', function (req, res) {
+router.get('/admin', async function (req, res) {
+  if(!req.session.isAuthenticated) { //if (!req.session.isAuthenticated) 
+    return res.status(401).render('401');
+  }
+  
+  const user = await db
+    .getDb()
+    .collection('users')
+    .findOne({ _id: req.session.user.id });
+
+  if (!user || !user.isAdmin){
+    return res.status(403).render('403');
+  }
+
+  res.render('admin');
+});
+
+
+router.get('/profile', function (req, res) {
   if(!req.session.isAuthenticated) { //if (!req.session.isAuthenticated) 
     return res.status(401).render('401');
   } 
-  res.render('admin');
+  res.render('profile');
 });
 
 router.post('/logout', function (req, res) {
