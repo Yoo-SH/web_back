@@ -35,7 +35,14 @@ https://ssungkang.tistory.com/entry/Django-render-%EC%99%80-redirect-%EC%9D%98-%
 ## MiddleWear
 ```
 -미들웨어 개념 및 기능
+https://markme-inur.tistory.com/73
 https://velog.io/@unyoi/%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%BF%8C%EC%8B%9C%EA%B8%B01-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90
+-로컬 전역변수로 이용
+https://junspapa-itdev.tistory.com/13
+https://expressjs.com/en/5x/api.html#res.locals
+
+
+
 ```
 ## Cookie와 Session
 ```
