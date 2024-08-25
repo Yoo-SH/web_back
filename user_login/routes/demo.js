@@ -29,7 +29,24 @@ router.get('/signup', function (req, res) {
 });
 
 router.get('/login', function (req, res) {
-  res.render('login');
+  let sessionInputData = req.session.inputData;
+  
+  if(!sessionInputData) {
+    sessionInputData = {
+      hasError: false,
+      message: null,
+      email: '',
+      confirmEmail: '',
+      password: ''
+    };
+
+  }
+
+  req.session.inputData = null;
+
+  res.render('login', {inputData: sessionInputData});
+
+  
 });
 
 router.post('/signup', async function (req, res) {
@@ -67,8 +84,18 @@ router.post('/signup', async function (req, res) {
   .findOne({ email : enteredEmail });
 
   if (existingUser) { //이메일의 중복을 검사하여 가입을 방지
-    console.log('User exists already');
-    return res.redirect('/signup');
+
+    req.session.inputData = {
+      hasError: true,
+      message: 'User exists already - please login',
+      email: enteredEmail,
+      confirmEmail: enteredConfirmEmail,
+      password: enteredPassword,
+    };
+    req.session.save(function () {
+      res.redirect('/signup');
+    });
+    return;  
   }
 
   const hashedPassword = await bcrypt.hash(enteredPassword, 12);
@@ -97,8 +124,17 @@ router.post('/login', async function (req, res) {
     .findOne({ email: enteredEmail });
 
   if (!existingUser) { //처음에는 이메일의 유효성을 검사
-    console.log('Invalid email');
-    return res.redirect('/login');
+
+    req.session.inputData = {
+      hasError: true,
+      message: 'could not find user with that email',
+      email: enteredEmail,
+      password: enteredPassword,
+    };
+    req.session.save(function () {  
+       res.redirect('/login');
+    });
+    return;
   }
 
   const passwordsAreEqual = await bcrypt.compare(
@@ -107,8 +143,16 @@ router.post('/login', async function (req, res) {
   ); //해쉬된 비밀번호와 입력된 비밀번호를 비교
 
   if (!passwordsAreEqual) { //이후 이메일의 우효성을 검사
-    console.log('Invalid password');
-    return res.redirect('/login');
+    req.session.inputData = {
+      hasError: true,
+      message: 'could not find user with that email',
+      email: enteredEmail,
+      password: enteredPassword,
+    };
+    req.session.save(function () {  
+       res.redirect('/login');
+    });
+    return;
   }
 
 
