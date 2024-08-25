@@ -103,6 +103,10 @@ router.get('/admin', function (req, res) {
   res.render('admin');
 });
 
-router.post('/logout', function (req, res) { });
+router.post('/logout', function (req, res) {
+  req.session.user = null;
+  req.session.isAuthenticated = false;
+  req.redirect('/'); //로그아웃시에 세션을 초기화하고 홈페이지로 리다이렉트(장바구니와 같은 기능을 위해 세션을 삭제하지는 않음.)
+ });
 
 module.exports = router;
