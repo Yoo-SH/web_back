@@ -20,9 +20,11 @@ router.get('/signup', function (req, res) {
       confirmEmail: '',
       password: ''
     };
+
   }
 
-  
+  req.session.inputData = null;
+    
   res.render('signup', {inputData: sessionInputData});
 });
 
