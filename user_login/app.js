@@ -5,12 +5,13 @@ const express = require('express');
 const db = require('./data/database');
 const demoRoutes = require('./routes/demo');
 const session = require('express-session');
-const mongodbStore = require('connect-mongodb-session')
+const mongodbStore = require('connect-mongodb-session');
+
 
 const app = express();
 const MongoDBStore = mongodbStore(session);
 const sessionStore = new MongoDBStore({
-  uri: 'mongodb://localhost:27017',
+  uri: 'mongodb://localhost:27017/auth-demo',
   databaseName: 'auth-demo',  
   collection: 'sessions'
 });
