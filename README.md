@@ -78,5 +78,12 @@ https://velog.io/@k4minseung/DB-SQL-Injection-%EA%B3%B5%EA%B2%A9%EA%B3%BC-%EB%B0
 -NoSQL Injection
 https://velog.io/@m200is/NoSQL-Injection
 
+-Node.js secure 코딩 규칙 10가지
+https://openeg.tistory.com/752
 
+
+-Node.js에서의 Error Handling 기본 예시
+https://velog.io/@yenicall/Node.js%EC%97%90%EC%84%9C%EC%9D%98-Error-Handling-%EA%B8%B0%EB%B3%B8-%EC%98%88%EC%8B%9C
+
+-정적파일을 express static으로 express할시에는 코드가 모두 공개됨.
 ```
