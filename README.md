@@ -64,3 +64,19 @@ https://velog.io/@10000ji_/Spring-Security-Authorization%EA%B6%8C%ED%95%9C%EB%B6
 ```
 -크로스 사이트 요청 위조란?
 https://nordvpn.com/ko/blog/csrf/?srsltid=AfmBOooxWPL8mAlzMXcstihlZKtWyKOzo2evvWnlUiTAiCTVCHoC0HUH
+
+-CSRF란, CSRF 동작원리, CSRF 방어방법
+https://devscb.tistory.com/123
+
+-웹 취약점과 해킹 매커니즘#7 XSS(Cross-Site Scripting)
+https://www.fis.kr/ko/major_biz/cyber_safety_oper/attack_info/security_news?articleSeq=3408
+
+-SQL 인젝션 공격을 방지하는 5가지 팁
+https://powerdmarc.com/ko/sql-injection-prevention/
+https://velog.io/@k4minseung/DB-SQL-Injection-%EA%B3%B5%EA%B2%A9%EA%B3%BC-%EB%B0%A9%EC%96%B4-%EB%B0%A9%EB%B2%95
+
+-NoSQL Injection
+https://velog.io/@m200is/NoSQL-Injection
+
+
+```
