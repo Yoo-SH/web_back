@@ -4,6 +4,14 @@
 
 # more info
 
+## JS
+
+```
+
+-자바스크립트 싱글스레드인데 왜 비동기적 일까?
+https://velog.io/@eamon3481/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%B1%EA%B8%80%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%B8%EB%8D%B0-%EC%99%9C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%EC%9D%BC%EA%B9%8C
+```
+
 ## Router
 
 ```
@@ -91,4 +99,12 @@ https://openeg.tistory.com/752
 https://velog.io/@yenicall/Node.js%EC%97%90%EC%84%9C%EC%9D%98-Error-Handling-%EA%B8%B0%EB%B3%B8-%EC%98%88%EC%8B%9C
 
 -정적파일을 express static으로 express할시에는 코드가 모두 공개됨.
+```
+
+## 참고사항
+
+```
+
+-유데미 스타터스 취업 부트캠프 2기 - 백엔드(java, 자바) 합격 후기 및 1주차 학습 일지
+https://velog.io/@inhalin/%EC%9C%A0%EB%8D%B0%EB%AF%B8-%EC%8A%A4%ED%83%80%ED%84%B0%EC%8A%A4-%EC%B7%A8%EC%97%85-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-2%EA%B8%B0-%EB%B0%B1%EC%97%94%EB%93%9Cjava-%EC%9E%90%EB%B0%94-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EB%B0%8F-1%EC%A3%BC%EC%B0%A8-%ED%95%99%EC%8A%B5-%EC%9D%BC%EC%A7%80
 ```
