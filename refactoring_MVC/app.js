@@ -8,6 +8,7 @@ const db = require('./data/database');
 const blogRoutes = require('./routes/blog');
 const authRoutes = require('./routes/auth');
 const authMiddleware = require('./middlewares/auth-middlewares');
+const addCSRFTokenMiddleware = require('./middlewares/csrf-token-middlewares');
 
 const app = express();
 
@@ -22,7 +23,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session(sessionConfig.createSessionConfig(mongoDbSessionStore)));  // 올바르게 설정된 세션 미들웨어
 
 app.use(csrf());
-
+app.use(addCSRFTokenMiddleware);
 app.use(authMiddleware);
 
 app.use(blogRoutes);
