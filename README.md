@@ -10,6 +10,9 @@
 
 -자바스크립트 싱글스레드인데 왜 비동기적 일까?
 https://velog.io/@eamon3481/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%B1%EA%B8%80%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%B8%EB%8D%B0-%EC%99%9C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%EC%9D%BC%EA%B9%8C
+
+-비동기 처리와 callback 함수
+https://velog.io/@jaeung5169/%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC%EC%99%80-callback-%ED%95%A8%EC%88%98
 ```
 
 ## Router
@@ -104,6 +107,11 @@ https://velog.io/@yenicall/Node.js%EC%97%90%EC%84%9C%EC%9D%98-Error-Handling-%EA
 ## 참고사항
 
 ```
+- nodejs 디버깅 방법
+https://medium.com/@imjuni/node-js-%EB%94%94%EB%B2%84%EA%B9%85-%EB%8F%84%EA%B5%AC-devtool-5e8ec01ba71e
+https://velog.io/@younoah/nodejs-debug
+https://velog.io/@moon-yerim/node.js-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0
+
 
 -유데미 스타터스 취업 부트캠프 2기 - 백엔드(java, 자바) 합격 후기 및 1주차 학습 일지
 https://velog.io/@inhalin/%EC%9C%A0%EB%8D%B0%EB%AF%B8-%EC%8A%A4%ED%83%80%ED%84%B0%EC%8A%A4-%EC%B7%A8%EC%97%85-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-2%EA%B8%B0-%EB%B0%B1%EC%97%94%EB%93%9Cjava-%EC%9E%90%EB%B0%94-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EB%B0%8F-1%EC%A3%BC%EC%B0%A8-%ED%95%99%EC%8A%B5-%EC%9D%BC%EC%A7%80
