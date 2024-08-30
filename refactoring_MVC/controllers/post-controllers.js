@@ -1,6 +1,7 @@
 const Post = require('../models/post');
 const validationSession = require('../util/validation-sessions');
 const validation = require('../util/validation');
+const { TopologyDescription } = require('mongodb');
 function getHome(req, res) {
     res.render('welcome', { csrfToken: req.csrfToken() });
 }
@@ -54,7 +55,12 @@ async function createPost(req, res) {
 }
 
 async function getSinglePost(req, res) {
-    const post = new Post(null, null, req.params.id);
+    try{
+        const post = new Post(null, null, req.params.id);
+    } catch(error) {
+        return res.render('401');
+    }
+    
     await post.fetch();
 
     if (!post.title || !post.content) {
