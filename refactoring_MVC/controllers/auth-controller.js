@@ -1,6 +1,11 @@
 const bcrypt = require('bcryptjs');
 const db = require('../data/database');
 
+function get401(req,res){
+  res.status(401).render('401');
+}
+
+
 function getSingup (req, res) {
     let sessionInputData = req.session.inputData;
   
@@ -157,5 +162,6 @@ module.exports = {
     getLogin : getLogin,
     signup : signup,
     login : login,
-    logout : logout
+    logout : logout,
+    get401 : get401
 }
