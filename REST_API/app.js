@@ -1,11 +1,22 @@
-const express = require('express');
-const app = express();
+const db = require('./data/database')
+const quoteRoutes = require('./routes/quotes.routes')
+const app = require('express')();
 
-app.get('/quote', (req, res, next) => {
-    res.json({
-        quote: 'The only way to do great work is to love what you do.',
+
+app.use('/quote', quoteRoutes)
+
+
+app.use(function (error, req, res, next) {
+    res.status(500).json({
+        message: 'Something went wrong'
     });
 });
 
 
-app.listen(3000);
+db.initDb()
+    .then(function() {
+        app.listen(3000)
+    }).catch(function (error) {
+        console.log('Connection error', error);
+    });
+
