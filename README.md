@@ -161,6 +161,9 @@ https://velog.io/@rl0425/%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%9C%8
 -API 예시
 https://blog.naver.com/sally_company/222346420445
 
+-REST API 제대로 알고 사용하기
+https://meetup.nhncloud.com/posts/92
+
 -SPA 
 https://www.elancer.co.kr/blog/view?seq=214
 
