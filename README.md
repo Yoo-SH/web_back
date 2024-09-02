@@ -49,7 +49,7 @@ https://velog.io/@eamon3481/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%
 https://velog.io/@jaeung5169/%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC%EC%99%80-callback-%ED%95%A8%EC%88%98
 ```
 
-## Router
+## express
 
 ```
 -get과 post 사용구분 및 기능적 특성
@@ -59,6 +59,14 @@ https://whales.tistory.com/120
 https://dev-mht.tistory.com/73
 https://ssungkang.tistory.com/entry/Django-render-%EC%99%80-redirect-%EC%9D%98-%EC%B0%A8%EC%9D%B4
 
+-미들웨어 사용
+https://expressjs.com/ko/guide/using-middleware.html
+
+-Express에서 특정 id를 URL 매개변수로 받는 방법 
+https://velog.io/@beton/Express%EC%97%90%EC%84%9C-%ED%8A%B9%EC%A0%95-id%EB%A5%BC-URL-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EB%A1%9C-%EB%B0%9B%EB%8A%94-%EB%B0%A9%EB%B2%95
+
+- Nodejs express PUT PATCH 차이
+https://selfdevelopcampus.tistory.com/entry/nodejs-express-PUT-PATCH-%EC%B0%A8%EC%9D%B4
 ```
 
 ## MiddleWear
@@ -138,6 +146,14 @@ https://velog.io/@yenicall/Node.js%EC%97%90%EC%84%9C%EC%9D%98-Error-Handling-%EA
 -정적파일을 express static으로 express할시에는 코드가 모두 공개됨.
 ```
 
+## API
+
+```
+- API란? API의 정의와 종류 그리고 장단점
+https://www.hanl.tech/blog/api%eb%9e%80-api%ec%9d%98-%ec%a0%95%ec%9d%98%ec%99%80-%ec%a2%85%eb%a5%98-%ec%9e%a5%eb%8b%a8%ec%a0%90/
+
+
+```
 ## 참고사항
 
 ```
@@ -152,5 +168,9 @@ https://velog.io/@inhalin/%EC%9C%A0%EB%8D%B0%EB%AF%B8-%EC%8A%A4%ED%83%80%ED%84%B
 
 -LFS
 https://velog.io/@shin6949/Git-LFS-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+
+
+-프론트 서버 / 백엔드 서버 를 따로 두는 이유는 무엇인가?
+https://velog.io/@hsg829/%ED%94%84%EB%A1%A0%ED%8A%B8-%EC%84%9C%EB%B2%84-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%9C%EB%B2%84-%EB%A5%BC-%EB%94%B0%EB%A1%9C-%EB%91%90%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-nvuhqxv5
 ```
 
