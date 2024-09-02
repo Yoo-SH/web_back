@@ -33,4 +33,7 @@ async function addTodo(req, res, next){
 }
 
 
-
+module.exports = {
+    getAllTodos : getAllTodos,
+    addTodo : addTodo
+}
