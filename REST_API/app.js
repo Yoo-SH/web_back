@@ -4,8 +4,10 @@ const db = require('./data/database');
 
 const app = express();
 const todosRoutes = require('./routes/todos.routes');
+const enableCors = require('./middlewares/cors');
 
 app.use(express.json());
+app.use(enableCors);
 app.use('/todos', todosRoutes);
 
 app.use(function (error, req, res, next) {
