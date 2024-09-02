@@ -146,12 +146,32 @@ https://velog.io/@yenicall/Node.js%EC%97%90%EC%84%9C%EC%9D%98-Error-Handling-%EA
 -정적파일을 express static으로 express할시에는 코드가 모두 공개됨.
 ```
 
-## API
+## API & CORS & SPA
 
 ```
 - API란? API의 정의와 종류 그리고 장단점
 https://www.hanl.tech/blog/api%eb%9e%80-api%ec%9d%98-%ec%a0%95%ec%9d%98%ec%99%80-%ec%a2%85%eb%a5%98-%ec%9e%a5%eb%8b%a8%ec%a0%90/
 
+-API(애플리케이션 프로그래밍 인터페이스)란 무엇인가요?
+https://www.ibm.com/kr-ko/topics/api
+
+-웹 서비스를 위한 아키텍처 스타일 - REST API
+https://velog.io/@rl0425/%EC%9B%B9-%EC%84%9C%EB%B9%84%EC%8A%A4%EB%A5%BC-%EC%9C%84%ED%95%9C-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%8A%A4%ED%83%80%EC%9D%BC-REST-API
+
+-API 예시
+https://blog.naver.com/sally_company/222346420445
+
+-SPA 
+https://www.elancer.co.kr/blog/view?seq=214
+
+-SPA(Single Page Application)이란 무엇인가요?
+https://velog.io/@dikum98/SPA-Single-Page-Application%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94
+
+-CORS란 무엇인가?
+https://velog.io/@effirin/CORS%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80
+
+-CORS는 왜 이렇게 우리를 힘들게 하는걸까?
+https://evan-moon.github.io/2020/05/21/about-cors/
 
 ```
 ## 참고사항
