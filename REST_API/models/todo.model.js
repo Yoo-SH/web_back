@@ -11,7 +11,7 @@ class Todo {
         const todoDocuments = await db.getDb().collection('todos').find().toArray();
 
         return todoDocuments.map(function(todoDocuments){
-            return new Todo(todoDocuments.text. todoDocuments._id);
+            return new Todo(todoDocuments.text, todoDocuments._id);
         })
     }
 
