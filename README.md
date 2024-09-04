@@ -184,7 +184,9 @@ https://evan-moon.github.io/2020/05/21/about-cors/
 https://medium.com/@imjuni/node-js-%EB%94%94%EB%B2%84%EA%B9%85-%EB%8F%84%EA%B5%AC-devtool-5e8ec01ba71e
 https://velog.io/@younoah/nodejs-debug
 https://velog.io/@moon-yerim/node.js-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0
-
+ 
+- [AWS]AWS에 서버 올리기 Part1. EC2 생성하기
+https://velog.io/@jjonggang/AWSAWS%EC%97%90-%EC%84%9C%EB%B2%84-%EC%98%AC%EB%A6%AC%EA%B8%B0-Part1.-EC2-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0
 
 -유데미 스타터스 취업 부트캠프 2기 - 백엔드(java, 자바) 합격 후기 및 1주차 학습 일지
 https://velog.io/@inhalin/%EC%9C%A0%EB%8D%B0%EB%AF%B8-%EC%8A%A4%ED%83%80%ED%84%B0%EC%8A%A4-%EC%B7%A8%EC%97%85-%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84-2%EA%B8%B0-%EB%B0%B1%EC%97%94%EB%93%9Cjava-%EC%9E%90%EB%B0%94-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EB%B0%8F-1%EC%A3%BC%EC%B0%A8-%ED%95%99%EC%8A%B5-%EC%9D%BC%EC%A7%80
