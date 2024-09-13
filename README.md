@@ -46,6 +46,7 @@
     
     - [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0)
     - [JS Promise with Multiple Promises](https://velog.io/@colki/Udemy-15.-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95-3%EA%B0%80%EC%A7%80-parallel-sequence-race-Promise.allSettled)
+
 ## express
 
 * 라우터
@@ -163,6 +164,13 @@
     - [CORS는 왜 이렇게 우리를 힘들게 하는걸까?](https://evan-moon.github.io/2020/05/21/about-cors/)
 
 
+## DB
+
+* 유효성 검사
+    - [유효성 검사는 어디에서 처리해야하나?
+](https://velog.io/@beberiche/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C-%ED%95%B4%EA%B2%B0%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98)
+    - [Validation에 대한 고민](https://blog.barogo.io/%EA%B0%9C%EB%B0%9C%EC%9D%B8%ED%84%B4-validation%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-532ffb986b64)
+    - [프론트엔드에서"만" 유효성 검사가 문제인 이유](https://jojoldu.tistory.com/157)
 ## 협업
 
 
