@@ -115,14 +115,19 @@ router.post('/posts/:id/delete', async function (req, res) {
 });
 
 router.get('/posts/:id/comments', async function (req, res) {
+  if(ObjectId.isValid(req.params.id) === false) {
+    console.log('req.params.id:', req.params.id);
+    console.log('Invalid ID');
+    return res.status(404).render('404');
+  }
+
   const postId = new ObjectId(req.params.id);
-  const post = await db.getDb().collection('posts').findOne({ _id: postId });
   const comments = await db
     .getDb()
     .collection('comments')
     .find({ postId: postId }).toArray();
 
-  return res.render('post-detail', { post: post, comments: comments });
+  res.json(comments);
 });
 
 router.post('/posts/:id/comments', async function (req, res) {

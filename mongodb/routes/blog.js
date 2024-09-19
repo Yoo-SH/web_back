@@ -126,7 +126,6 @@ router.post('/posts/:id/delete', async function (req, res, next) {
   } catch {error}{
     return res.status(404).render('404');
   }
-
   const result = await db
   .getDb()
   .collection('posts')
