@@ -1,3 +1,6 @@
-export class Todo{
-    constructor(public id: string, public text: string){
-}};
+export class Todo {
+  constructor(
+    public id: string,
+    public text: string
+  ) {}
+}
