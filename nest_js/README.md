@@ -4,7 +4,8 @@ nest cli
 ```
 1.npm install -g @nestjs/cli
 2.nest new project_name
-
+3.nest generate module module_name
+4.nest generate controller project_name/controller_name [--flat]
 ```
 
 ## package.json
