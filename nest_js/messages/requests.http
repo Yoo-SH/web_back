@@ -2,7 +2,7 @@
 
 GET http://localhost:3000/messages
 
-### Create a new message
+### Create a new message 
 POST http://localhost:3000/messages
 Content-Type: application/json
 
@@ -12,5 +12,7 @@ Content-Type: application/json
 
 ### Get a message
 GET http://localhost:3000/messages/1
+
+
 
 

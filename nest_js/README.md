@@ -6,6 +6,8 @@ nest cli
 2.nest new project_name
 3.nest generate module module_name
 4.nest generate controller project_name/controller_name [--flat]
+5.npm install class-validator
+6,npm install class-transformer
 ```
 
 ## package.json
