@@ -4,8 +4,9 @@ nest cli
 ```
 1.npm install -g @nestjs/cli
 2.nest new project_name
-3.nest generate module module_name
-4.nest generate controller project_name/controller_name [--flat]
+3.nest generate(g) module module_name
+4.nest generate(g) controller project_name/controller_name [--flat] (flat 옵션 안 넣으면 모듈 프로젝트에 종속적으로 들어감.)
+5.nest generate(g) service service_name
 5.npm install class-validator
 6,npm install class-transformer
 ```
