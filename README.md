@@ -66,12 +66,13 @@
 
 ## MORE_NJ
 
-- DI
-  -[NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
-  -[Nest.js 기본구조와 DI, IOC](https://medium.com/@devjohnpark/nest-js-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0%EC%99%80-di-ioc-e35876c9af79)
-  -[Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
-  -[NestJS 인터페이스로 DI하기](https://medium.com/@leeseonje9323/nestjs-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-di%ED%95%98%EA%B8%B0-87002b9f51e9)
-  -[종속성 주입(DI)](https://docs.nestjs.com/fundamentals/custom-providers)
+* DI
+  - [NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
+  
+  - [Nest.js 기본구조와 DI, IOC](https://medium.com/@devjohnpark/nest-js-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0%EC%99%80-di-ioc-e35876c9af79)
+  - [Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
+  - [NestJS 인터페이스로 DI하기](https://medium.com/@leeseonje9323/nestjs-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-di%ED%95%98%EA%B8%B0-87002b9f51e9)
+  - [종속성 주입(DI)](https://docs.nestjs.com/fundamentals/custom-providers)
 
 ## express
 
