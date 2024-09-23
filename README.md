@@ -72,6 +72,10 @@
 
 
 * DI 설계 
+  - [[NestJs] 모듈 설계](https://velog.io/@naljajm/NestJs-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84)
+  - [NestJS - Module 설계](https://assu10.github.io/dev/2023/03/04/nest-module/)
+  - [Nest 모듈 설계](https://choi-records.tistory.com/entry/NestJS-Nest-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84)
+
 
 ## express
 
@@ -497,3 +501,16 @@ case 3: container간 통신
 
 da(network로 back과 연결) <=>(network로 db와 연결) back(port를 local과 연결하여 front와 연결) <=> front (브라우저에서 동작 port를 local과 연결)
 ```
+
+
+## 쇼핑몰 참고 레퍼런스
+
+- [nest js, mini shop](https://github.com/antipiebse/NestJS_BoilerPlate)
+- [[NestJS] - 6. 상품 REST API 만들기](https://sjh9708.tistory.com/31)
+- [ Next, Nest, Graphql 기반으로 컬리 쇼핑몰 클론 해보기](https://www.clien.net/service/board/lecture/18049239)
+- [네스트JS(NestJS) 프로젝트 구조와 인증 시스템 구현 방법](https://f-lab.kr/insight/nestjs-project-structure-and-authentication)
+- [[Next.js, react-query] 쇼핑몰 만들기](https://velog.io/@drrobot409/Next.js-react-query-%EC%87%BC%ED%95%91%EB%AA%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0)
+- [쇼핑몰 플랫폼 만들기 - 판매자용 API](https://chunws13.tistory.com/24#google_vignette)
+- [미니 쇼핑몰](https://github.com/Affluent-Closet/server)
+- [[NestJS] - 21. 결제 프로세스와 Transaction Isolation => 내용 좋으면 시리즈 전부 참고하기](https://sjh9708.tistory.com/51)
+- [트랜잭션 => 내용 좋으면 시리즈 전부 참고하기](https://blog.naver.com/gi_balja/223422569009)
