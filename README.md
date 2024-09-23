@@ -66,6 +66,27 @@
 
 ## MORE_NJ
 
+
+* module, service, controller
+  - [Module 이란?](https://velog.io/@dinb1242/Nest.js-Module-%EC%9D%B4%EB%9E%80)
+  - [NestJS 모듈이란?](https://velog.io/@dev_0livia/%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0-01)
+  - [모듈](https://www.wisewiredbooks.com/nestjs/overview/05-modules.html)
+  - [NestJS Service란? (ft. Providers)](https://velog.io/@dev_0livia/NestJS-Service%EB%9E%80-ft.-Providers)
+  - [NestJS에서 서비스(Service) 개념 및 서비스 생성하기](https://bluemiv.tistory.com/73)
+  - [Controller 란?](https://velog.io/@dinb1242/Nest.js-Controller-%EB%9E%80)
+  - [컨트롤러 1편](https://www.wisewiredbooks.com/nestjs/overview/02-controller-1.html#%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-1%ED%8E%B8)
+  - [컨트롤러 2편](https://www.wisewiredbooks.com/nestjs/overview/03-controller-2.html)
+  - [프로바이더](https://www.wisewiredbooks.com/nestjs/overview/04-provider.html)
+  - [컨트롤러 및 미들웨어](https://www.wisewiredbooks.com/nestjs/overview/06-middleware.html)
+  
+  - [Nest.js의 Modules, Controllers, Providers 알아보기
+](https://www.rldnd.net/nestjs-modules-controllers-providers)
+  - [basic - module, controller, service](https://velog.io/@giyeon/Nest-js-basic-module-controller-service)
+  - [모듈 구조 - Module/Service/Controller](https://sjh9708.tistory.com/28)
+  - [NestJS 프로젝트 구조 (Module, Controller, Service)](https://velog.io/@hyein0112/NestJS-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%A1%B0)
+  - [nestJS로 백엔드 api 만들기 (컨트롤러, 서비스, 엔티티)](https://kyounghwan01.github.io/blog/etc/nest/controller-service/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9)
+  - [nest js API 구성하기](https://jae-study.tistory.com/141)
+
 * DI
   - [NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
   
@@ -73,6 +94,12 @@
   - [Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
   - [NestJS 인터페이스로 DI하기](https://medium.com/@leeseonje9323/nestjs-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-di%ED%95%98%EA%B8%B0-87002b9f51e9)
   - [종속성 주입(DI)](https://docs.nestjs.com/fundamentals/custom-providers)
+  - [DI / IoC (의존성 주입/제어의 역전)](https://sjh9708.tistory.com/29)
+  - [NestJS 서비스간의 기능 의존성 해결하기](https://development-crow.tistory.com/39)
+  - [인터페이스로 DI하기](https://velog.io/@wonn23/NestJS-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-DI%ED%95%98%EA%B8%B0)
+
+
+* DI 설계 
 
 ## express
 
