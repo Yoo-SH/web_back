@@ -54,7 +54,7 @@
   - [commonJs](https://ts2ree.tistory.com/183)
   - [JS .js 와 .mjs](https://kjs-dev.tistory.com/entry/JS-js-%EC%99%80-mjs)
 
-## more_ts
+## MORE_TS
 
 - 데코레이터 메타프로그래밍
 
@@ -63,6 +63,15 @@
   - [메타프로그래밍이란?](https://ctkim.tistory.com/entry/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%EB%A9%94%ED%83%80%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D#google_vignette)
 
   - [9가지 프로그래밍 언어로 배우는 개념: 3편 - 메타프로그래밍](https://tech.devsisters.com/posts/programming-languages-3-metaprogramming/)
+
+## MORE_NJ
+
+- DI
+  -[NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
+  -[Nest.js 기본구조와 DI, IOC](https://medium.com/@devjohnpark/nest-js-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0%EC%99%80-di-ioc-e35876c9af79)
+  -[Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
+  -[NestJS 인터페이스로 DI하기](https://medium.com/@leeseonje9323/nestjs-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-di%ED%95%98%EA%B8%B0-87002b9f51e9)
+  -[종속성 주입(DI)](https://docs.nestjs.com/fundamentals/custom-providers)
 
 ## express
 
@@ -176,8 +185,10 @@
 
 ## DB
 
-- 유효성 검사 - [유효성 검사는 어디에서 처리해야하나?
-  ](https://velog.io/@beberiche/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C-%ED%95%B4%EA%B2%B0%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98) - [Validation에 대한 고민](https://blog.barogo.io/%EA%B0%9C%EB%B0%9C%EC%9D%B8%ED%84%B4-validation%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-532ffb986b64) - [프론트엔드에서"만" 유효성 검사가 문제인 이유](https://jojoldu.tistory.com/157)
+- 유효성 검사 
+  - [유효성 검사는 어디에서 처리해야하나?](https://velog.io/@beberiche/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C-%ED%95%B4%EA%B2%B0%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98) 
+  - [Validation에 대한 고민](https://blog.barogo.io/%EA%B0%9C%EB%B0%9C%EC%9D%B8%ED%84%B4-validation%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-532ffb986b64) 
+  - [프론트엔드에서"만" 유효성 검사가 문제인 이유](https://jojoldu.tistory.com/157)
 
 - 쿼리 최적화 튜닝
 
@@ -199,8 +210,9 @@
   - [ORM 개념](https://www.incodom.kr/ORM) 
   - [[데이터베이스&백엔드] ORM(Object Relational Mapping)의 개념과 종류, 활용방안
   ](https://jalynne-kim.medium.com/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B0%B1%EC%97%94%EB%93%9C-orm-object-relational-mapping-%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%A2%85%EB%A5%98-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88-c43b69028957) 
-  - [TypeORM, 처음 만나본 혁신](https://velog.io/@tilto0822/TypeORM-%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%98%EB%B3%B8-%ED%98%81%EC%8B%A0) - [Node.js 백엔드TypeScript + typeORM으로 무한 대댓글 가공하기
-  ](https://inchan.dev/posts/202302160417/) - [ORM vs SQL](https://onepredict.github.io/sql-orm/)
+  - [TypeORM, 처음 만나본 혁신](https://velog.io/@tilto0822/TypeORM-%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%98%EB%B3%B8-%ED%98%81%EC%8B%A0) 
+  - [Node.js 백엔드TypeScript + typeORM으로 무한 대댓글 가공하기](https://inchan.dev/posts/202302160417/) 
+  - [ORM vs SQL](https://onepredict.github.io/sql-orm/)
 
 - DB 디자인 
   - [DB 설계는 어떻게 해야 할까?
