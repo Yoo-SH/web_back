@@ -13,7 +13,7 @@ Content-Type: application/json
 GET http://localhost:3000/auth/1
 
 ### find all users with a given email
-GET http://localhost:3000/auth?email=ads137485@jbnu.ac.kr
+GET http://localhost:3000/auth?email=hi@test.com
 
 
 ### DELETE a user   
