@@ -39,20 +39,26 @@
 ## MORE_NJ
 
 
-* module, service, controller
+* module
   - [Module 이란?](https://velog.io/@dinb1242/Nest.js-Module-%EC%9D%B4%EB%9E%80)
   - [NestJS 모듈이란?](https://velog.io/@dev_0livia/%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0-01)
   - [모듈](https://www.wisewiredbooks.com/nestjs/overview/05-modules.html)
+  - [프로바이더](https://www.wisewiredbooks.com/nestjs/overview/04-provider.html)
+  - [Nest Js 공식 문서 파헤치기 - Providers(프로바이더)](https://tristy.tistory.com/40)
+
+* service
   - [NestJS Service란? (ft. Providers)](https://velog.io/@dev_0livia/NestJS-Service%EB%9E%80-ft.-Providers)
   - [NestJS에서 서비스(Service) 개념 및 서비스 생성하기](https://bluemiv.tistory.com/73)
+
+* controller 
   - [Controller 란?](https://velog.io/@dinb1242/Nest.js-Controller-%EB%9E%80)
   - [컨트롤러 1편](https://www.wisewiredbooks.com/nestjs/overview/02-controller-1.html#%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-1%ED%8E%B8)
-  - [컨트롤러 2편](https://www.wisewiredbooks.com/nestjs/overview/03-controller-2.html)
-  - [프로바이더](https://www.wisewiredbooks.com/nestjs/overview/04-provider.html)
+  - [컨트롤러 2편](https://www.wisewiredbooks.com/nestjs/overview/03-controller-2.html) 
   - [컨트롤러 및 미들웨어](https://www.wisewiredbooks.com/nestjs/overview/06-middleware.html)
   
-  - [Nest.js의 Modules, Controllers, Providers 알아보기
-](https://www.rldnd.net/nestjs-modules-controllers-providers)
+* module, service, controller
+  - [[BackEnd] Repository, Service, Controller를 분리하는 이유?](https://velog.io/@kwaktaemin_/BackEnd-Repository-Service-Controller%EB%A5%BC-%EB%B6%84%EB%A6%AC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
+  - [Nest.js의 Modules, Controllers, Providers 알아보기](https://www.rldnd.net/nestjs-modules-controllers-providers)
   - [basic - module, controller, service](https://velog.io/@giyeon/Nest-js-basic-module-controller-service)
   - [모듈 구조 - Module/Service/Controller](https://sjh9708.tistory.com/28)
   - [NestJS 프로젝트 구조 (Module, Controller, Service)](https://velog.io/@hyein0112/NestJS-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%EC%A1%B0)
@@ -60,8 +66,8 @@
   - [nest js API 구성하기](https://jae-study.tistory.com/141)
 
 * DI
-  - [NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
   
+  - [NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
   - [Nest.js 기본구조와 DI, IOC](https://medium.com/@devjohnpark/nest-js-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0%EC%99%80-di-ioc-e35876c9af79)
   - [Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
   - [NestJS 인터페이스로 DI하기](https://medium.com/@leeseonje9323/nestjs-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-di%ED%95%98%EA%B8%B0-87002b9f51e9)
@@ -76,6 +82,26 @@
   - [NestJS - Module 설계](https://assu10.github.io/dev/2023/03/04/nest-module/)
   - [Nest 모듈 설계](https://choi-records.tistory.com/entry/NestJS-Nest-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84)
 
+
+* DTO, Entiy, interceptor
+
+  - [DTO, Entity의 차이?](https://velog.io/@eunsiver/DTO-Entity%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+  - [역할 분리를 위한 Entity, DTO 개념과 차이점](https://wildeveloperetrain.tistory.com/101)
+  - [DTO와 Entity Class의 차이](https://velog.io/@pjy05200/DTO%EC%99%80-Entity-Class%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+  - [DTO와 VO 그리고 Entity의 차이](https://youngjinmo.github.io/2021/04/dto-vo-entity/)
+  - [nestjs) 특정 데이터를 제외하고 response 하는 방법 + custom interceptor](https://velog.io/@tchaikovsky/nestjs-response-after-excluding-specific-data)
+  - [NestJS Request Lifecycle (3) - Interceptor](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-3-Interceptor)
+  - [데이터 직렬화(serialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26)
+  
+* log
+
+  -[[Web] Logging Level(로그 레벨) 이란?](https://pig-programming.tistory.com/51)
+  -[1. 효율적으로 로그 모니터링하기 - 로그 레벨 구분하기](https://jojoldu.tistory.com/712)
+  -[[Nest.js] 로깅은 왜 중요하고, 어떻게 찍히는 것일까? 내장 로거를 직접 만들어보며 알아보자!](https://velog.io/@cheesechoux/Nest.js-%EB%A1%9C%EA%B9%85%EC%9D%80-%EC%99%9C-%EC%A4%91%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B0%8D%ED%9E%88%EB%8A%94-%EA%B1%B8%EA%B9%8C-%EB%82%B4%EC%9E%A5-%EB%A1%9C%EA%B1%B0-%EB%9C%AF%EC%96%B4%EB%B3%B4%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0)
+  
+* DB연결
+  
+  - [NestJS 블로그 만들기 - 데이터베이스 연결 (Postgresql)과 User 모듈](https://velog.io/@qnfmtm666/2.-NestJS-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%97%B0%EA%B2%B0-Postgresql%EA%B3%BC-User-%EB%AA%A8%EB%93%88)
 
 ## express
 
