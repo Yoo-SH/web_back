@@ -7,3 +7,23 @@ Content-Type: application/json
     "password": "1235"
 
 }
+
+
+### find a particular user  
+GET http://localhost:3000/auth/1
+
+### find all users with a given email
+GET http://localhost:3000/auth?email=ads137485@jbnu.ac.kr
+
+
+### DELETE a user   
+DELETE http://localhost:3000/auth/1
+
+
+### update a user  
+PATCH http://localhost:3000/auth/2
+Content-Type:   application/json
+
+{
+    "email": "aaa@jbnu.ac.kr"
+}
