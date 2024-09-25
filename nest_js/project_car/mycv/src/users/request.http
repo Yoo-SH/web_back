@@ -20,11 +20,17 @@ Content-Type: application/json
 ### find a particular user  
 GET http://localhost:3000/auth/2
 
+
+## logout session user
+GET http://localhost:3000/auth/logout
+
+
 ### find all users with a given email
 GET http://localhost:3000/auth?email=hi@test.com
 
 ### find session user 
 GET http://localhost:3000/auth/whoami
+
 
 ### DELETE a user   
 DELETE http://localhost:3000/auth/1
