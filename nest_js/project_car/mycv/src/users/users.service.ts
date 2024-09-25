@@ -14,16 +14,16 @@ export class UsersService {
     return this.repo.save(user);
   }
 
-  findOne(id: number) {
-    const user = this.repo.findOne({ where: { id } });
+  async findOne(id: number) {
+    const user = await this.repo.findOne({ where: { id } }); // await 추가
     if (!user) {
       throw new NotFoundException('User not found');
     }
     return user;
   }
 
-  find(email: string) {
-    const user = this.repo.find({ where: { email } });
+  async find(email: string) {
+    const user = await this.repo.find({ where: { email } }); // await 추가
     if (!user) {
       throw new NotFoundException('User not found');
     }

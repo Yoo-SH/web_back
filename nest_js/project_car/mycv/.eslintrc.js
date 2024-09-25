@@ -21,11 +21,13 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-require-imports': 'warn', // 여기서 'error'를 'warn'으로 변경
+
     'prettier/prettier': [
-            'error',
-            {
-                endOfLine: 'auto',
-            },
-        ],
+      'warn', // 여기서 'error'를 'warn'으로 변경
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };
