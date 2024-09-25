@@ -15,7 +15,6 @@ Content-Type: application/json
 {
     "email": "testsession@test.com",
     "password": "1245"
-
 }
 
 ### find a particular user  
@@ -24,6 +23,8 @@ GET http://localhost:3000/auth/2
 ### find all users with a given email
 GET http://localhost:3000/auth?email=hi@test.com
 
+### find session user 
+GET http://localhost:3000/auth/whoami
 
 ### DELETE a user   
 DELETE http://localhost:3000/auth/1

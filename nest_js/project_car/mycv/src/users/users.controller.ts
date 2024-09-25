@@ -48,6 +48,11 @@ export class UsersController {
     return this.usersService.find(email);
   }
 
+  @Get('/whoami') //세션을 사용하여 현재 사용자의 정보를 가져옴
+  whoAmI(@Session() session: any) {
+    return this.usersService.findOne(session.userId);
+  }
+
   @Delete('/:id')
   removeUser(@Param('id') id: string) {
     return this.usersService.remove(parseInt(id));
