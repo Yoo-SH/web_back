@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "testsession@test.com",
+    "email": "sessiontest1@test.com",
     "password": "1245"
 
 }
@@ -13,23 +13,29 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "testsession@test.com",
+    "email": "sessiontest1@test.com",
     "password": "1245"
 }
+
+### logout session user
+POST http://localhost:3000/auth/signout
+
+### find session user 
+GET http://localhost:3000/auth/whoami
+
+### test
+GET http://localhost:3000/auth/test
+
+
 
 ### find a particular user  
 GET http://localhost:3000/auth/2
 
 
-## logout session user
-GET http://localhost:3000/auth/logout
-
 
 ### find all users with a given email
 GET http://localhost:3000/auth?email=hi@test.com
 
-### find session user 
-GET http://localhost:3000/auth/whoami
 
 
 ### DELETE a user   
