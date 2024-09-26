@@ -8,6 +8,7 @@ import {
   Query,
   Session,
   Patch,
+  UseGuards,
 } from '@nestjs/common';
 import { CreateUserDto } from './dtos/create-user.dto';
 import { UpdateUserDto } from './dtos/update-user.dto';
@@ -17,6 +18,7 @@ import { UserDto } from './dtos/user.dto';
 import { AuthService } from './auth.service';
 import { CurrentUser } from '../decorator/current-user.decoraotr';
 import { User } from './user.entity';
+import { AuthGuard } from '../guard/auth.guard';
 
 @Controller('auth')
 @Serialize(UserDto)
@@ -50,6 +52,7 @@ export class UsersController {
   }
 
   @Get('/whoami')
+  @UseGuards(AuthGuard)
   whoAmI(@CurrentUser() user: User) {
     console.log('whoAmI route called'); // 메서드가 호출되는지 확인하기 위한 로그 추가
 
