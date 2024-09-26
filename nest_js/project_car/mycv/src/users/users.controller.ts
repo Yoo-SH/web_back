@@ -18,8 +18,8 @@ import { AuthService } from './auth.service';
 import { CurrentUser } from '../decorator/current-user.decoraotr';
 import { User } from './user.entity';
 
-@Serialize(UserDto)
 @Controller('auth')
+@Serialize(UserDto)
 export class UsersController {
   constructor(
     private usersService: UsersService,
