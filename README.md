@@ -93,15 +93,33 @@
   - [NestJS Request Lifecycle (3) - Interceptor](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-3-Interceptor)
   - [데이터 직렬화(serialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26)
   
-* log
+* Life cycle
+  - [NestJS - Middleware, Guard, Interceptor, Pipe, ExceptionFilter 그리고 Life Cycle](https://assu10.github.io/dev/2023/04/08/nest-middleware-guard-interceptor-pipe-exceptionfilter-lifecycle/)
+  - [nestjs 생명주기와 설명](https://velog.io/@cjstkrak/nestjs-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%EC%99%80-%EC%84%A4%EB%AA%85)
+  - [[Nest.js] Interceptor VS Filter VS Middleware  차이점](https://byul91oh.tistory.com/554)
+  - [NestJS Request Lifecycle (0)](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-0-%EA%B0%9C%EC%9A%94)
+  - [NestJS Request Lifecycle (1) - Middleware](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-1-Middleware?category=1105866)
+  - [NestJS Request Lifecycle (2) - Guard](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-2-Guard)
+  - [NestJS Request Lifecycle (3) - Interceptor](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-3-Interceptor?category=1105866)
+  - [NestJS Request Lifecycle (4) - Pipe](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-4-Pipe?category=1105866)
+  - [NestJS Request Lifecycle (5) - Exception Filter](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-5-Exception-Filter?category=1105866)
 
-  -[[Web] Logging Level(로그 레벨) 이란?](https://pig-programming.tistory.com/51)
-  -[1. 효율적으로 로그 모니터링하기 - 로그 레벨 구분하기](https://jojoldu.tistory.com/712)
-  -[[Nest.js] 로깅은 왜 중요하고, 어떻게 찍히는 것일까? 내장 로거를 직접 만들어보며 알아보자!](https://velog.io/@cheesechoux/Nest.js-%EB%A1%9C%EA%B9%85%EC%9D%80-%EC%99%9C-%EC%A4%91%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B0%8D%ED%9E%88%EB%8A%94-%EA%B1%B8%EA%B9%8C-%EB%82%B4%EC%9E%A5-%EB%A1%9C%EA%B1%B0-%EB%9C%AF%EC%96%B4%EB%B3%B4%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0)
-  
+* interceptor and guard
+  - [NestJS - Interceptor](https://assu10.github.io/dev/2023/04/02/nest-interceptor/#1-interceptor-useinterceptors)
+  - [Nestjs - Interceptor](https://velog.io/@atesi/Nestjs-Interceptor)
+  - [가드(Guard)로 NestJS 앱 안전하게 지키기](https://www.daleseo.com/nestjs-guards/)
+
+
+
 * DB연결
   
   - [NestJS 블로그 만들기 - 데이터베이스 연결 (Postgresql)과 User 모듈](https://velog.io/@qnfmtm666/2.-NestJS-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%97%B0%EA%B2%B0-Postgresql%EA%B3%BC-User-%EB%AA%A8%EB%93%88)
+
+* LOG
+
+  - [[Web] Logging Level(로그 레벨) 이란?](https://pig-programming.tistory.com/51)
+  - [1. 효율적으로 로그 모니터링하기 - 로그 레벨 구분하기](https://jojoldu.tistory.com/712)
+  - [[Nest.js] 로깅은 왜 중요하고, 어떻게 찍히는 것일까? 내장 로거를 직접 만들어보며 알아보자!](https://velog.io/@cheesechoux/Nest.js-%EB%A1%9C%EA%B9%85%EC%9D%80-%EC%99%9C-%EC%A4%91%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B0%8D%ED%9E%88%EB%8A%94-%EA%B1%B8%EA%B9%8C-%EB%82%B4%EC%9E%A5-%EB%A1%9C%EA%B1%B0-%EB%9C%AF%EC%96%B4%EB%B3%B4%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0)
 
 ## express
 
