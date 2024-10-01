@@ -7,7 +7,7 @@
 
 ## MORE_JS
 
-- 비동기와 콜백함수
+- `비동기와 콜백함수`
 
   - [자바스크립트 싱글스레드인데 왜 비동기적 일까?](https://velog.io/@eamon3481/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8B%B1%EA%B8%80%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%B8%EB%8D%B0-%EC%99%9C-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%A0%81-%EC%9D%BC%EA%B9%8C)
   - [비동기 처리와 callback 함수](https://velog.io/@jaeung5169/%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC%EC%99%80-callback-%ED%95%A8%EC%88%98)
@@ -15,9 +15,9 @@
   - [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0)
   - [JS Promise with Multiple Promises](https://velog.io/@colki/Udemy-15.-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95-3%EA%B0%80%EC%A7%80-parallel-sequence-race-Promise.allSettled)
 
-- rest parameter && Spread syntax
+- `rest parameter && Spread syntax`
   - [나머지 매개변수, 전개 구문(Rest parameters, Spread syntax)](https://velog.io/@ye-ji/%EB%82%98%EB%A8%B8%EC%A7%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EC%A0%84%EA%B0%9C-%EA%B5%AC%EB%AC%B8Rest-parameters-Spread-syntax)
-- more_info
+- `more_info`
   - [Property Descriptor](https://velog.io/@shroad1802/Property-Descriptor)
   - [[JavaScript] 비구조화 할당/구조분해할당](https://velog.io/@kimhyesu-_-/JavaScript-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9%EA%B5%AC%EC%A1%B0%EB%B6%84%ED%95%B4%ED%95%A0%EB%8B%B9)
   - [ES6 문법 정리](https://velog.io/@kim_unknown_/JavaScript-ES6)
@@ -28,7 +28,7 @@
 
 ## MORE_TS
 
-- 데코레이터 메타프로그래밍
+- `데코레이터 메타프로그래밍`
 
   - [it공부 (개념)/javascriptDecorator(데코레이터) 와 Meta-programming(메타프로그래밍)](https://batcave.tistory.com/42)
 
@@ -39,24 +39,24 @@
 ## MORE_NJ
 
 
-* module
+* `module`
   - [Module 이란?](https://velog.io/@dinb1242/Nest.js-Module-%EC%9D%B4%EB%9E%80)
   - [NestJS 모듈이란?](https://velog.io/@dev_0livia/%EA%B2%8C%EC%8B%9C%ED%8C%90-%EB%A7%8C%EB%93%A4%EA%B8%B0-01)
   - [모듈](https://www.wisewiredbooks.com/nestjs/overview/05-modules.html)
   - [프로바이더](https://www.wisewiredbooks.com/nestjs/overview/04-provider.html)
   - [Nest Js 공식 문서 파헤치기 - Providers(프로바이더)](https://tristy.tistory.com/40)
 
-* service
+* `service`
   - [NestJS Service란? (ft. Providers)](https://velog.io/@dev_0livia/NestJS-Service%EB%9E%80-ft.-Providers)
   - [NestJS에서 서비스(Service) 개념 및 서비스 생성하기](https://bluemiv.tistory.com/73)
 
-* controller 
+* `controller `
   - [Controller 란?](https://velog.io/@dinb1242/Nest.js-Controller-%EB%9E%80)
   - [컨트롤러 1편](https://www.wisewiredbooks.com/nestjs/overview/02-controller-1.html#%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC-1%ED%8E%B8)
   - [컨트롤러 2편](https://www.wisewiredbooks.com/nestjs/overview/03-controller-2.html) 
   - [컨트롤러 및 미들웨어](https://www.wisewiredbooks.com/nestjs/overview/06-middleware.html)
   
-* module, service, controller
+* `module, service, controller`
   - [[BackEnd] Repository, Service, Controller를 분리하는 이유?](https://velog.io/@kwaktaemin_/BackEnd-Repository-Service-Controller%EB%A5%BC-%EB%B6%84%EB%A6%AC%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0)
   - [Nest.js의 Modules, Controllers, Providers 알아보기](https://www.rldnd.net/nestjs-modules-controllers-providers)
   - [basic - module, controller, service](https://velog.io/@giyeon/Nest-js-basic-module-controller-service)
@@ -65,8 +65,9 @@
   - [nestJS로 백엔드 api 만들기 (컨트롤러, 서비스, 엔티티)](https://kyounghwan01.github.io/blog/etc/nest/controller-service/#%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8C%E1%85%A6%E1%86%A8%E1%84%90%E1%85%B3-%E1%84%80%E1%85%AE%E1%84%8C%E1%85%A9)
   - [nest js API 구성하기](https://jae-study.tistory.com/141)
 
-* DI
-  
+* `DI`
+  - [[NestJS] IoC, DI, Singleton](https://m.blog.naver.com/fbfbf1/222620699725)
+  - [NestJS의 DI Container](https://velog.io/@ferrari_roma/Nest%EC%9D%98-DI-container)
   - [NestJS DI 따라해보기](https://velog.io/@tlsdntjd95/NestJS-DI-%EB%94%B0%EB%9D%BC%ED%95%B4%EB%B3%B4%EA%B8%B0)
   - [Nest.js 기본구조와 DI, IOC](https://medium.com/@devjohnpark/nest-js-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0%EC%99%80-di-ioc-e35876c9af79)
   - [Nest.js는 실제로 어떻게 의존성을 주입해줄까?](https://velog.io/@coalery/nest-injection-how)
@@ -75,15 +76,18 @@
   - [DI / IoC (의존성 주입/제어의 역전)](https://sjh9708.tistory.com/29)
   - [NestJS 서비스간의 기능 의존성 해결하기](https://development-crow.tistory.com/39)
   - [인터페이스로 DI하기](https://velog.io/@wonn23/NestJS-%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EB%A1%9C-DI%ED%95%98%EA%B8%B0)
+  
+  
 
 
-* DI 설계 
+
+* `DI 설계 `
   - [[NestJs] 모듈 설계](https://velog.io/@naljajm/NestJs-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84)
   - [NestJS - Module 설계](https://assu10.github.io/dev/2023/03/04/nest-module/)
   - [Nest 모듈 설계](https://choi-records.tistory.com/entry/NestJS-Nest-%EB%AA%A8%EB%93%88-%EC%84%A4%EA%B3%84)
 
 
-* DTO, Entiy, interceptor
+* `DTO, Entiy, interceptor`
 
   - [DTO, Entity의 차이?](https://velog.io/@eunsiver/DTO-Entity%EC%9D%98-%EC%B0%A8%EC%9D%B4)
   - [역할 분리를 위한 Entity, DTO 개념과 차이점](https://wildeveloperetrain.tistory.com/101)
@@ -93,7 +97,7 @@
   - [NestJS Request Lifecycle (3) - Interceptor](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-3-Interceptor)
   - [데이터 직렬화(serialization)는 무엇이고 왜 필요한가?](https://hub1234.tistory.com/26)
   
-* Life cycle
+* `Life cycle`
   - [NestJS - Middleware, Guard, Interceptor, Pipe, ExceptionFilter 그리고 Life Cycle](https://assu10.github.io/dev/2023/04/08/nest-middleware-guard-interceptor-pipe-exceptionfilter-lifecycle/)
   - [nestjs 생명주기와 설명](https://velog.io/@cjstkrak/nestjs-%EC%83%9D%EB%AA%85%EC%A3%BC%EA%B8%B0%EC%99%80-%EC%84%A4%EB%AA%85)
   - [[Nest.js] Interceptor VS Filter VS Middleware  차이점](https://byul91oh.tistory.com/554)
@@ -104,18 +108,29 @@
   - [NestJS Request Lifecycle (4) - Pipe](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-4-Pipe?category=1105866)
   - [NestJS Request Lifecycle (5) - Exception Filter](https://one-armed-boy.tistory.com/entry/NestJS-Request-Lifecycle-5-Exception-Filter?category=1105866)
 
-* interceptor and guard
+* `interceptor and guard`
   - [NestJS - Interceptor](https://assu10.github.io/dev/2023/04/02/nest-interceptor/#1-interceptor-useinterceptors)
   - [Nestjs - Interceptor](https://velog.io/@atesi/Nestjs-Interceptor)
   - [가드(Guard)로 NestJS 앱 안전하게 지키기](https://www.daleseo.com/nestjs-guards/)
 
 
 
-* DB연결
+* `DB연결`
   
   - [NestJS 블로그 만들기 - 데이터베이스 연결 (Postgresql)과 User 모듈](https://velog.io/@qnfmtm666/2.-NestJS-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%97%B0%EA%B2%B0-Postgresql%EA%B3%BC-User-%EB%AA%A8%EB%93%88)
 
-* LOG
+* `TTD`
+  - [테스트 nestjs](https://docs.nestjs.com/fundamentals/testing)
+  - [TTD란?](https://velog.io/@kth121211/TTD%EB%9E%80)
+  - [NestJS - 테스트 자동화](https://assu10.github.io/dev/2023/04/30/nest-test/)
+  - [NestJS에서 테스트코드 작성(feat. Jest, @nestjs/testing)](https://marklee1117.tistory.com/2)
+  - [Jest와 Supertest 활용한 NestJS 테스트](https://www.daleseo.com/nestjs-testing/)
+  - [Nestjs 기반 테스트코드 작성법 공부중 - 2일 차 회고](https://issuebombom.tistory.com/116)
+  - [NestJS에서 단위 테스트 작성하기](https://jhyeok.com/nestjs-unit-test/)
+  - [[NestJS] 회원가입 API의 TestCode를 작성하자(with.Jest)](https://velog.io/@doll950904/NestJS-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-API%EC%9D%98-TestCode%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EC%9E%90with.Jest)
+  
+
+* `LOG`
 
   - [[Web] Logging Level(로그 레벨) 이란?](https://pig-programming.tistory.com/51)
   - [1. 효율적으로 로그 모니터링하기 - 로그 레벨 구분하기](https://jojoldu.tistory.com/712)
@@ -123,17 +138,17 @@
 
 ## express
 
-- 라우터
+- `라우터`
 
   - [get과 post 사용구분 및 기능적 특성](https://whales.tistory.com/120)
   - [redirect와 render 사용구분](https://dev-mht.tistory.com/73)
   - [render 와 redirect 의 차이](https://ssungkang.tistory.com/entry/Django-render-%EC%99%80-redirect-%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 
-- 미들웨어
+- `미들웨어`
 
   - [미들웨어 사용](https://expressjs.com/ko/guide/using-middleware.html)
 
-- express
+- `express`
 
   - [Express에서 특정 id를 URL 매개변수로 받는 방법](https://velog.io/@beton/Express%EC%97%90%EC%84%9C-%ED%8A%B9%EC%A0%95-id%EB%A5%BC-URL-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EB%A1%9C-%EB%B0%9B%EB%8A%94-%EB%B0%A9%EB%B2%95)
 
@@ -141,7 +156,7 @@
 
 ## MiddleWear
 
-- 미들웨어 개념 및 기능
+- `미들웨어 개념 및 기능`
 
   - [node.js, express, 미들웨어란?](https://velog.io/@wjddnjswjd12/node.js-express-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4%EB%9E%80)
 
@@ -149,12 +164,12 @@
   - [미들웨어 개념 및 기능2](https://velog.io/@unyoi/%EC%9D%B8%ED%94%84%EB%9D%BC-%EB%BF%8C%EC%8B%9C%EA%B8%B01-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-%EA%B0%9C%EB%85%90%EC%9D%84-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%9)
   - [미들웨어 개념 및 기능3](https://medium.com/twolinecode/13-%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4-middleware-%EB%9E%80-23abb33ec4f4)
 
-- 전역 변수
+- `전역 변수`
   - [로컬 전역변수로 이용](https://junspapa-itdev.tistory.com/13https://expressjs.com/en/5x/api.html#res.locals)
 
 ## multer
 
-- 이미지 업로드
+- `이미지 업로드`
 
   - [Node.js express + multer로 이미지 업로드 구현하기](https://velog.io/@mainfn/Node.js-express-multer%EB%A1%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
 
@@ -162,7 +177,7 @@
 
 ## Rendering
 
-- CSR vs SSR
+- `CSR vs SSR`
 
   - [CSR vs SSR 특징 및 차이](https://hahahoho5915.tistory.com/52)
 
@@ -172,21 +187,21 @@
 
 ## Cookie와 Session
 
-- 개념
+- `개념`
 
   - [쿠키와 세션의 개념](https://velog.io/@octo__/%EC%BF%A0%ED%82%A4Cookie-%EC%84%B8%EC%85%98Session)
 
-- 기능적 특성
+- `기능적 특성`
   - [쿠키(Cookie)와 세션(Session)의 차이 (+캐시(Cache))](https://dev-coco.tistory.com/61)
 
 ## 권한과 인증부여
 
-- 권한과 인증부여의 대한 구체적 차이
+- `권한과 인증부여의 대한 구체적 차이`
   - [Authentication (인증) VS Authorization (권한부여/인가)](https://velog.io/@10000ji_/Spring-Security-Authorization%EA%B6%8C%ED%95%9C%EB%B6%80%EC%97%AC%EC%9D%B8%EA%B0%80%EC%9D%98-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%ED%98%84)
 
 ## Security
 
-- 크로스 사이트 요청 위조
+- `크로스 사이트 요청 위조`
 
   - [크로스 사이트 요청 위조란?](https://nordvpn.com/ko/blog/csrf/?srsltid=AfmBOooxWPL8mAlzMXcstihlZKtWyKOzo2evvWnlUiTAiCTVCHoC0HUH)
 
@@ -194,7 +209,7 @@
 
   - [웹 취약점과 해킹 매커니즘#7 XSS(Cross-Site Scripting)](https://www.fis.kr/ko/major_biz/cyber_safety_oper/attack_info/security_news?articleSeq=3408)
 
-- 인젝션 공격
+- `인젝션 공격`
 
   - [SQL 인젝션 공격을 방지하는 5가지 팁](https://powerdmarc.com/ko/sql-injection-prevention/)
 
@@ -202,7 +217,7 @@
 
   - [NoSQL Injection](https://velog.io/@m200is/NoSQL-Injection)
 
-- 보안을 위한 코딩규칙
+- `보안을 위한 코딩규칙`
 
   - [Node.js secure 코딩 규칙 10가지](https://openeg.tistory.com/752)
 
@@ -210,7 +225,7 @@
 
 ## API & CORS & SPA
 
-- API
+- `API`
 
   - [API란? API의 정의와 종류 그리고 장단점](https://www.hanl.tech/blog/api%eb%9e%80-api%ec%9d%98-%ec%a0%95%ec%9d%98%ec%99%80-%ec%a2%85%eb%a5%98-%ec%9e%a5%eb%8b%a8%ec%a0%90/)
 
@@ -222,25 +237,25 @@
 
   - [REST API 제대로 알고 사용하기](https://meetup.nhncloud.com/posts/92)
 
-- SPA
+- `SPA`
 
   - [SPA의 개념](https://www.elancer.co.kr/blog/view?seq=214)
   - [SPA(Single Page Application)이란 무엇인가요?](https://velog.io/@dikum98/SPA-Single-Page-Application%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80%EC%9A%94)
 
-- CORS
+- `CORS`
   - [CORS란 무엇인가?](https://velog.io/@effirin/CORS%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
   - [CORS는 왜 이렇게 우리를 힘들게 하는걸까?](https://evan-moon.github.io/2020/05/21/about-cors/)
 
 ## ORM
 
-* ORM 
+* `ORM` 
   - [ORM이란](https://velog.io/@alskt0419/ORM%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C...-iek4f0o3fg) 
   - [ORM 개념](https://www.incodom.kr/ORM) 
   - [[데이터베이스&백엔드] ORM(Object Relational Mapping)의 개념과 종류, 활용방안
   ](https://jalynne-kim.medium.com/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EB%B0%B1%EC%97%94%EB%93%9C-orm-object-relational-mapping-%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%A2%85%EB%A5%98-%ED%99%9C%EC%9A%A9%EB%B0%A9%EC%95%88-c43b69028957) 
   - [ORM vs SQL](https://onepredict.github.io/sql-orm/)
 
-* TYPEORM
+* `TYPEORM`
   - [TypeORM, 처음 만나본 혁신](https://velog.io/@tilto0822/TypeORM-%EC%B2%98%EC%9D%8C-%EB%A7%8C%EB%82%98%EB%B3%B8-%ED%98%81%EC%8B%A0) 
   - [Node.js 백엔드TypeScript + typeORM으로 무한 대댓글 가공하기](https://inchan.dev/posts/202302160417/)
   - [TypeORM개요 + Entity란?](https://simple-coding-place.tistory.com/57)
@@ -254,12 +269,12 @@
 
 ## DB
 
-- 유효성 검사 
+- `유효성 검사` 
   - [유효성 검사는 어디에서 처리해야하나?](https://velog.io/@beberiche/%EC%9C%A0%ED%9A%A8%EC%84%B1-%EA%B2%80%EC%82%AC%EB%8A%94-%EC%96%B4%EB%94%94%EC%97%90%EC%84%9C-%ED%95%B4%EA%B2%B0%ED%95%B4%EC%95%BC%ED%95%98%EB%82%98) 
   - [Validation에 대한 고민](https://blog.barogo.io/%EA%B0%9C%EB%B0%9C%EC%9D%B8%ED%84%B4-validation%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-532ffb986b64) 
   - [프론트엔드에서"만" 유효성 검사가 문제인 이유](https://jojoldu.tistory.com/157)
 
-- 쿼리 최적화 튜닝
+- `쿼리 최적화 튜닝`
 
   - [SQL 쿼리 튜닝하는 여러가지 방법](https://chung-develop.tistory.com/145)
   - [SQL 쿼리 성능 최적화를 위한 튜닝 팁 6가지 (Query Optimization)](https://community.heartcount.io/ko/query-optimization-tips/)
@@ -267,7 +282,7 @@
   - [[DB] 데이터베이스 인덱스(Index) 정의, 종류, 설계 : SQL 검색성능 향상](https://smartpro.tistory.com/61)
   - [인덱스의 원리 및 종류](https://ssunws.tistory.com/45)
 
-- 쿼리 성능 분석
+- `쿼리 성능 분석`
 
   - [쿼리 성능 분석하기 (PostgreSQL)](https://seunghyunson.tistory.com/20)
   - [PostgreSQL explain](https://onbaba.tistory.com/3)
@@ -275,13 +290,13 @@
   - [PostgreSQL 쿼리 실행 계획 분석 (explain, analyze)](https://justdo1tme.tistory.com/entry/PostgreSQL-%EC%BF%BC%EB%A6%AC-%EC%8B%A4%ED%96%89-%EA%B3%84%ED%9A%8D-%EB%B6%84%EC%84%9Dexplain-analyze)
 
 
-- DB 디자인 
+- `DB 디자인` 
   - [DB 설계는 어떻게 해야 할까?
   ](https://velog.io/@sontulip/how-to-db-design) 
   - [데이터베이스 스키마 설계에 대한 전체 가이드
   ](https://www.integrate.io/ko/blog/complete-guide-to-database-schema-design-guide-ko/) - [DB 설계](https://luv-n-interest.tistory.com/618) - [ERD 작성법 : 기호(사상수,참여도)와 선(식별/비식별)의 의미 정리 (ERD Cloud / IE표기법 기준)](https://dogfoot-er.tistory.com/43) - [쇼핑몰 ERD 설계](https://velog.io/@1afterwon/%EC%87%BC%ED%95%91%EB%AA%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EC%87%BC%ED%95%91%EB%AA%B0-ERD-%EC%84%A4%EA%B3%84)
 
-- Postgresql 
+- `Postgresql` 
   - [PostgreSQL-기초 문법 총정리
   ](https://velog.io/@eogh773/PostgreSQL-%EA%B8%B0%EC%B4%88-%EB%AC%B8%EB%B2%95-%EC%B4%9D%EC%A0%95%EB%A6%AC) 
   - [서브쿼리(Subquery) / WITH 절 이해하기 -1](https://adjh54.tistory.com/156) 
@@ -290,7 +305,7 @@
 
 ## 협업
 
-- 서버
+- `서버`
 
   - [프론트 서버 / 백엔드 서버 를 따로 두는 이유는 무엇인가?](https://velog.io/@hsg829/%ED%94%84%EB%A1%A0%ED%8A%B8-%EC%84%9C%EB%B2%84-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%84%9C%EB%B2%84-%EB%A5%BC-%EB%94%B0%EB%A1%9C-%EB%91%90%EB%8A%94-%EC%9D%B4%EC%9C%A0%EB%8A%94-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-nvuhqxv5)
 
@@ -298,7 +313,7 @@
 
   - [Node 프로덕트 퀄리티를 높이는 협업 방법](https://velog.io/@hax0r/Node-%ED%94%84%EB%A1%9C%EB%8D%95%ED%8A%B8-%ED%80%84%EB%A6%AC%ED%8B%B0%EB%A5%BC-%EB%86%92%EC%9D%B4%EB%8A%94-%ED%98%91%EC%97%85-%EB%B0%A9%EB%B2%95-q29zo12w)
 
-- 협업 도구 
+- `협업 도구` 
   * 도커 
     - [도커로 백엔드랑 협업하기](https://velog.io/@asj1966/%EB%8F%84%EC%BB%A4%EB%A1%9C-%EB%B0%B1%EC%97%94%EB%93%9C%EB%9E%91-%ED%98%91%EC%97%85%ED%95%98%EA%B8%B0) 
     - [팀원 모두에게 공통된 백엔드 환경 제공하기](https://developer-nyong.tistory.com/43) 
@@ -332,49 +347,49 @@
       - [협업을 위한 디스코드, 아직 안쓰세요?](https://velog.io/@junkue20/%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C-%EC%95%84%EC%A7%81-%EC%95%88%EC%93%B0%EC%84%B8%EC%9A%94)
 ## 웹 배포전 필수 확인사항
 
-- 테스트 코드
+- `테스트 코드`
   - [테스트 코드? 어느 범위까지?](https://velog.io/@city7310/%EB%B0%B1%EC%97%94%EB%93%9C%EA%B0%80-%EC%9D%B4%EC%A0%95%EB%8F%84%EB%8A%94-%ED%95%B4%EC%A4%98%EC%95%BC-%ED%95%A8-16.-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%97%90-%EB%8C%80%ED%95%9C-%EA%B3%A0%EB%AF%BC-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1-1)
   - [테스트 코드 작성의 기본 원칙](https://f-lab.kr/insight/backend-test-code-writing-20240716),
   - [Node.js에서 Unit Test 활용](https://velog.io/@yenicall/Nodejs%EC%97%90%EC%84%9C-Unit-Test-%ED%99%9C%EC%9A%A9)
   - [Node.js에서의 테스팅 전략](https://www.deviantceblog.com/node-js%EC%97%90%EC%84%9C%EC%9D%98-%ED%85%8C%EC%8A%A4%ED%8C%85-%EC%A0%84%EB%9E%B5/)
-- 환경변수
+- `환경변수`
   - [환경 변수(PATH)란?](https://gliver.tistory.com/43)
   - [환경변수란? 환경변수와 path](https://m.blog.naver.com/zxwnstn/221521038431)
   - [Node 개발 및 배포용 환경변수 관리하기](https://seungtaek95.github.io/node/node_env/)
   - [[react] 실무 개발 환경/배포 환경 설정(.env)](https://han-py.tistory.com/441)
-- 브라우저간 지원 평가(최신 vesion - ex) flex box)
+- `브라우저간 지원 평가(최신 vesion - ex) flex box`
 
   - [css 브라우저 호환 확인 사이트](https://caniuse.com/?search=flex%20box)
 
-* 검색엔진 최적화 
+* `검색엔진 최적화` 
   - [검색엔진 최적화(SEO) 기본 가이드](https://imweb.me/faq?mode=view&category=29&category2=35&idx=2471) 
   - [SEO (검색엔진 최적화)란? – 구글, 네이버 가이드 총정리
   ](https://seo.tbwakorea.com/blog/seo-guide-2022/) 
   - [SEO(검색엔진최적화)가이드북 총정리 2024](https://www.hedleyonline.com/ko/blog/seo-guide/) 
   - [자바스크립트 검색엔진 최적화(SEO) 가이드 총 정리](https://helloinyong.tistory.com/308)
-* 성능 항상 & 자산 축소(JS, 이미지) 
+* `성능 항상 & 자산 축소(JS, 이미지) `
   - [Javascript 코드를 축소하는 이유는?
   ](https://www.cloudflare.com/ko-kr/learning/performance/why-minify-javascript-code/) 
   - [[자바스크립트] 압축(Minify) / 난독화(Uglify)
   ](https://12bme.tistory.com/357) 
   - [js minify 사이트](https://www.toptal.com/developers/javascript-minifier)
-- 동적 웹사이트, DB 배포
+- `동적 웹사이트, DB 배포`
   - [클라우드 서버에 배포하기(AWS)](https://junvelee.tistory.com/55)
 
 
 ## 참고사항
 
-- nodejs 디버깅 방법
+- `nodejs 디버깅 방법`
 
   - [nodejs 디버깅 방법1](https://medium.com/@imjuni/node-js-%EB%94%94%EB%B2%84%EA%B9%85-%EB%8F%84%EA%B5%AC-devtool-5e8ec01ba71e)
   - [nodejs 디버깅 방법2](https://velog.io/@younoah/nodejs-debug)
   - [nodejs 디버깅 방법3](https://velog.io/@moon-yerim/node.js-%ED%99%98%EA%B2%BD%EC%97%90%EC%84%9C-%EB%94%94%EB%B2%84%EA%B9%85%ED%95%98%EA%B8%B0)
 
-- 서버 클라우드 배포 및 호스팅
+- `서버 클라우드 배포 및 호스팅`
 
   - [AWS에 서버 올리기 Part1. EC2 생성하기](https://velog.io/@jjonggang/AWSAWS%EC%97%90-%EC%84%9C%EB%B2%84-%EC%98%AC%EB%A6%AC%EA%B8%B0-Part1.-EC2-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0)
 
-- 기타
+- `기타`
 
   - [ERD 작성하기 (feat. ERDCloud)](https://velog.io/@junkue20/%ED%98%91%EC%97%85%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%94%94%EC%8A%A4%EC%BD%94%EB%93%9C-%EC%95%84%EC%A7%81-%EC%95%88%EC%93%B0%EC%84%B8%EC%9A%94)
 
@@ -559,15 +574,3 @@ case 3: container간 통신
 da(network로 back과 연결) <=>(network로 db와 연결) back(port를 local과 연결하여 front와 연결) <=> front (브라우저에서 동작 port를 local과 연결)
 ```
 
-
-## 쇼핑몰 참고 레퍼런스
-
-- [nest js, mini shop](https://github.com/antipiebse/NestJS_BoilerPlate)
-- [[NestJS] - 6. 상품 REST API 만들기](https://sjh9708.tistory.com/31)
-- [ Next, Nest, Graphql 기반으로 컬리 쇼핑몰 클론 해보기](https://www.clien.net/service/board/lecture/18049239)
-- [네스트JS(NestJS) 프로젝트 구조와 인증 시스템 구현 방법](https://f-lab.kr/insight/nestjs-project-structure-and-authentication)
-- [[Next.js, react-query] 쇼핑몰 만들기](https://velog.io/@drrobot409/Next.js-react-query-%EC%87%BC%ED%95%91%EB%AA%B0-%EB%A7%8C%EB%93%A4%EA%B8%B0)
-- [쇼핑몰 플랫폼 만들기 - 판매자용 API](https://chunws13.tistory.com/24#google_vignette)
-- [미니 쇼핑몰](https://github.com/Affluent-Closet/server)
-- [[NestJS] - 21. 결제 프로세스와 Transaction Isolation => 내용 좋으면 시리즈 전부 참고하기](https://sjh9708.tistory.com/51)
-- [트랜잭션 => 내용 좋으면 시리즈 전부 참고하기](https://blog.naver.com/gi_balja/223422569009)
