@@ -15,7 +15,13 @@
   - [자바스크립트 비동기 처리와 콜백 함수](https://joshua1988.github.io/web-development/javascript/javascript-asynchronous-operation/#%EB%93%A4%EC%96%B4%EA%B0%80%EB%A9%B0)
   - [JS Promise with Multiple Promises](https://velog.io/@colki/Udemy-15.-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%8B%A4%ED%96%89-%EB%B0%A9%EB%B2%95-3%EA%B0%80%EC%A7%80-parallel-sequence-race-Promise.allSettled)
 
-- `rest parameter && Spread syntax`
+* `Promise`
+  - [봐도 봐도 헷갈리는 resolve, reject](https://velog.io/@rejoelve/%EB%B4%90%EB%8F%84-%EB%B4%90%EB%8F%84-%ED%97%B7%EA%B0%88%EB%A6%AC%EB%8A%94-resolve-reject)
+  - [자바스크립트 Promise 쉽게 이해하기](https://joshua1988.github.io/web-development/javascript/promise-for-beginners/)
+  - [Promise강의](https://programmingsummaries.tistory.com/325)
+  - [자바스크립트 Promise 개념 & 문법 정복하기](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC-Promise)
+
+* `rest parameter && Spread syntax`
   - [나머지 매개변수, 전개 구문(Rest parameters, Spread syntax)](https://velog.io/@ye-ji/%EB%82%98%EB%A8%B8%EC%A7%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EC%A0%84%EA%B0%9C-%EA%B5%AC%EB%AC%B8Rest-parameters-Spread-syntax)
 - `more_info`
   - [Property Descriptor](https://velog.io/@shroad1802/Property-Descriptor)
@@ -120,6 +126,10 @@
   - [NestJS 블로그 만들기 - 데이터베이스 연결 (Postgresql)과 User 모듈](https://velog.io/@qnfmtm666/2.-NestJS-%EB%B8%94%EB%A1%9C%EA%B7%B8-%EB%A7%8C%EB%93%A4%EA%B8%B0-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%97%B0%EA%B2%B0-Postgresql%EA%B3%BC-User-%EB%AA%A8%EB%93%88)
 
 * `TTD`
+  - [Nest.js 테스트 코드 작성](https://velog.io/@tmdwns1521/Nest.js-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%BD%94%EB%93%9C-%EC%9E%91%EC%84%B1)
+  - [Jest를 이용한 Unit/E2E 테스트 (NestJS)](https://coldpresso.tistory.com/13)
+  - [Nest.js - unit testing, e2e testing (feat. jest)](https://inuplace.tistory.com/734)
+  - [[NestJS | Docs] Testing 알아보기](https://cdragon.tistory.com/entry/NestJS-Docs-Testing-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)
   - [테스트 nestjs](https://docs.nestjs.com/fundamentals/testing)
   - [TTD란?](https://velog.io/@kth121211/TTD%EB%9E%80)
   - [NestJS - 테스트 자동화](https://assu10.github.io/dev/2023/04/30/nest-test/)
