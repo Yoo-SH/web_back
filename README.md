@@ -139,6 +139,19 @@
   - [NestJS에서 단위 테스트 작성하기](https://jhyeok.com/nestjs-unit-test/)
   - [[NestJS] 회원가입 API의 TestCode를 작성하자(with.Jest)](https://velog.io/@doll950904/NestJS-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-API%EC%9D%98-TestCode%EB%A5%BC-%EC%9E%91%EC%84%B1%ED%95%98%EC%9E%90with.Jest)
 
+- `COOKIE-SESSION`
+  - [[NestJS] 쿠키와 세션이란?](https://puleugo.tistory.com/121)
+  - [NestJS에서 클라이언트로 쿠키 보내기 (왜 내 쿠키는 안받아줘요?)](https://lee-yo-han.github.io/nestjs-server-client-cookie)
+  - [NestJS 공식문서 Session](https://velog.io/@hing/NestJS-%EA%B3%B5%EC%8B%9D%EB%AC%B8%EC%84%9C-Session)
+  - [[Nest.js] Cookie 관리하기](https://velog.io/@d159123/Nest.js-Cookie-%EA%B4%80%EB%A6%AC%ED%95%98%EA%B8%B0)
+  - [[NestJS] Auth Token을 쿠키에 저장하기](https://sound-story.tistory.com/entry/NestJS-Auth-Token%EC%9D%84-%EC%BF%A0%ED%82%A4%EC%97%90-%EC%A0%80%EC%9E%A5%ED%95%98%EA%B8%B0#google_vignette)
+  - [httpOnly Cookie 접근하기](https://23life.tistory.com/entry/Next-JS-14-server-component%EB%A1%9C-httpOnly-cookie-%EC%A0%91%EA%B7%BC%ED%95%98%EA%B8%B0)
+  - [NestJS Cookie를 활용한 인증・인가 처리](https://velog.io/@ldhbenecia/NestJS-Cookie%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-%EC%9D%B8%EC%A6%9D%E3%83%BB%EC%9D%B8%EA%B0%80-%EC%B2%98%EB%A6%AC)
+  - [Nest.js: 인증 / 인가](https://velog.io/@zoeyul/Nest.js-%EC%9D%B8%EC%A6%9D-%EC%9D%B8%EA%B0%80)
+  - [NestJS 로그인 SESSION 기능 예시](https://1minute-cut.tistory.com/48)
+  - [Nest.js : Nest.js로 Redis와 연동하여 세션 로그인 구현하기 (2)](https://suloth.tistory.com/23)
+
+
 - `LOG`
 
   - [[Web] Logging Level(로그 레벨) 이란?](https://pig-programming.tistory.com/51)
