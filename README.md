@@ -200,6 +200,9 @@
   - [Swagger로 API 문서 자동화를 해보자](https://velog.io/@banjjoknim/Swagger)
   - [[Nest.js] swagger 적용하기](https://velog.io/@___pepper/Nest.js-swagger-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
   - [NestJs 프로젝트에서 Swagger ](https://develop-const.tistory.com/15)
+
+- `nest swagger`
+  - [무물보 GTP](https://chatgpt.com/share/67188f27-55a4-800f-a035-fdc3a18a7794)
   
   
 
@@ -408,6 +411,7 @@
 
   - [Node 프로덕트 퀄리티를 높이는 협업 방법](https://velog.io/@hax0r/Node-%ED%94%84%EB%A1%9C%EB%8D%95%ED%8A%B8-%ED%80%84%EB%A6%AC%ED%8B%B0%EB%A5%BC-%EB%86%92%EC%9D%B4%EB%8A%94-%ED%98%91%EC%97%85-%EB%B0%A9%EB%B2%95-q29zo12w)
 
+ - [백엔드-프론트엔드 폴더 구조 with Axious](https://medium.com/@yihimin01/%EB%B0%B1%EC%97%94%EB%93%9C-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%ED%8F%B4%EB%8D%94-%EA%B5%AC%EC%A1%B0-c66625474d23)
 - `협업 도구`
 
   - 도커
