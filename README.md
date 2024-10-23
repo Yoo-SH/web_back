@@ -151,7 +151,7 @@
   - [NestJS 로그인 SESSION 기능 예시](https://1minute-cut.tistory.com/48)
   - [Nest.js : Nest.js로 Redis와 연동하여 세션 로그인 구현하기 (2)](https://suloth.tistory.com/23)
 
-  - `OAuth, JWT with Nest js`
+* `OAuth, JWT with Nest js`
     - [Nest.js를 이용한 OAuth 2.0 구현](https://velog.io/@jinony/Nest.js%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-OAuth-2.0-%EA%B5%AC%ED%98%84)
     - [[NestJS] JWT 로그인 구현 예제 (bcrypt, passport, JWT, cookie)](https://charming-kyu.tistory.com/39)
     - [공식문서](https://docs.nestjs.com/security/authentication)
@@ -286,6 +286,17 @@
   - [[Backend] 서버 인증 방식의 종류](https://jeonyoungho.github.io/posts/%EC%84%9C%EB%B2%84-%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D%EC%9D%98-%EC%A2%85%EB%A5%98/)
   - [백엔드 개발자 로드맵 따라가기 10. 사용자 인증 방식 - OAuth2.0 인증 서버 구축하기](https://velog.io/@skysoo/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A1%9C%EB%93%9C%EB%A7%B5-%EB%94%B0%EB%9D%BC%EA%B0%80%EA%B8%B0-10.-OAuth2.0)
   - [Nest.js - 회원가입과 로그인 구현하기](https://blog.naver.com/gi_balja/223069730719)
+
+- JWT(토큰) vs cookie(쿠키) vs session(세션)
+  - [1. JWT 토큰 인증과 (쿠키, 세션, 토큰)](https://jhbljs92.tistory.com/entry/1-JWT-%ED%86%A0%ED%81%B0-%EC%9D%B8%EC%A6%9D%EA%B3%BC-%EC%BF%A0%ED%82%A4-%EC%84%B8%EC%85%98-%ED%86%A0%ED%81%B0)
+  - [쿠키, 세션, JWT의 차이점과 보안 전략](https://f-lab.kr/insight/cookie-session-jwt-differences)
+  - [세션과 쿠키의 차이점, 그리고 JWT token: session vs cookie vs JWT token](https://blog.yevgnenll.me/posts/session-vs-cookie-vs-jwt-token)
+  - [[인증/인가] 쿠키 VS 세션 VS 토큰 (JWT) 방식 중 무엇을 사용할까?](https://ksh-coding.tistory.com/113)
+  - [인증 방식: Cookie & Session vs JWT](https://velog.io/@park-moen/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D-Cookie-vs-Cookie-Session-vs-JWT)
+  - [인증 방식(쿠키, 세션, JWT)에 대해 알아보자](https://velog.io/@kimdy0915/%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D%EC%BF%A0%ED%82%A4-%EC%84%B8%EC%85%98-JWT%EC%97%90-%EB%8C%80%ED%95%B4-%EC%95%8C%EC%95%84%EB%B3%B4%EC%9E%90)
+  - [세션 쿠키 토큰](https://kbwplace.tistory.com/165#google_vignette)
+  - [JWT Cookie Session 비교](https://bob-data.tistory.com/40)
+
 - `JWT`
   - [JWT란 무엇인가? 그리고 어떻게 사용하는가? (1) - 개념](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)
   - [우리는 왜 JWT를 사용하는가? / JWT 사용 이유](https://puleugo.tistory.com/138)
