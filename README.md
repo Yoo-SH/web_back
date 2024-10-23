@@ -151,6 +151,16 @@
   - [NestJS 로그인 SESSION 기능 예시](https://1minute-cut.tistory.com/48)
   - [Nest.js : Nest.js로 Redis와 연동하여 세션 로그인 구현하기 (2)](https://suloth.tistory.com/23)
 
+  - `OAuth, JWT with Nest js`
+    - [Nest.js를 이용한 OAuth 2.0 구현](https://velog.io/@jinony/Nest.js%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-OAuth-2.0-%EA%B5%AC%ED%98%84)
+    - [[NestJS] JWT 로그인 구현 예제 (bcrypt, passport, JWT, cookie)](https://charming-kyu.tistory.com/39)
+    - [공식문서](https://docs.nestjs.com/security/authentication)
+    - [NestJS | JWT 인증, 로그인 기능 구현](https://dapsu-startup.tistory.com/entry/NestJS-JWT-%EC%9D%B8%EC%A6%9D-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84)
+    - [[NestJS] OAuth 2.0을 활용한 로그인 구현](https://velog.io/@wonn23/NestJS-OAuth-2.0%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC%ED%98%84)
+    - [[nestjs] 핀테크 벡엔드 개발자가 알려주는 인증 & 인가 시스템 4편 - 깃허브/구글 oauth 인증](https://blog.naver.com/pjt3591oo/223137573151)
+    - [[NestJS] 구글 로그인 (1)/구글 OAuth 적용](https://doppelgoer.tistory.com/entry/NestJS-%EA%B5%AC%EA%B8%80-%EB%A1%9C%EA%B7%B8%EC%9D%B8-1%EA%B5%AC%EA%B8%80-OAuth-%EC%A0%81%EC%9A%A9)
+    - [[Nest.js]06. JWT 로그인 구현](https://velog.io/@wlduq0150/Nest.js06.-JWT-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B5%AC)
+
 
 - `LOG`
 
@@ -266,7 +276,7 @@
   - [[WEB] 웹 저장소 - 쿠키/로컬스토리지/세션스토리지](https://kangdanne.tistory.com/197)
 
 
-## 권한과 인증부여
+## 권한과 인증부여 
 
 - `권한과 인증부여의 대한 구체적 차이`
   - [Authentication (인증) VS Authorization (권한부여/인가)](https://velog.io/@10000ji_/Spring-Security-Authorization%EA%B6%8C%ED%95%9C%EB%B6%80%EC%97%AC%EC%9D%B8%EA%B0%80%EC%9D%98-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%ED%98%84)
@@ -279,6 +289,22 @@
 - `JWT`
   - [JWT란 무엇인가? 그리고 어떻게 사용하는가? (1) - 개념](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)
   - [우리는 왜 JWT를 사용하는가? / JWT 사용 이유](https://puleugo.tistory.com/138)
+  - []
+
+
+- `OAuth`
+  - [OAuth 란 무엇일까](https://showerbugs.github.io/2017-11-16/OAuth-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C)
+  - [Spring Security + JWT를 이용한 자체 Login & OAuth2 Login(구글, 네이버, 카카오) API 구현 (5) - OAuth란? / OAuth 2.0 인증 과정 예시](https://ksh-coding.tistory.com/62)
+  - [OAuth란?](https://www.entrust.com/ko/resources/learn/what-is-oauth)
+
+- `JWT vs OAuth`
+  - [JWT 와 OAuth 의 차이](https://velog.io/@chanyoung1998/JWT-%EC%99%80-OAuth-%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+  - [OAuth 2.0 + JWT, 그 속으로](https://velog.io/@beomdrive/OAuth-2.0-JWT-%EA%B7%B8-%EC%86%8D%EC%9C%BC%EB%A1%9C)
+  - [JWT와 OAuth 2.0의 차이점 및 적용 사례](https://f-lab.kr/insight/jwt-vs-oauth2)
+  - [OAuth2.0 + JWT를 사용한 토큰 기반 서버 인증 구현하기](https://zkdlu.tistory.com/12)
+  - [JWT와 OAuth 차이점](https://lewis-kku.tistory.com/34)
+
+
  
 ## Security
 
@@ -399,6 +425,7 @@
   - `프록시(proxy)`
     - [[Network] 프록시(Proxy) 이해하기 : 종류, 사용 목적 별, 오픈 소스 종류](https://adjh54.tistory.com/526)
     - [[Web] Proxy Server의 개념 및 종류](https://chan-it-note.tistory.com/106)
+
 
 
 ## 협업
