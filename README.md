@@ -158,6 +158,11 @@
   - [1. 효율적으로 로그 모니터링하기 - 로그 레벨 구분하기](https://jojoldu.tistory.com/712)
   - [[Nest.js] 로깅은 왜 중요하고, 어떻게 찍히는 것일까? 내장 로거를 직접 만들어보며 알아보자!](https://velog.io/@cheesechoux/Nest.js-%EB%A1%9C%EA%B9%85%EC%9D%80-%EC%99%9C-%EC%A4%91%EC%9A%94%ED%95%98%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%B0%8D%ED%9E%88%EB%8A%94-%EA%B1%B8%EA%B9%8C-%EB%82%B4%EC%9E%A5-%EB%A1%9C%EA%B1%B0-%EB%9C%AF%EC%96%B4%EB%B3%B4%EA%B8%B0-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0)
 
+- `nest 동작방식`
+ - [ NestJS를 배우기 전에](https://velog.io/@kshjessica/2%EC%9E%A5-NestJS%EB%A5%BC-%EB%B0%B0%EC%9A%B0%EA%B8%B0-%EC%A0%84%EC%97%90)
+ - [제어의 역전, 의존성 주입, 싱글톤](https://jun-choi-4928.medium.com/nest-js-behind-the-curtain-712b39abd49c)
+ 
+
 ## express
 
 - `라우터`
@@ -175,6 +180,29 @@
   - [Express에서 특정 id를 URL 매개변수로 받는 방법](https://velog.io/@beton/Express%EC%97%90%EC%84%9C-%ED%8A%B9%EC%A0%95-id%EB%A5%BC-URL-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98%EB%A1%9C-%EB%B0%9B%EB%8A%94-%EB%B0%A9%EB%B2%95)
 
   - [Nodejs express PUT PATCH 차이](https://selfdevelopcampus.tistory.com/entry/nodejs-express-PUT-PATCH-%EC%B0%A8%EC%9D%B4)
+
+## http 
+
+- `contents-type 종류`
+  - [[개념 정리] http content-type 관한 정리](https://yunzema.tistory.com/186)
+  - [Content-Type](https://velog.io/@eunhye_k/Content-Type%EC%9D%98-%EC%9D%B4%ED%95%B4)
+  - [Content-type이란?](https://velog.io/@vekkary/Content-type%EC%9D%B4%EB%9E%80)
+  - [HTTP Content-Type 정리](https://velog.io/@onady/HTTP-Content-Type)
+  - [Content-Type](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Content-Type)
+  
+
+
+## Swagger
+
+- `swagger 개념 및 기능`
+  - [Swagger 란? 무엇인고?](https://velog.io/@stpn94/Swagger-%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B3%A0)
+  - [Swagger for 백엔드 프론트엔트 통신](https://yozm.wishket.com/magazine/detail/2195/)
+  - [Swagger로 API 문서 자동화를 해보자](https://velog.io/@banjjoknim/Swagger)
+  - [[Nest.js] swagger 적용하기](https://velog.io/@___pepper/Nest.js-swagger-%EC%A0%81%EC%9A%A9%ED%95%98%EA%B8%B0)
+  - [NestJs 프로젝트에서 Swagger ](https://develop-const.tistory.com/15)
+  
+  
+
 
 ## MiddleWear
 
@@ -207,6 +235,14 @@
 
   - [SSR시작전에 알아야 할 것들 ](https://yozm.wishket.com/magazine/detail/2330/)
 
+- `SPA vs MPA`
+  - [SPA vs MPA와 SSR vs CSR 장단점 뜻정리](https://hanamon.kr/spa-mpa-ssr-csr-%EC%9E%A5%EB%8B%A8%EC%A0%90-%EB%9C%BB%EC%A0%95%EB%A6%AC/)
+  - [SPA와 MPA의 차이, 작동 원리에 대해서 (feat CSR, SSR)](https://wonderwalls.tistory.com/m/entry/SPA%EC%99%80-MPA%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EC%9E%91%EB%8F%99-%EC%9B%90%EB%A6%AC%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-feat-CSR-SSR)
+  - [다양한 렌더링 방식과 Next.js(서버사이드 리엑트)의 렌더링 방식](https://velog.io/@a-honey/Nest-JS)
+
+- `이미지 렌더링`
+  - [백엔드에서 이미지 업로드는 어떻게 하면 좋을까](https://seungyong20.tistory.com/entry/%EB%B0%B1%EC%97%94%EB%93%9C%EC%97%90%EC%84%9C-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%97%85%EB%A1%9C%EB%93%9C%EB%8A%94-%EC%96%B4%EB%96%BB%EA%B2%8C-%ED%95%98%EB%A9%B4-%EC%A2%8B%EC%9D%84%EA%B9%8C)
+
 ## Cookie와 Session
 
 - `개념`
@@ -216,11 +252,31 @@
 - `기능적 특성`
   - [쿠키(Cookie)와 세션(Session)의 차이 (+캐시(Cache))](https://dev-coco.tistory.com/61)
 
+## LocalStorage , SessionStorage 
+
+- `개념`
+  - [[JS] 📚 LocalStorage / SessionStorage (vs 쿠키와 비교)](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-localStorage-sessionStorage)
+  - [TIL - 세션 스토리지 (sessionStorage)](https://velog.io/@qmasem/TIL-%EC%84%B8%EC%85%98-%EC%8A%A4%ED%86%A0%EB%A6%AC%EC%A7%80-sessionStorage)
+  - [로컬 스토리지 세션 스토리지 차이점](https://kyuntechblog.tistory.com/64)
+  - [localStorage & sessionStorage 사용하기](https://merrily-code.tistory.com/14)
+  - [localStorage와 sessionStorage](https://ko.javascript.info/localstorage)
+  - [[WEB] 웹 저장소 - 쿠키/로컬스토리지/세션스토리지](https://kangdanne.tistory.com/197)
+
+
 ## 권한과 인증부여
 
 - `권한과 인증부여의 대한 구체적 차이`
   - [Authentication (인증) VS Authorization (권한부여/인가)](https://velog.io/@10000ji_/Spring-Security-Authorization%EA%B6%8C%ED%95%9C%EB%B6%80%EC%97%AC%EC%9D%B8%EA%B0%80%EC%9D%98-%EA%B0%9C%EB%85%90-%EC%9D%B4%ED%95%B4-%EB%B0%8F-%EA%B5%AC%ED%98%84)
 
+- `인증 작동원리`
+  - [[인증 작동 원리 정리] 서버 기반 인증 방식(server-side sessions) vs 토큰 기반 인증 방식(authentication tokens)](https://velog.io/@mieum/Session-vs-JWT)
+  - [[Backend] 서버 인증 방식의 종류](https://jeonyoungho.github.io/posts/%EC%84%9C%EB%B2%84-%EC%9D%B8%EC%A6%9D-%EB%B0%A9%EC%8B%9D%EC%9D%98-%EC%A2%85%EB%A5%98/)
+  - [백엔드 개발자 로드맵 따라가기 10. 사용자 인증 방식 - OAuth2.0 인증 서버 구축하기](https://velog.io/@skysoo/%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EB%A1%9C%EB%93%9C%EB%A7%B5-%EB%94%B0%EB%9D%BC%EA%B0%80%EA%B8%B0-10.-OAuth2.0)
+  - [Nest.js - 회원가입과 로그인 구현하기](https://blog.naver.com/gi_balja/223069730719)
+- `JWT`
+  - [JWT란 무엇인가? 그리고 어떻게 사용하는가? (1) - 개념](https://velog.io/@vamos_eon/JWT%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80-1)
+  - [우리는 왜 JWT를 사용하는가? / JWT 사용 이유](https://puleugo.tistory.com/138)
+ 
 ## Security
 
 - `크로스 사이트 요청 위조`
@@ -327,6 +383,20 @@
   - [서브쿼리(Subquery) / WITH 절 이해하기 -1](https://adjh54.tistory.com/156)
   - [[Postgresql] WITH문 사용하기, WITH가 성능에 미치는 영향](https://chiefcoder.tistory.com/12)
   - [재귀쿼리 만들기 (Recursive) ( + 매우 주의해야하는 케이스 : 무한루프)](https://uminoh.tistory.com/25#google_vignette)
+
+
+## 서버
+
+  - `서버 종류`
+    - [서버 종류 및 프록시 이해하기](https://lifegoesonme.tistory.com/334)
+    - [서버의 개념과 종류](https://velog.io/@maxminos/%EC%84%9C%EB%B2%84%EC%9D%98-%EA%B0%9C%EB%85%90%EA%B3%BC-%EC%A2%85%EB%A5%98)
+    - [서버 유형 Computer Networks: 15가지 종류](https://www.guru99.com/ko/different-types-of-servers.html)
+    - [[Backend] 백엔드 서버의 핵심 역할과 구성 요소: 자세한 설명과 실제 예시 ](https://wntdev.tistory.com/62)
+
+  - `프록시(proxy)`
+    - [[Network] 프록시(Proxy) 이해하기 : 종류, 사용 목적 별, 오픈 소스 종류](https://adjh54.tistory.com/526)
+    - [[Web] Proxy Server의 개념 및 종류](https://chan-it-note.tistory.com/106)
+
 
 ## 협업
 
