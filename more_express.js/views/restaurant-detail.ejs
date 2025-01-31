@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('include/head.ejs') %>
+    <link rel="stylesheet" href="/styles/restaurants.css" />
+  </head>
+  <body>
+    <%- include('include/header.ejs') %>
+    <%- include('include/side-drawer.ejs') %>
+    <main>
+      <h1><%= restaurant.name %></h1>
+      <p> <%= restaurant.cuisine %> | <%= restaurant.address %></p>
+      <p> <%= restaurant.description %></p>
+      <p><a href="<%= restaurant.name %>">View Website</a></p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+###create a new user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "sessiontest1@test.com",
+    "password": "1245"
+
+}
+
+### sign in
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "sessiontest1@test.com",
+    "password": "1245"
+}
+
+### logout session user
+POST http://localhost:3000/auth/signout
+
+### find session user 
+GET http://localhost:3000/auth/whoami
+
+### test
+GET http://localhost:3000/auth/test
+
+
+
+### find a particular user  
+GET http://localhost:3000/auth/2
+
+
+
+### find all users with a given email
+GET http://localhost:3000/auth?email=hi@test.com
+
+
+
+### DELETE a user   
+DELETE http://localhost:3000/auth/1
+
+
+### update a user  
+PATCH http://localhost:3000/auth/2
+Content-Type:   application/json
+
+{
+    "email": "aaa@jbnu.ac.kr"
+}

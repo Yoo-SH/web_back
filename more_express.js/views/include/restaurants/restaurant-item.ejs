@@ -1,0 +1,16 @@
+<li class="restaurant-item">
+          <article>
+            <h2><%= restaurant.name %></h2>
+            <div class="restaurant-meta">
+              <p><%= restaurant.cuisine %></p>
+              <p><%= restaurant.address %></p>
+            </div>
+            <p>
+              A short description, explaining why this restaurant is awesome!
+            </p>
+            
+            <div class="restaurant-actions">
+              <a href="/restaurants/<%= restaurant.id %>">보기 웹페이지</a>
+            </div>
+          </article>
+        </li>
