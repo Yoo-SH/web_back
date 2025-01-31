@@ -13,4 +13,4 @@
 - ### [JAVASCRIPT, TYPESCRIPT 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/javascript%26typescript.md)
 - ### [RENDERING 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
 - ### [DOCKER 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
-- ### [DEPLOY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
+- ### [DEPLOY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)
