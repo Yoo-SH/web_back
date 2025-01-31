@@ -1,7 +1,8 @@
 # Backend Roadmap
 
-- [2024년 현대적 백엔드 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/backend)
-
+- [2025년 현대적 백엔드 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/backend)
+- [2025년 DevOps, SRE 또는 기타 운영 역할에 대한 단계별 가이드](https://roadmap.sh/devops)
+- [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
 # Reference
 
 - ### [API 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/api.md)
