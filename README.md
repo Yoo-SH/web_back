@@ -5,31 +5,28 @@
 - [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
 # Reference
 
-
-
-## framework
--  [JAVASCRIPT, TYPESCRIPT 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/javascript%26typescript.md)
--  [NODE FRAMEWORK 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nodejs_framework.md)
-
-
-## network 
--  [HTTP/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
- - [WEB SERVER 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
- - [PROTOCOL 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
--  [PROXY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
+## Network 
+-  [Htp/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
+ - [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
+ - [Protocol 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
+-  [Proxy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
 -  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
--  [NGINX 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
+-  [Nginx 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
 
-
-## Database
--  [DATABASE 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
-
-## Deploy
--  [DOCKER 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
--  [DEPLOY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)
+## Framework
+-  [Javascript, Typescript 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/javascript%26typescript.md)
+-  [Node framework 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nodejs_framework.md)
 
 ## Server
 -  [API 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/api.md)
--  [RENDERING 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
--  [SECURITY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/security.md)
--  [SERVER TYPE 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/server_type.md)
+-  [Rendering 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
+-  [Security 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/security.md)
+-  [Server type 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/server_type.md)
+
+## Database
+-  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
+-  [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
+
+## Deploy
+-  [Docker 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
+-  [Deploy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)

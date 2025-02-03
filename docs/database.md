@@ -60,3 +60,4 @@
   - [[Postgresql] WITH문 사용하기, WITH가 성능에 미치는 영향](https://chiefcoder.tistory.com/12)
   - [재귀쿼리 만들기 (Recursive) ( + 매우 주의해야하는 케이스 : 무한루프)](https://uminoh.tistory.com/25#google_vignette)
 
+(nest에서 동시성 문제 해결하는 방법)[https://chatgpt.com/g/g-p-675d2d2c129c8191858417c72926c195-yuseunghyeon-gpt/c/677d521c-0024-8006-bb11-f6bd22811994]
