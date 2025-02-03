@@ -473,8 +473,8 @@ RediSearch와 RedisJSON은 Redis의 인덱싱, 검색 및 문서 저장 기능�
 
 
 # 참고자료
-[Redis : 개발자를 위한 Redis 완벽 가이드](https://www.udemy.com/course/redis-the-complete-developers-guide-korean/?couponCode=KEEPLEARNING)
-[RedisSearch vs Elasticsearch](https://2mukee.tistory.com/780)
+- [Redis : 개발자를 위한 Redis 완벽 가이드](https://www.udemy.com/course/redis-the-complete-developers-guide-korean/?couponCode=KEEPLEARNING)
+- [RedisSearch vs Elasticsearch](https://2mukee.tistory.com/780)
 
 
 
