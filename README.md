@@ -15,4 +15,6 @@
 - ### [RENDERING 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
 - ### [DOCKER 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
 - ### [NGINX 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
+- ### [PROXY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
+- ### [WEB SERVER 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
 - ### [DEPLOY 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)
