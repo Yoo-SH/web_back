@@ -22,8 +22,7 @@ Map (Key-Value 구조, Collection 상속 X)
   ├─ LinkedHashMap
   └─ TreeMap
 ```
-
-
+![Image](https://github.com/user-attachments/assets/1663cdfb-4cd9-4372-83de-e57603339868)
 ---
 
 ## 3. 주요 인터페이스 및 구현 클래스
