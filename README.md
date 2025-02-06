@@ -7,16 +7,22 @@
 
 ## Java
 -  [Java 실행환경 ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_env.md)
+-  [Java Jshell](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_jshell.md)
 -  [Java 타입(Type) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type.md)
+-  [Java 스트링(String)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_string.md)
 -  [Java 연산자(Operator) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_operator.md)
 -  [Java 클래스(Class) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class.md)
+-  [Java 레코드(Record)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_record.md)
+-  [Java 컴포지션(Composition)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_compostion.md)
 -  [Java 객체지향프로그래밍(OOP) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_oop.md)
 -  [Java 컬렉션(Collection)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection.md)
+-  [Java 스트림(Stream)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_stream.md)
 -  [Java 예외처리(Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception.md)
 -  [Java 인터페이스(Interface) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_interface.md)
 -  [Java 제네릭(Generic) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_generic.md)
-- [Java 스레드(Thread) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread.md)
-- [Java 네트워킹(Networking) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_networking.md)
+-  [Java 스레드(Thread) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread.md)
+-  [Java 동기화(Synchronization)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_synchronization.md)
+-  [Java 네트워킹(Networking) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_networking.md)
 -  [Java 이벤트(Event) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_event.md)
 
 
