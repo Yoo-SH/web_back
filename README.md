@@ -6,24 +6,63 @@
 # Reference
 
 ## Java
+
+### Flaform
 -  [Java 실행환경 ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_env.md)
 -  [Java Jshell](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_jshell.md)
+- 
+### Type
 -  [Java 타입(Type) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type.md)
+-  [Java 제네릭(Generic) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_generic.md)
 -  [Java 스트링(String)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_string.md)
+-  [Java 열거형(Enumeration)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_enum.md)
+- 
+### Operator
 -  [Java 연산자(Operator) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_operator.md)
+
+### Object Oriented Programming
+-  [Java 객체지향프로그래밍(OOP) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_oop.md)
 -  [Java 클래스(Class) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class.md)
 -  [Java 레코드(Record)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_record.md)
--  [Java 컴포지션(Composition)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_compostion.md)
--  [Java 객체지향프로그래밍(OOP) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_oop.md)
--  [Java 컬렉션(Collection)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection.md)
--  [Java 스트림(Stream)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_stream.md)
--  [Java 예외처리(Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception.md)
 -  [Java 인터페이스(Interface) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_interface.md)
--  [Java 제네릭(Generic) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_generic.md)
--  [Java 스레드(Thread) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread.md)
--  [Java 동기화(Synchronization)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_synchronization.md)
--  [Java 네트워킹(Networking) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_networking.md)
+-  [Java 컴포지션(Composition)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_compostion.md)
+
+### Functional Programing
+-  [Java 익명함수(AnonymousFuntion)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class_anonymousFunction.md)
+-  [Java 람다(Lambda)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class_lambda.md)
+-  [Java 익명클래스(AnonymousClass)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class_anonymousClass.md)
+-  [Java 함수형인터페이스(FunctionalInterface)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_interface_functionalInterface.md)
+
+### Event driven programming
 -  [Java 이벤트(Event) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_event.md)
+
+### Map & Collection & Stream
+-   [Java 맵(Map)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_map.md)
+-   [Java 컬렉션(Collection)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection.md)
+-  [Java 컬렉션_리스트(Collection List)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection_list.md)
+-  [Java 컬렉션_큐(Collection Queue)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection_queue.md)
+-  [Java 컬렉션_집합(Collection Set)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection_set.md)
+-  [Java 스트림(Stream)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_stream.md)
+
+### Thread
+-  [Java 스레드(Thread) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread.md)
+-  [Java 스레드 실행자(Thread Executor) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread_excecutor.md)
+-  [Java 동기화(Synchronization)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_synchronization.md)
+
+### Exception
+-   [Java 예외처리(Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception.md)
+-   [Java 사용자예외처리(Personal Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception_personal.md)
+
+### File
+-   [Java 파일(File)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_file.md)
+
+### Network
+-  [Java 네트워킹(Networking) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_networking.md)
+
+### Date
+- [Java 로컬시간(Local Date)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_localDate.md)
+
+### Others
 
 
 ## Network 
