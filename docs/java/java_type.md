@@ -17,15 +17,13 @@
 
 - 기본 자료형(Primitive Type)
     - 정수형: byte, short, int, long
-    - 실수형: float, double
-    - 문자형: char
-    - 논리형: boolean
+    - 실수형: float, double (참고: [bigDecimal class-부동소수점연산](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_bigdecimal.md))
+  - 문자형: char(참고:[char 자료형과 관련된 메서드](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_char.md))
+  - 논리형: boolean
 - 참조 자료형(Reference Type)
     - 클래스, 인터페이스, 배열 등
 
 ![Image](https://github.com/user-attachments/assets/bce2e7b8-65cf-4a23-b030-5d0f20fd4521)
-
-
 ## 자료형과 메모
 - 메모리의3가지영역
     - 클래스(class)/정적(static)/상수(final)/메서드(method) 영역
@@ -383,7 +381,11 @@ Java에서는 8개의 기본 자료형에 대해 각각 대응되는 Wrapper 클
   int num = Integer.parseInt("100"); // 문자열을 정수로 변환
   double d = Double.valueOf("3.14"); // 문자열을 Double 객체로 변환
   ```
-
+- 기본 타입이 필요하면 parseXxx() 사용
+  - 예: int a = Integer.parseInt("100");
+- 객체(Integer, Double 등)가 필요하면 valueOf() 사용
+  - 예: Integer b = Integer.valueOf("100");
+  
 ### (4) [Boxing & Unboxing](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Language/%5BJava%5D%20Auto%20Boxing%20%26%20Unboxing.md)
 - Java 5부터는 **Autoboxing**(기본 자료형 → Wrapper 클래스 자동 변환)과 **Unboxing**(Wrapper 클래스 → 기본 자료형 자동 변환)을 지원하여 편리하게 사용할 수 있습니다.
   ```java

@@ -1,4 +1,6 @@
-# `JAVA 에러와 예외처리`
+# `JAVA 예외처리`
+
+## Error와 Exception 차이
 
 Error와 Exception은 같다고 생각할 수도 있지만 사실 큰 차이가 있습니다.
 
@@ -10,17 +12,7 @@ Error와 Exception은 같다고 생각할 수도 있지만 사실 큰 차이가 
 
 Error의 상황을 미리 미연에 방지하기 위해서 Exception 상황을 만들 수 있으며, java에서는 try-catch문으로 Exception handling을 할 수 있습니다.
 
-<br>
-
-## Throwable 클래스
-
-![Image](https://github.com/user-attachments/assets/7708ac96-0041-4815-9655-39441b12a2dc)
-
-Throwable 클래스는 예외처리를 할 수 있는 최상위 클래스입니다. Exception과 Error는 Throwable의 상속을 받습니다.
-
-<br>
-
-## Error (에러)
+### Error (에러)
 
 ![Image](https://github.com/user-attachments/assets/4d90182c-f279-4782-b9d3-fefccf5c2eae)
 
@@ -40,7 +32,7 @@ Error는 시스템 레벨에서 발생하여, 개발자가 어떻게 조치할 �
 
 ## Exception의 2가지 종류
 
-1. Checked Exception : 예외처리가 필수이며, 처리하지 않으면 컴파일되지 않습니다. JVM 외부와 통신(네트워크, 파일시스템 등)할 때 주로 쓰입니다.
+1. Checked Exception : 반드시 예외처리를 해야하며, 처리하지 않으면 컴파일되지 않습니다. JVM 외부와 통신(네트워크, 파일시스템 등)할 때 주로 쓰입니다.
 
     - RuntimeException 이외에 있는 모든 예외
     - IOException, SQLException 등
@@ -50,7 +42,14 @@ Error는 시스템 레벨에서 발생하여, 개발자가 어떻게 조치할 �
     - RuntimeException 하위의 모든 예외
     - NullPointerException, IndexOutOfBoundException 등
 
-<br>
+
+
+## Throwable 클래스
+
+![Image](https://github.com/user-attachments/assets/7708ac96-0041-4815-9655-39441b12a2dc)
+
+Throwable 클래스는 예외처리를 할 수 있는 최상위 클래스입니다. Exception과 Error는 Throwable의 상속을 받습니다.
+
 
 ## 대표적인 Exception Class
 
@@ -242,6 +241,10 @@ void method() throws IOException {  // 예외를 선언 (throws)
     throw new IOException("예외 발생"); // 예외를 실제로 발생 (throw)
 }
 ```
+
+
+<br>
+
 ## 계층적 예외 처리
 메소드 안에서 예외가 발생하면 런타임 시스템은 예외 처리기를 검색
 하고 예외 처리기가 없다면 호출스택(call stack)에 있는 상위메소드를 조사

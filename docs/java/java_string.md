@@ -26,21 +26,50 @@ String str = "Hello";
 int length = str.length(); // 5
 ```
 
-### 2.2 문자열 연결 (Concatenation)
+### 2.2 문자열 연결 
+
+__`+` 연산자__ 가장 간단한 방식, 작은 문자열 작업에 적합
+
+```java
+String result = first + " " + second;
+```
+
+__String.concat()__ 문자열만 연결 가능, 비교적 덜 사용됨
 ```java
 String first = "Hello";
 String second = "World";
 String result = first.concat(" ").concat(second); // "Hello World"
 ```
-또는 `+` 연산자를 사용할 수 있습니다.
+
+_String.join()__ 배열이나 리스트 데이터를 특정 구분자로 연결할 때 적합
 ```java
-String result = first + " " + second;
+String result = String.join(", ", "Apple", "Banana", "Cherry");
+System.out.println(result); // 출력: Apple, Banana, Cherry
 ```
 
-### 2.3 문자 추출
+__String.format()__ 포매팅이 필요한 문자열 작업에서 사용
 ```java
-char ch = str.charAt(1); // 'e'
+String firstName = "John";
+String lastName = "Doe";
+
+String fullName = String.format("%s %s", firstName, lastName);
+System.out.println(fullName); // 출력: John Doe
 ```
+
+__StringBuilder__ 성능이 뛰어나며 대량 작업에 적합
+```java
+StringBuilder sb = new StringBuilder("Hello");
+sb.append(" ").append("World!");
+System.out.println(sb.toString()); // 출력: Hello World!
+```
+
+__StringBuffer__ 스레드 안전하지만, `StringBuilder`보다 느림
+```java
+StringBuffer sb = new StringBuffer("Hello");
+sb.append(" ").append("World!");
+System.out.println(sb.toString()); // 출력: Hello World!
+ ```
+
 
 ### 2.4 부분 문자열 (Substring)
 ```java

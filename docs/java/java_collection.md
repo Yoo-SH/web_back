@@ -5,28 +5,31 @@ Java Collection Framework는 데이터를 효율적으로 저장하고 조작할
 
 ## 2. Collection 계층 구조
 ```
-Iterable
-  └─ Collection
-      ├─ List
-      |   ├─ ArrayList
-      |   └─ LinkedList
-      ├─ Set
-      |   ├─ HashSet
-      |   └─ TreeSet
-      └─ Queue
-          ├─ LinkedList
-          └─ PriorityQueue
+java.util.Collection (인터페이스)
+├── List (인터페이스)
+│   ├── ArrayList
+│   ├── LinkedList
+│   └── Vector
+├── Set (인터페이스)
+│   ├── HashSet
+│   ├── LinkedHashSet
+│   └── TreeSet
+└── Queue (인터페이스)
+    ├── PriorityQueue
+    └── LinkedList (Deque 구현)
 
-Map (Key-Value 구조, Collection 상속 X)
-  ├─ HashMap
-  ├─ LinkedHashMap
-  └─ TreeMap
+java.util.Map (인터페이스)
+├── HashMap
+├── LinkedHashMap
+├── TreeMap
+└── Hashtable
+
 ```
 ![Image](https://github.com/user-attachments/assets/1663cdfb-4cd9-4372-83de-e57603339868)
 ---
 
 ## 3. 주요 인터페이스 및 구현 클래스
-### 3.1 List (순서 보장, 중복 허용)
+### 3.1 [List (순서 보장, 중복 허용)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection_list.md)
 | 클래스 | 특징 |
 |--------|------|
 | `ArrayList<E>` | 동적 배열, 빠른 검색(O(1)), 추가/삭제 느림(O(n)) |
@@ -44,7 +47,7 @@ list.add("Banana");
 System.out.println(list.get(1)); // 출력: Banana
 ```
 
-### 3.2 Set (중복 불가, 순서 보장 X)
+### 3.2 [Set (중복 불가, 순서 보장 X)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_set.md)
 | 클래스 | 특징 |
 |--------|------|
 | `HashSet<E>` | 중복 불가, 순서 없음, 빠른 검색(O(1)) |
@@ -59,7 +62,7 @@ set.add("Banana");
 System.out.println(set); // 출력 예시: [Apple, Banana]
 ```
 
-### 3.3 Queue (FIFO 구조)
+### 3.3 [Queue (FIFO 구조)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_queue.md)
 | 클래스 | 특징 |
 |--------|------|
 | `LinkedList<E>` | Queue로 사용 가능 (FIFO) |
@@ -73,7 +76,7 @@ queue.offer(20);
 System.out.println(queue.poll()); // 출력: 10
 ```
 
-### 3.4 Map (Key-Value 구조)
+### 3.4 [Map (Key-Value 구조, collection 인터페이스 상속x)]((https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_map.md))
 | 클래스 | 특징 |
 |--------|------|
 | `HashMap<K, V>` | Key 중복 불가, 순서 없음 |
@@ -124,7 +127,6 @@ list.stream()
     .forEach(System.out::println); // 출력: 2 4 6
 ```
 
----
 
 ## 6. 정리
 | 컬렉션 유형 | 중복 허용 | 순서 보장 | 대표 클래스 |
