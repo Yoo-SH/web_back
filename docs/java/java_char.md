@@ -1,5 +1,8 @@
 # `Java char 자료형과 관련된 메서드`
 
+
+<br>
+
 ## 1. `isVowel(char c)` - 모음 판별
 영어 알파벳에서 주어진 문자가 모음(A, E, I, O, U, a, e, i, o, u)인지 확인하는 메서드입니다.
 
@@ -18,6 +21,8 @@ System.out.println(isVowel('b')); // false
 
 ---
 
+<br>
+
 ## 2. `isDigit(char c)` - 숫자 판별
 주어진 문자가 숫자(0~9)인지 확인하는 메서드입니다.
 
@@ -35,6 +40,8 @@ System.out.println(isDigit('A')); // false
 
 ---
 
+<br>
+
 ## 3. `isConsonant(char c)` - 자음 판별
 영어 알파벳에서 주어진 문자가 자음인지 확인하는 메서드입니다. (A, E, I, O, U를 제외한 알파벳)
 
@@ -51,6 +58,8 @@ System.out.println(isConsonant('e')); // false
 ```
 
 ---
+
+<br>
 
 ## 4. `List Upper Case`
 알파벳 대문자(A~Z)를 리스트로 반환하는 메서드입니다.
@@ -74,6 +83,8 @@ System.out.println(listUpperCase());
 ```
 
 ---
+
+<br>
 
 ## 5. `L`에 대한 판별
 문자가 'L'인지 확인하는 간단한 메서드입니다.
