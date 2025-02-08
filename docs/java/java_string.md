@@ -214,20 +214,20 @@ String formatted = String.format("%s version is %d", name, version);
 
 <br>
 
-# `Java String, StringBuffer, StringBuilder`
+## Java String, StringBuffer, StringBuilder
 
-## 개요
+### 개요
 Java에서 문자열을 다루는 주요 클래스는 `String`, `StringBuffer`, `StringBuilder`입니다. 각 클래스는 문자열을 처리하는 방식이 다르며, 사용 목적에 따라 적절한 클래스를 선택해야 합니다.
 
-## 1. String
+### 1. String
 `String` 클래스는 **불변(Immutable)** 객체로, 한 번 생성되면 변경할 수 없습니다. 문자열을 변경하는 연산을 수행하면 새로운 객체가 생성됩니다.
 
-### 특징
+#### 특징
 - **불변 객체**: 문자열 변경 시 새로운 객체가 생성됨.
 - **리터럴 풀 사용**: 동일한 문자열 리터럴을 재사용하여 메모리 절약 가능.
 - **멀티스레드 환경에서 안전**: 불변 객체이므로 동기화 문제가 없음.
 
-### 예제
+#### 예제
 ```java
 public class StringExample {
     public static void main(String[] args) {
@@ -242,15 +242,15 @@ public class StringExample {
 
 ---
 
-## 2. StringBuffer
+### 2. StringBuffer
 `StringBuffer` 클래스는 **가변(Mutable)** 객체로, 문자열을 변경할 때 새로운 객체를 생성하지 않고 기존 객체를 변경합니다. 따라서 문자열을 자주 변경하는 경우 `StringBuffer`를 사용하는 것이 성능상 유리합니다.
 
-### 특징
+#### 특징
 - **가변 객체**: 문자열을 직접 변경할 수 있음.
 - **스레드 안전(Thread-Safe)**: 내부적으로 `synchronized` 키워드를 사용하여 동기화 지원.
 - **성능**: `synchronized` 사용으로 다중 스레드 환경에서는 안전하지만, 단일 스레드 환경에서는 속도가 느릴 수 있음.
 
-### 예제
+#### 예제
 ```java
 public class StringBufferExample {
     public static void main(String[] args) {
@@ -264,15 +264,15 @@ public class StringBufferExample {
 
 ---
 
-## 3. StringBuilder
+### 3. StringBuilder
 `StringBuilder` 클래스는 `StringBuffer`와 유사하지만, **동기화(synchronized)가 지원되지 않음**. 따라서 단일 스레드 환경에서 `StringBuffer`보다 성능이 더 뛰어납니다.
 
-### 특징
+#### 특징
 - **가변 객체**: 문자열을 직접 변경할 수 있음.
 - **비동기 처리(Non-thread safe)**: 동기화 지원이 없어서 단일 스레드 환경에서 더 빠름.
 - **성능**: `StringBuffer`보다 속도가 빠름(동기화 비용 없음).
 
-### 예제
+#### 예제
 ```java
 public class StringBuilderExample {
     public static void main(String[] args) {
@@ -286,7 +286,7 @@ public class StringBuilderExample {
 
 ---
 
-## 4. String vs StringBuffer vs StringBuilder 비교
+### 4. String vs StringBuffer vs StringBuilder 비교
 
 | 특성          | String      | StringBuffer   | StringBuilder  |
 |--------------|------------|---------------|---------------|
@@ -297,12 +297,12 @@ public class StringBuilderExample {
 
 ---
 
-## 5. 어떤 것을 선택해야 할까?
+### 5. 어떤 것을 선택해야 할까?
 - **변경이 거의 없는 문자열** → `String`
 - **멀티스레드 환경에서 문자열을 자주 변경** → `StringBuffer`
 - **단일 스레드 환경에서 문자열을 자주 변경** → `StringBuilder`
 
-### Java String, StringBuffer, StringBuilder 정리
+#### Java String, StringBuffer, StringBuilder 정리
 - `String`은 **불변 객체**로 메모리 낭비가 있을 수 있음.
 - `StringBuffer`는 **멀티스레드 환경**에서 안정적이지만 동기화로 인해 성능이 다소 낮음.
 - `StringBuilder`는 **단일 스레드 환경**에서 가장 빠름.

@@ -8,16 +8,20 @@
 
 * ### Flatform
   -  [Java 실행환경 ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_env.md)
+  -  [Java 패키지(package) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_env_package.md)
   -  [Java Jshell](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_jshell.md)
 * ### Type
   -  [Java 타입(Type) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type.md)
+  -  [Java 참조 타입(Type Reference) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type_referenceType.md)
+  -  [Java 래퍼 클래스(Type WrapperClass) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type_wrapperClass.md)
   -  [Java 제네릭(Generic) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_generic.md)
   -  [Java 스트링(String)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_string.md)
   -  [Java 열거형(Enumeration)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_type_enum.md)
 
 * ### Operator
-  -  [Java 연산자(Operator) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_operator.md)
-
+  -  [Java 연산자(Operator)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_operator.md)
+  -  [Java 참조값 호출(Operator callByValueOfReference)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_operator_callByType.md)
+  - 
 * ### Object Oriented Programming
   -  [Java 객체지향프로그래밍(OOP) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_oop.md)
   -  [Java 클래스(Class) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_class.md)
@@ -45,8 +49,9 @@
 * ### Thread
   -  [Java 스레드(Thread) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread.md)
   -  [Java 스레드 실행자(Thread Executor) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread_executor.md)
-  -  [Java 동기화(Synchronization)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_synchronization.md)
-
+  -  [Java 스레드 동기화(Thread Synchronization)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread_synchronization.md)
+  -  [Java 스레드 스케줄링(Thread Scheduling)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_thread_synchronization.md)
+  
 * ### Exception
   -   [Java 예외처리(Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception.md)
   -   [Java 사용자예외처리(Personal Exception) ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_exception_personal.md)
@@ -62,13 +67,16 @@
 
 * ### Others
 
-# Spring
+# Spring 6
 
-# Spring Boot
-
-# Spring JPA
+# Spring Boot 3
 
 # Spring Security
+
+
+# Spring JPA & Hibernate
+
+
 
 
 # Network 
