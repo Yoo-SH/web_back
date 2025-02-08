@@ -9,7 +9,7 @@
 * JDK(Java Development Kit)는 Java 프로그램을 개발하기 위한 도구들을 제공합니다.
   - JRE + Compilers + Debuggers
   
-<img src="https://github.com/user-attachments/assets/31d79b5a-4bdf-443b-bba6-ba031e5f74e3)
+<img src="https://github.com/user-attachments/assets/31d79b5a-4bdf-443b-bba6-ba031e5f74e3" width="500">
 
 <br>
 
