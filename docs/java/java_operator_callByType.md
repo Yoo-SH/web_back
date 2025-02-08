@@ -2,7 +2,9 @@
 
 Java는 **Call by Value(값에 의한 호출)**만 지원하며, **Call by Reference(참조에 의한 호출)**는 직접적으로 지원하지 않습니다. 그러나 **참조 타입(Reference Type)**을 사용하면 마치 Call by Reference처럼 동작하는 것처럼 보일 수 있습니다.
 
----
+
+
+<br>
 
 ## 1. Call by Value vs. Call by Reference
 
@@ -11,7 +13,9 @@ Java는 **Call by Value(값에 의한 호출)**만 지원하며, **Call by Refer
 | **Call by Value (값에 의한 호출)** | 메서드에 전달된 인자의 **복사본**이 사용됨. 원본 값은 변경되지 않음. |
 | **Call by Reference (참조에 의한 호출)** | 메서드에 객체의 참조(주소)가 전달되어, 원본 객체의 값이 변경될 수 있음. |
 
----
+
+
+<br>
 
 ## 2. Java는 Call by Value만 지원
 
@@ -38,7 +42,9 @@ public class CallByValueExample {
 
 `changeValue(num)`에서 `num`의 값이 변경된 것처럼 보이지만, 이는 **값이 복사되어 전달**된 것이므로 원본 변수에는 영향을 주지 않습니다.
 
----
+
+
+<br>
 
 ## 3. 참조 타입을 이용한 Call by Reference처럼 보이는 동작
 
@@ -73,7 +79,9 @@ Charlie
 
 위 코드에서는 `Person` 객체의 **참조값이 복사**되어 전달되지만, 참조된 객체의 필드를 변경할 수 있기 때문에 Call by Reference처럼 동작하는 것처럼 보입니다.
 
----
+
+
+<br>
 
 ## 4. 참조 자체를 변경하려고 하면?
 
@@ -100,7 +108,9 @@ Alice
 
 메서드 내에서 `p`가 새로운 `Person` 객체를 참조하게 되었지만, 이는 `p`라는 **로컬 변수**가 변경된 것이고, 원본 변수 `person`에는 영향을 주지 않습니다.
 
----
+
+
+<br>
 
 ## 5. 결론
 - Java는 **Call by Value**만 지원한다.

@@ -1,5 +1,7 @@
 # `JAVA 참조 자료형`
 
+<br>
+
 ## 1.배열
 
 배열은 같은 자료형의 데이터를 여러 개 저장할 수 있는 자료구조입니다. 배열은 **고정된 크기**를 가지며, **인덱스(index)**를 통해 각 요소에 접근할 수 있습니다.
@@ -21,7 +23,7 @@ int[] a = null;
 ```
 - 스택 메모리에 위치한 참조자료형 변수의 빈공간을 초기화시 사용가능함
 - 힙 메모리의특정위치(번지)를 가리키고 있지 않다는 의미를 내포함(연결된 실제데이터가없음)
-  ![Image](https://github.com/user-attachments/assets/80a2d1bc-f115-4be1-a7d5-05d3f2f1cea1)
+  <img src="https://github.com/user-attachments/assets/80a2d1bc-f115-4be1-a7d5-05d3f2f1cea1" width="500">
 
 ### 힙 메모리에 배열 객체 생성하기
 
@@ -39,7 +41,8 @@ int[] a = new int[3];
 int[] a;
 a = new int[3];
 ```
-![Image](https://github.com/user-attachments/assets/b02a09dd-eb67-4521-b6c2-70d020303936)
+<img src="https://github.com/user-attachments/assets/b02a09dd-eb67-4521-b6c2-70d020303936" width="500">
+
 new 키워드 없이 배열 객체 생성하기
 ```java
 // new 키워드 없이는 객체 대입을 분리하여 사용할 수 없음
@@ -52,7 +55,7 @@ a = {1, 2, 3, 4, 5}; //error
 ### 참조 자료형 복사 시 주의사항
 데이터값을 변경하면 다른 참조변수의 데이터도 변하게됨
 
-![Image](https://github.com/user-attachments/assets/86ecbda9-092e-45da-ae06-c9ea4914692b)
+<img src="https://github.com/user-attachments/assets/86ecbda9-092e-45da-ae06-c9ea4914692b" width="500">
 
 ### for-each문을 이용한 배열 요소 출력
 배열이나 컬렉션(Collection)등의 집합 객체에서 원소들을 하나씩 꺼내는 과정을 반복하는 구문
@@ -63,6 +66,8 @@ for (int num : a) {
 }
 // 1 2 3 4 5
 ```
+
+<br>
 
 ## 2. 2차원 배열
 2차원 배열 선언
@@ -92,8 +97,10 @@ a[1][0] = 4;
 a[1][1] = 5;
 a[1][2] = 6;
 ```
-![Image](https://github.com/user-attachments/assets/52ba556f-bb9a-43ab-9c07-775f20f204da)
+<img src="https://github.com/user-attachments/assets/52ba556f-bb9a-43ab-9c07-775f20f204da" width="500">
 
+
+<br>
 
 ## 3. String
 String은 문자열을 저장하는 참조 자료형, 문자열은 큰 따옴표로 묶어서 표현함
@@ -124,4 +131,4 @@ String str3 = "안녕";
 String str4 = new String("안녕");
 ```
 
-![Image](https://github.com/user-attachments/assets/cb73385f-a94a-40f5-9d84-00ae7ae3f9f1)
+<img src="https://github.com/user-attachments/assets/cb73385f-a94a-40f5-9d84-00ae7ae3f9f1" width="500">

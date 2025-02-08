@@ -3,7 +3,9 @@
 **Executor Framework**는 자바 5에서 도입된 **병렬 실행 관리** 프레임워크로, 스레드 생성 및 관리를 간단하고 효과적으로 처리하기 위해 설계되었습니다.  
 `ExecutorService`는 이 프레임워크의 핵심 인터페이스로, **스레드 풀(thread pool)**을 사용하여 작업을 실행하는 데 도움을 줍니다.
 
----
+
+
+<br>
 
 ## 1. 왜 ExecutorService를 사용하는가?
 
@@ -17,7 +19,9 @@
 - **시간 초과 및 스레드 종료**: 작업 제출 시 시간 초과 값을 지정하거나 특정 조건에서 스레드를 종료할 수 있습니다.
 - **작업 완료 여부 관리**: 작업 결과를 추적하고 필요한 경우 `Future` 객체를 사용하여 결과를 확인할 수 있습니다.
 
----
+
+
+<br>
 
 ## 2. 주요 인터페이스 및 클래스
 
@@ -28,7 +32,9 @@
 | `ScheduledExecutorService` | 주기적인 작업 스케줄링 가능한 서비스.                                                   |
 | `Executors`        | `ExecutorService`의 구현체를 쉽게 생성할 수 있는 정적 팩토리 클래스.                             |
 
----
+
+
+<br>
 
 ## 3. 주요 메서드 설명
 
@@ -48,9 +54,13 @@
 | `scheduleAtFixedRate()`         | 작업을 고정된 간격으로 반복 실행.                                                          |
 | `scheduleWithFixedDelay()`      | 이전 작업 완료 후 일정 지연 시간 후 작업을 실행.                                            |
 
----
+
+
+<br>
 
 ## 4. 예제 코드
+
+<br>
 
 ## 코드 예제
 
@@ -91,7 +101,7 @@ public class InvokeAllExample {
 }
 ```
 
----
+
 
 ### 2. 빠르게 완료된 작업의 결과만 가져오기 (`invokeAny` 사용)
 `invokeAny`는 가장 **빠르게 완료된 작업 결과**만 반환합니다.
@@ -124,7 +134,7 @@ public class InvokeAnyExample {
 }
 ```
 
----
+
 
 ### 3. 작업 실행 중 취소하기 (`Future.cancel` 사용)
 
@@ -163,7 +173,7 @@ public class CancelExample {
 }
 ```
 
----
+
 
 ### 4. 작업 완료 시간 초과 처리
 
@@ -200,7 +210,7 @@ public class TimeoutExample {
 }
 ```
 
----
+
 
 ### 5. 스케줄링 작업 (`scheduleWithFixedDelay` 사용)
 
@@ -224,7 +234,7 @@ public class ScheduleWithFixedDelayExample {
 }
 ```
 
----
+
 
 ### 6. 동적으로 스레드 풀 관리 (`newCachedThreadPool` 사용)
 
@@ -250,7 +260,7 @@ public class CachedThreadPoolExample {
 }
 ```
 
----
+
 
 ### 7. 예외 처리 (`submit` 과 `execute`의 차이점)
 
@@ -283,7 +293,9 @@ public class ExceptionHandlingExample {
 출력: Exception caught: java.lang.RuntimeException: Task failed with exception!
 
 
----
+
+
+<br>
 
 ## FAQ
 
@@ -291,7 +303,9 @@ public class ExceptionHandlingExample {
 - `shutdown()`: 기존에 제출된 작업만 모두 완료한 후 스레드풀을 종료합니다.
 - `shutdownNow()`: 실행 중인 작업을 강제로 중단하고 즉시 종료합니다.
 
----
+
+
+<br>
 
 ## 결론
 

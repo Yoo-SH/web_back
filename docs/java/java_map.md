@@ -2,7 +2,9 @@
 
 Spring Boot에서 자주 사용하는 `Map` 인터페이스와 다양한 구현체(`HashMap`, `LinkedHashMap`, `TreeMap`)를 활용한 예제를 정리합니다.
 
----
+
+
+<br>
 
 ## 1. **`HashMap`을 사용하는 예제**
 `HashMap`은 **순서를 보장하지 않는** 키-값 쌍을 저장하는 컬렉션입니다. 내부적으로 해시 테이블(Hash Table)을 기반으로 빠른 검색, 삽입, 삭제를 제공합니다.
@@ -11,7 +13,9 @@ Spring Boot에서 자주 사용하는 `Map` 인터페이스와 다양한 구현�
 
 Spring Boot에서 자주 사용하는 `Map` 인터페이스와 다양한 구현체(`HashMap`, `LinkedHashMap`, `TreeMap`)를 활용한 예제를 정리합니다.
 
----
+
+
+<br>
 
 ## 1. **`HashMap`을 사용하는 예제**
 `HashMap`은 **순서를 보장하지 않는** 키-값 쌍을 저장하는 컬렉션입니다. 내부적으로 해시 테이블(Hash Table)을 기반으로 빠른 검색, 삽입, 삭제를 제공합니다.
@@ -52,7 +56,9 @@ public class HashMapController {
     - 순서를 보장하지 않음.
     - 빠른 삽입, 삭제 및 검색.
 
----
+
+
+<br>
 
 ## 2. **`LinkedHashMap`을 사용하는 예제**
 `LinkedHashMap`은 **삽입 순서**를 유지하는 해시 테이블 기반 Map입니다. 삽입된 순서나 접근된 순서를 기준으로 데이터를 관리할 수 있습니다.
@@ -93,7 +99,9 @@ public class LinkedHashMapController {
     - 키와 값 모두 `null` 허용.
     - 정렬이 필요하지 않고 순서가 중요한 경우 사용.
 
----
+
+
+<br>
 
 ## 3. **`TreeMap`을 사용하는 예제**
 `TreeMap`은 **정렬된 순서**로 키를 관리하는 Map입니다. 내부적으로 **레드-블랙 트리**를 기반으로 구현되며, 키는 자연 순서 또는 사용자 정의 `Comparator`에 따라 정렬됩니다.
@@ -134,7 +142,9 @@ public class TreeMapController {
     - `null` 키를 허용하지 않으며, `null` 값은 허용.
     - 검색과 정렬 작업이 효율적.
 
----
+
+
+<br>
 
 ## 주요 `Map` 구현 클래스 요약
 
@@ -144,7 +154,7 @@ public class TreeMapController {
 | `LinkedHashMap`        | 삽입된 순서 또는 접근된 순서를 유지.                                 |
 | `TreeMap`              | 키를 기준으로 정렬된 순서를 유지. 레드-블랙 트리 기반.              |
 
----
+
 
 ### 추가 참고 사항:
 - **`HashMap` vs `LinkedHashMap`**: 데이터 순서가 중요한 경우 `LinkedHashMap`을, 순서가 필요 없으면 `HashMap`을 사용.
@@ -184,7 +194,9 @@ public class HashMapController {
     - 순서를 보장하지 않음.
     - 빠른 삽입, 삭제 및 검색.
 
----
+
+
+<br>
 
 ## 2. **`LinkedHashMap`을 사용하는 예제**
 `LinkedHashMap`은 **삽입 순서**를 유지하는 해시 테이블 기반 Map입니다. 삽입된 순서나 접근된 순서를 기준으로 데이터를 관리할 수 있습니다.
@@ -225,7 +237,9 @@ public class LinkedHashMapController {
     - 키와 값 모두 `null` 허용.
     - 정렬이 필요하지 않고 순서가 중요한 경우 사용.
 
----
+
+
+<br>
 
 ## 3. **`TreeMap`을 사용하는 예제**
 `TreeMap`은 **정렬된 순서**로 키를 관리하는 Map입니다. 내부적으로 **레드-블랙 트리**를 기반으로 구현되며, 키는 자연 순서 또는 사용자 정의 `Comparator`에 따라 정렬됩니다.
@@ -266,7 +280,9 @@ public class TreeMapController {
     - `null` 키를 허용하지 않으며, `null` 값은 허용.
     - 검색과 정렬 작업이 효율적.
 
----
+
+
+<br>
 
 ## 주요 `Map` 구현 클래스 요약
 
@@ -276,7 +292,7 @@ public class TreeMapController {
 | `LinkedHashMap`        | 삽입된 순서 또는 접근된 순서를 유지.                                 |
 | `TreeMap`              | 키를 기준으로 정렬된 순서를 유지. 레드-블랙 트리 기반.              |
 
----
+
 
 ### 추가 참고 사항:
 - **`HashMap` vs `LinkedHashMap`**: 데이터 순서가 중요한 경우 `LinkedHashMap`을, 순서가 필요 없으면 `HashMap`을 사용.

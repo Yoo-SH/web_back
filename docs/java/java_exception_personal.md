@@ -3,14 +3,18 @@
 Java에서는 기본 제공 예외 클래스만으로는 애플리케이션 또는 비즈니스 로직에서 발생할 수 있는 모든 상황을 명확히 표현하기 어려울 수 있습니다.  
 이때 **사용자 정의 예외(Custom Exception)**를 통해 더욱 직관적이고 명확한 예외 처리를 구현할 수 있습니다.
 
----
+
+
+<br>
 
 ## 사용자 정의 예외란?
 
 사용자 정의 예외는 **기본 제공 예외 클래스(Exception, RuntimeException 등)를 상속**받아,  
 특정 도메인 문제나 로직에 맞게 커스텀한 예외 클래스를 생성하는 것입니다.
 
----
+
+
+<br>
 
 ## 사용자 정의 예외를 사용하는 이유
 
@@ -24,7 +28,9 @@ Java에서는 기본 제공 예외 클래스만으로는 애플리케이션 또�
 3. **표준화된 예외 처리**
     - 사실상 표준화된 도메인 별 예외를 만들어, 코드를 일관성 있게 유지할 수 있습니다.
 
----
+
+
+<br>
 
 ## 사용자 정의 예외 구현
 
@@ -37,7 +43,7 @@ Java에서는 기본 제공 예외 클래스만으로는 애플리케이션 또�
    → `RuntimeException`을 상속받아 구현.  
    → 런타임 시 발생하고, 컴파일러가 처리 여부를 강제하지 않습니다.
 
----
+
 
 ### 기본 형식
 ```java
@@ -60,7 +66,9 @@ public class MyCustomException extends Exception {
 }
 ```
 
----
+
+
+<br>
 
 ## 1. Checked Exception 예제
 
@@ -97,7 +105,9 @@ public class CheckedExceptionExample {
 **출력**: Exception caught: Age cannot be negative
 
 
----
+
+
+<br>
 
 ## 2. Unchecked Exception 예제
 
@@ -133,7 +143,9 @@ public class UncheckedExceptionExample {
 **출력**: Exception caught: Denominator cannot be zero
 
 
----
+
+
+<br>
 
 ## 3. 사용자 정의 예외에 추가 데이터 제공
 
@@ -177,7 +189,9 @@ public class UserService {
 **출력**: Exception caught: User not found User ID: 456
 
 
----
+
+
+<br>
 
 ## 4. Checked와 Unchecked 예외 선택 기준
 
@@ -193,7 +207,9 @@ public class UserService {
 
 예) `NullPointerException`, `ArithmeticException`
 
----
+
+
+<br>
 
 ## 5. 예외 처리 표준
 
@@ -215,7 +231,9 @@ public class UserService {
 5. **문서화**
     - 예외 발생 조건, 전달되는 데이터, 호출자가 처리해야 하는 방법 등을 적절히 명시해야 합니다.
 
----
+
+
+<br>
 
 ## 6. 최종 요약
 
@@ -223,7 +241,7 @@ public class UserService {
 - `Checked Exception`과 `Unchecked Exception` 중 하나를 선택하여 애플리케이션 요구 사항에 맞게 설계합니다.
 - 잘 설계된 사용자 정의 예외는 애플리케이션의 가독성과 유지보수성을 높이는 데 기여합니다.
 
----
+
 
 ### 예제 핵심 구현 요약
 

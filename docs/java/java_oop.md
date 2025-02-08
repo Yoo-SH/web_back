@@ -1,5 +1,7 @@
 # `객체지향 프로그래밍`
 
+<br>
+
 ## 1. 객체지향 프로그래밍(OOP)이란?
 객체지향 프로그래밍(Object-Oriented Programming, OOP)은 현실 세계의 사물을 모델링하여 소프트웨어를 개발하는 방법론입니다. OOP는 **객체(Object)**를 중심으로 **속성(Attribute)**과 **기능(Method)**을 정의하며, **캡슐화(Encapsulation)**, **상속(Inheritance)**, **다형성(Polymorphism)**과 **추상화**를 지원합니다.
 

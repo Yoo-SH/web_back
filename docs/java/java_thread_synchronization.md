@@ -4,6 +4,8 @@
 
 <br>
 
+<br>
+
 ## 스레드 동기화 방법
 
 - 임계 영역(critical section) : 공유 자원에 단 하나의 스레드만 접근하도록(하나의 프로세스에 속한 스레드만 가능)
@@ -14,6 +16,8 @@
 
 <br>
 
+
+<br>
 
 ## 1. 임계 영역 (Critical Section)
 임계 영역은 여러 스레드가 동시에 접근하면 안 되는 공유 자원을 보호하는 코드 블록입니다. Java에서는 `synchronized` 키워드를 사용하여 임계 영역을 설정할 수 있습니다.
@@ -63,6 +67,8 @@ public class SynchronizedExample {
 }
 ```
 이 코드에서 `increment()` 메서드는 `synchronized` 키워드를 사용하여 임계 영역을 보호합니다. 따라서 여러 스레드가 동시에 접근하더라도 `count` 값이 일관되게 유지됩니다.
+
+<br>
 
 ## 2. [Lock을 활용한 동기화](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Language/%5BJava%5D%20Intrinsic%20Lock.md)
 Java의 `ReentrantLock`을 사용하면 보다 세밀한 동기화 제어가 가능합니다.
@@ -123,6 +129,8 @@ public class LockExample {
 ```
 위 코드에서는 `ReentrantLock`을 사용하여 `increment()` 메서드의 임계 영역을 보호합니다. `lock.lock()`을 호출하면 다른 스레드는 해당 임계 영역에 접근할 수 없으며, `finally` 블록에서 `lock.unlock()`을 호출하여 잠금을 해제합니다.
 
+<br>
+
 ## 3. Java의 고유 락 (Intrinsic Lock)
 Java의 `synchronized` 키워드를 사용하면 해당 객체의 **고유 락(Intrinsic Lock)** 이 자동으로 관리됩니다.
 
@@ -149,6 +157,8 @@ class IntrinsicLockExample {
 ```
 위 코드에서는 `synchronized (this)`를 사용하여 특정 객체(`this`)의 고유 락을 획득하고 보호합니다.
 
+<br>
+
 ## 4. `synchronized` vs `ReentrantLock` vs 고유 락
 | 비교 항목       | `synchronized` | `ReentrantLock` | 고유 락 (Intrinsic Lock) |
 |----------------|---------------|----------------|----------------|
@@ -161,7 +171,9 @@ class IntrinsicLockExample {
 
 멀티스레드 환경에서는 여러 스레드가 동시에 공유 자원에 접근하면서 예상치 못한 문제가 발생할 수 있습니다. 이를 방지하기 위해 **임계 영역(Critical Section)과 잠금(Lock)**을 활용하여 동기화를 수행할 수 있습니다.
 
----
+
+
+<br>
 
 ## 1. 임계 영역 (Critical Section)
 임계 영역은 여러 스레드가 동시에 접근하면 안 되는 공유 자원을 보호하는 코드 블록입니다. Java에서는 `synchronized` 키워드를 사용하여 임계 영역을 설정할 수 있습니다.
@@ -181,14 +193,18 @@ class SharedResource {
 }
 ```
 
----
+
+
+<br>
 
 ## 2. Synchronized 문제점 - **적은 병행성**
 `synchronized`는 선언만으로 간단하게 사용할 수 있지만, 다음의 단점이 있습니다:
 - `synchronized` 메서드나 블록 내에서는 한 번에 하나의 스레드만 접근 가능하기 때문에 **병렬 실행이 제한**됩니다.
 - 특정 조건에서는 대기 시간이 길어지고 성능 저하가 발생할 수 있습니다.
 
----
+
+
+<br>
 
 ## 3. ReEntrantLock를 통한 Enter Locks
 Java에서는 보다 세밀한 제어가 필요할 경우 `java.util.concurrent.locks.ReentrantLock`을 이용할 수 있습니다.
@@ -217,7 +233,9 @@ class SharedResourceWithLock {
 }
 ```
 
----
+
+
+<br>
 
 ## 4. 원자 클래스 소개 - `AtomicInteger`
 Java의 `java.util.concurrent.atomic` 패키지는 원자적(Atomic) 연산을 제공하여 동기화 없이도 스레드 안전성을 보장합니다.
@@ -241,7 +259,9 @@ class AtomicExample {
 
 **장점**: `AtomicInteger`는 락이 필요 없으며, 성능적으로 효율성이 높습니다.
 
----
+
+
+<br>
 
 ## 5. ConcurrentMap의 필요성
 기존의 `HashMap`이나 `Hashtable`은 멀티스레드 환경에서 제한적입니다:
@@ -251,7 +271,9 @@ class AtomicExample {
 ### 해결책: `ConcurrentMap`
 Java에서는 `java.util.concurrent.ConcurrentMap` 인터페이스를 통해 병렬 안전성을 제공하는 컬렉션을 구현합니다.
 
----
+
+
+<br>
 
 ## 6. ConcurrentHashMap을 통한 예시 구현
 `ConcurrentHashMap`은 `HashMap`과 유사하지만, 멀티스레드 환경에서 병렬 처리를 지원하기 때문에 성능과 스레드 안전성을 모두 제공합니다.
@@ -273,7 +295,9 @@ class ConcurrentHashMapExample {
 }
 ```
 
----
+
+
+<br>
 
 ## 7. ConcurrentHashMap은 다른 lock과 다른 부분에서 쓰임
 `ConcurrentHashMap`은 **분할된 락 메커니즘(Segment Locking)**을 사용합니다:
@@ -284,7 +308,9 @@ class ConcurrentHashMapExample {
 - 읽기 작업(`get`)은 거의 제한 없이 병렬 실행됩니다.
 - 쓰기 작업(`put`, `remove`)은 맵의 특정 부분에만 락을 걸어, 전체 락을 피합니다.
 
----
+
+
+<br>
 
 ## 8. CopyOnWrite Concurrent 컬렉션 - 읽기가 쓰기보다 많을 때
 Java에는 읽기 작업이 월등히 많은 환경에서 쓰기 작업보다 높은 성능을 보이는 `CopyOnWrite` 컬렉션이 존재합니다.
@@ -315,7 +341,9 @@ class CopyOnWriteExample {
 - 쓰기 시 전체 데이터를 복사하여 새로운 데이터를 추가합니다.
 - 대신 **읽기 중 Lock을 사용하지 않으므로 매우 높은 스레드 안전성**이 제공됩니다.
 
----
+
+
+<br>
 
 ## 요약
 Java는 다양한 방법으로 멀티스레드 환경에서의 동기화를 지원합니다:
@@ -326,6 +354,8 @@ Java는 다양한 방법으로 멀티스레드 환경에서의 동기화를 지�
 5. `CopyOnWrite` 컬렉션: 읽기 중심 작업 환경에서 성능 우위.
 
 최적의 동기화 방법을 선택하려면, **동시성 요구사항과 성능이 중요한 작업 패턴**을 고려해야 합니다.
+<br>
+
 ## 결론
 - 단순한 동기화가 필요하다면 `synchronized`를 사용하면 코드가 간결해집니다.
 - 보다 정교한 동기화가 필요하거나 `tryLock()` 등의 기능이 필요하다면 `ReentrantLock`을 사용하는 것이 좋습니다.

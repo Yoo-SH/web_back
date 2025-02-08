@@ -1,9 +1,13 @@
 # `Java String`
 
+<br>
+
 ## 개요
 `String` 클래스는 Java에서 문자열을 다루기 위한 불변(immutable) 객체입니다. 문자열 조작을 위한 다양한 메서드를 제공합니다.
 
----
+
+<br>
+
 <br>
 
 ## 1. String 선언 및 생성
@@ -17,7 +21,9 @@ String str2 = new String("Hello, Java");
 
 > **Tip:** 문자열 리터럴 방식은 String Pool을 활용하여 메모리를 절약할 수 있습니다.
 
----
+
+<br>
+
 <br>
 
 ## 2. 주요 메서드
@@ -142,7 +148,9 @@ String str = "Hello";
 char[] charArray = str.toCharArray(); // ['H', 'e', 'l', 'l', 'o']
 ```
 
----
+
+<br>
+
 <br>
 
 ## 3. StringBuilder 및 StringBuffer
@@ -162,7 +170,9 @@ sb.append(" World");
 String result = sb.toString(); // "Hello World"
 ```
 
----
+
+<br>
+
 <br>
 
 ## 4. 문자열 비교 (`==` vs `equals()`)
@@ -176,7 +186,9 @@ System.out.println(str1.equals(str2)); // true (값 비교)
 
 > **Tip:** 문자열 값 비교는 항상 `equals()`를 사용하세요.
 
----
+
+<br>
+
 <br>
 
 ## 5. String.format() 활용
@@ -187,7 +199,9 @@ String formatted = String.format("%s version is %d", name, version);
 // "Java version is 17"
 ```
 
----
+
+<br>
+
 <br>
 
 ## 6. 문자열 조작을 위한 유용한 메서드 정리
@@ -211,7 +225,9 @@ String formatted = String.format("%s version is %d", name, version);
 | `valueOf(Object obj)` | 객체를 문자열로 변환 |
 | `toCharArray()` | 문자열을 문자 배열로 변환 |
 
----
+
+<br>
+
 <br>
 
 ## 7. string 정리
@@ -220,6 +236,8 @@ String formatted = String.format("%s version is %d", name, version);
 - 문자열 조작 시 다양한 메서드를 적절히 활용하면 성능을 최적화할 수 있습니다.
 
 <br>
+<br>
+
 <br>
 
 ## Java String, StringBuffer, StringBuilder
@@ -247,7 +265,7 @@ public class StringExample {
 }
 ```
 
----
+
 <br>
 
 ### 2. StringBuffer
@@ -270,7 +288,7 @@ public class StringBufferExample {
 }
 ```
 
----
+
 <br>
 
 ### 3. StringBuilder
@@ -293,7 +311,7 @@ public class StringBuilderExample {
 }
 ```
 
----
+
 <br>
 
 ### 4. String vs StringBuffer vs StringBuilder 비교
@@ -305,7 +323,7 @@ public class StringBuilderExample {
 | **성능**     | 가장 느림 | 다소 빠름 | 가장 빠름 |
 | **사용 예시** | 변경이 거의 없는 문자열 | 멀티스레드 환경에서 문자열 변경 | 단일 스레드 환경에서 문자열 변경 |
 
----
+
 <br>
 
 ### 5. 어떤 것을 선택해야 할까?

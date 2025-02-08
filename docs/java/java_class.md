@@ -50,10 +50,12 @@ ClassName obj = new ClassName();
 * 객체는 힙 메모리에 생성됨
 * 메서드 구현 코드는 인스턴스 메서드(클래스 영역)에 저장됨
 
-![Image](https://github.com/user-attachments/assets/5760589f-99a0-49c0-8047-c3a003a4d5ce)
 
-자동차 클래스 예시
-![Image](https://github.com/user-attachments/assets/27b61366-512c-4b13-9bc6-13bfb2a802dd)
+<img src="https://github.com/user-attachments/assets/5760589f-99a0-49c0-8047-c3a003a4d5ce" width="500">
+
+__자동차 클래스 예시__
+
+<img src="https://github.com/user-attachments/assets/27b61366-512c-4b13-9bc6-13bfb2a802dd" width="500">
 
 <br>
 
@@ -201,11 +203,11 @@ static import를 사용하여 클래스의 static 멤버를 직접 import
 하지만, static 키워드의 남발은 객체 지향적인 설계와는 맞지 않고 메모리를 많이 차지할 경우 효율성을 떨어트릴 수 있으니, 적절한 사용을 유지하는 것이 좋습니다.
 
 ### static 필드
-![Image](https://github.com/user-attachments/assets/69c6fbca-819a-4ae6-b95b-2d2268c03160)
+<img src="https://github.com/user-attachments/assets/69c6fbca-819a-4ae6-b95b-2d2268c03160" width="500">
 
 
 ### static 필드와 instance 필드 메모리 구조
-![Image](https://github.com/user-attachments/assets/c2b89143-3703-458a-a30f-371316a798cb) 
+<img src="https://github.com/user-attachments/assets/c2b89143-3703-458a-a30f-371316a798cb" width="500"> 
 
 
 ### static 메서드
@@ -298,7 +300,7 @@ public class Child extends Parent {
 ```
 
 ### 상속과 접근 제어
-![Image](https://github.com/user-attachments/assets/beafe096-fcdb-4330-85f8-1020c47277df)
+<img src="https://github.com/user-attachments/assets/beafe096-fcdb-4330-85f8-1020c47277df" width="500">
 
 ### 부모 클래스의 필드 상속
 1. private 필드를 protected으로 바꿔서 상속
@@ -470,7 +472,7 @@ package main;
 Object 클래스는 모든 클래스의 최상위 클래스로, 모든 클래스는 Object 클래스를 상속받습니다. 따라서, 모든 클래스는 Object 클래스의 메서드를 사용할 수 있고 상황에 따라서 오버라이딩할 수 있다. 
 
 __(extends Object) 어느 클래스에서나 상속하고 있으니 언제나 가지고 있는 함수!!__ 
-![Image](https://github.com/user-attachments/assets/653c0983-31ad-4745-ad39-1cc750e29b7c)
+<img src="https://github.com/user-attachments/assets/653c0983-31ad-4745-ad39-1cc750e29b7c" width="500">
 
 ### Is-A 관계 vs Has-A 관계
 
@@ -479,7 +481,7 @@ __(extends Object) 어느 클래스에서나 상속하고 있으니 언제나 �
     - 예시: 자동차는 탈 것이다(Car is a Vehicle)
     - 강아지는 동물이다(Dog is an Animal)
 - Has-A 관계: 클래스가 다른 클래스를 포함하는 관계
-    - 내부에 다른 클래스를 포함하여 모델링
+    - 내부에 다른 클래스를 포함하여 
     - 예시: 자동차는 엔진을 가지고 있다(Car has an Engine)
     - 사람은 머리를 가지고 있다(Person has a Head)
 

@@ -1,5 +1,7 @@
 # `JAVA 인터페이스`
 
+<br>
+
 ## 1. 인터페이스(Interface)란?
 인터페이스(Interface)는 추상 메서드와 상수로만 구성된 클래스로, 객체의 사용 방법을 정의합니다. 인터페이스는 다중 상속을 지원하며, 클래스와 클래스 간의 관계를 정의할 때 사용되며 필요한 메서드 변수에 대하여 서로 합의하는 것입니다.
 
@@ -26,12 +28,16 @@ public class Television implements RemoteControl {
     }
 }
 ```
+<br>
+
 ## 2. 추상 클래스 vs 인터페이스
 
 - 클래스는 오로지 하나의 추상 클래스만 상속받을 수 있지만, 인터페이스는 여러개 구현할 수 있음
 - 추상 클래스는 Is-A 관계를 표현할 때 사용되고, 인터페이스는 Has-A 관계를 표현할 때 사용됨
 - 추상 클래스는 일반 맴버 변수와 메서드를 가질 수 있지만, 인터페이스는 상수와 추상 메서드만 가질 수 있음
 - 인터페이스 모든 메서드는 public abstract로 선언되어야 함.
+
+<br>
 
 ## 3. 인터페이스와 타입
 인터페이스는 타입으로 사용될 수 있으며, 인터페이스 타입으로 선언된 변수는 인터페이스를 구현한 객체를 참조할 수 있습니다.
@@ -47,6 +53,8 @@ tv.turnOn();
 tv.turnOff();
 ```
 
+<br>
+
 ## 4. 인터페이스의 상속
 기존 인터페이스를 수정하는 경우 기존 클래스 사용 불가. 따라서   인터페이스도 인터페이스를 상속할 수 있도록 허용
 
@@ -60,6 +68,8 @@ public interface advancedRemoteControl extends RemoteControl {
     void setVolume(int volume);
 }
 ```
+
+<br>
 
 ## 5. 인터페이스의 다중 상속
 인터페이스는 다중 상속을 지원하며, 여러 개의 인터페이스를 구현할 수 있습니다.
@@ -88,6 +98,8 @@ public class SmartTelevision implements RemoteControl, Searchable {
 }
 ```
 
+<br>
+
 ## 6. 디폴트 메서드(Default Method)
 JDK8 이후부터 인터페이스에 디폴트 메서드를 추가할 수 있습니다. 디폴트 메서드는 인터페이스를 구현한 클래스에서 메서드를 재정의하지 않아도 사용할 수 있습니다. 또한 static 메서드도 추가할 수 있습니다.
 
@@ -108,6 +120,8 @@ public interface RemoteControl {
 }
 ```
 
+<br>
+
 ## 7. 상수 정의
 변수 정의시 자동으로 public static final 속성이 부여되어 상수가 됨
 ```java
@@ -116,6 +130,8 @@ public interface RemoteControl {
     int MIN_VOLUME = 0;
 }
 ```
+
+<br>
 
 ## 8. 무명 클래스(Anonymous Class)
 
@@ -177,6 +193,8 @@ public class Test {
 }
 
 ```
+<br>
+
 ## 9. 람다식
 람다식(Lambda Expression)은 함수형 프로그래밍을 위해 자바 8부터 추가된 기능으로, 메서드를 하나의 식으로 표현한 것입니다. 람다식은 익명 함수로 메서드를 간단히 표현할 수 있으며, 함수형 인터페이스를 구현할 때 사용됩니다.
 
@@ -206,7 +224,7 @@ __람다식 형식__
  () -> { return 3.141592; };
 ```
 
-![Image](https://github.com/user-attachments/assets/32bee5c2-f4e8-49a4-b6e4-34554e9f3a06)
+<img src="https://github.com/user-attachments/assets/32bee5c2-f4e8-49a4-b6e4-34554e9f3a06" width="500">
 
 ### 함수 인터페이스(Functional Interface)와 람다식
 

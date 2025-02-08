@@ -2,7 +2,9 @@
 
 Spring Boot에서 `Queue` 인터페이스와 다양한 구현 클래스들을 사용하는 방법을 정리합니다. 특히 `PriorityQueue`와 `LinkedList`에 대한 사용 예제를 중심으로 설명합니다.
 
----
+
+
+<br>
 
 ## 1. **`PriorityQueue`를 사용하는 예제**
 `PriorityQueue`는 **우선순위 큐**를 제공하며, 요소들이 우선순위에 따라 자동으로 정렬됩니다. 기본적으로는 자연 순서를 따르며, 필요에 따라 `Comparator`를 제공하여 커스텀 정렬도 가능합니다.
@@ -73,7 +75,9 @@ public class PriorityQueueController {
     - 정렬 기준 변경 시 `Comparator`를 활용 가능.
     - 순서 보장이 없어 FIFO가 아닌 우선순위 기준으로 동작.
 
----
+
+
+<br>
 
 ## 2. **`LinkedList`를 `Queue`로 사용하는 예제**
 `LinkedList`는 `Queue` 인터페이스를 구현하며, FIFO(First In First Out) 구조로 사용할 수 있습니다.
@@ -117,7 +121,9 @@ public class LinkedListQueueController {
     - FIFO 기반 큐로 동작.
     - 삽입/삭제 작업이 빈번할 경우 `ArrayList`보다 효율적.
 
----
+
+
+<br>
 
 ## 3. **`ArrayDeque`를 사용하는 예제**
 `ArrayDeque`는 큐와 덱(Deque)을 모두 지원하며, 크기 제한 없이 사용이 가능합니다.
@@ -167,7 +173,9 @@ public class ArrayDequeController {
     - 양방향 삽입/삭제 지원.
     - 스레드 안전하지 않음(멀티스레드 환경에서는 `ConcurrentLinkedDeque` 사용 권장).
 
----
+
+
+<br>
 
 ## 주요 `Queue` 구현 클래스 요약
 
@@ -178,4 +186,3 @@ public class ArrayDequeController {
 | `ArrayDeque`            | 양방향 삽입/삭제를 지원하는 배열 기반 큐.                            |
 | `ConcurrentLinkedQueue` | 비블로킹(non-blocking) 큐. 멀티스레드 환경에서 적합.                 |
 
----

@@ -1,10 +1,14 @@
 # `Java 파일 및 디렉토리 작업 가이드`
 
+<br>
+
 ## 📌 개요
 Java에서는 `java.nio.file` 패키지를 사용하여 파일과 디렉토리를 쉽게 다룰 수 있습니다.
 이 문서는 `Files` 및 `Paths` 클래스를 활용하여 파일 및 디렉토리 작업을 수행하는 방법을 설명합니다.
 
----
+
+
+<br>
 
 ## 📝 스텝 01 - `Files.list()`를 통한 디렉토리 내 파일 및 폴더 목록 가져오기
 `Files.list(Path dir)` 메소드는 특정 디렉토리 내의 파일 및 폴더 목록을 가져올 수 있습니다.
@@ -32,7 +36,9 @@ public class FileListExample {
 - `Files.list(dir)` → **해당 디렉토리의 1-depth 파일 및 폴더 목록을 반환**
 - `forEach(System.out::println)` → 목록 출력
 
----
+
+
+<br>
 
 ## 📝 스텝 02 - 재귀적 리스트, 파일 필터링
 `Files.walk(Path dir)`를 사용하면 **하위 디렉토리까지 포함한 모든 파일 및 폴더 목록**을 가져올 수 있습니다.
@@ -61,7 +67,9 @@ public class RecursiveFileList {
 - `Files.walk(dir)` → **하위 폴더까지 포함한 전체 파일 및 디렉토리 목록을 탐색**
 - `filter(Files::isRegularFile)` → **파일만 필터링**
 
----
+
+
+<br>
 
 ## 📝 스텝 03 - 파일에서 내용 읽기
 파일의 내용을 읽을 때 `Files.readAllLines()` 또는 `Files.lines()`를 사용할 수 있습니다.
@@ -109,7 +117,9 @@ public class FileReadStreamExample {
 - `Files.readAllLines()` → **모든 내용을 한 번에 로드** (작은 파일에 적합)
 - `Files.lines()` → **스트림을 이용하여 한 줄씩 읽음** (대용량 파일에 적합)
 
----
+
+
+<br>
 
 ## 📝 스텝 04 - 파일에 내용 저장 (쓰기)
 파일에 내용을 쓸 때는 `Files.write()` 메소드를 사용할 수 있습니다.
@@ -161,7 +171,9 @@ public class FileController {
 }
 ```
 
----
+
+
+<br>
 
 ## ✅ 정리
 | 단계 | 메소드 | 설명 |

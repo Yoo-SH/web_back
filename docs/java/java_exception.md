@@ -1,5 +1,7 @@
 # `JAVA 예외처리`
 
+<br>
+
 ## Error와 Exception 차이
 
 Error와 Exception은 같다고 생각할 수도 있지만 사실 큰 차이가 있습니다.
@@ -14,7 +16,7 @@ Error의 상황을 미리 미연에 방지하기 위해서 Exception 상황을 �
 
 ### Error (에러)
 
-![Image](https://github.com/user-attachments/assets/4d90182c-f279-4782-b9d3-fefccf5c2eae)
+<img src="https://github.com/user-attachments/assets/4d90182c-f279-4782-b9d3-fefccf5c2eae" width="500">
 
 Error는 시스템 레벨에서 발생하여, 개발자가 어떻게 조치할 수 없는 수준을 의미합니다.
 
@@ -22,11 +24,15 @@ Error는 시스템 레벨에서 발생하여, 개발자가 어떻게 조치할 �
 
 <br>
 
+<br>
+
 ## Exception (예외)
 
-![Image](https://github.com/user-attachments/assets/30277f2d-4f22-4a65-98c5-1effafb5b026)
+<img src="https://github.com/user-attachments/assets/30277f2d-4f22-4a65-98c5-1effafb5b026" width="500">
 
 예외는 개발자가 구현한 로직에서 발생하며 개발자가 다른 방식으로 처리가능한 것들로 JVM은 정상 동작합니다.
+
+<br>
 
 <br>
 
@@ -44,12 +50,16 @@ Error는 시스템 레벨에서 발생하여, 개발자가 어떻게 조치할 �
 
 
 
+<br>
+
 ## Throwable 클래스
 
-![Image](https://github.com/user-attachments/assets/7708ac96-0041-4815-9655-39441b12a2dc)
+<img src="https://github.com/user-attachments/assets/7708ac96-0041-4815-9655-39441b12a2dc" width="500">
 
 Throwable 클래스는 예외처리를 할 수 있는 최상위 클래스입니다. Exception과 Error는 Throwable의 상속을 받습니다.
 
+
+<br>
 
 ## 대표적인 Exception Class
 
@@ -66,6 +76,8 @@ Throwable 클래스는 예외처리를 할 수 있는 최상위 클래스입니�
 
 <br>
 
+<br>
+
 ## 주요 Method
 
 - printStackTrace() : 발생한 Exception의 출처를 메모리상에서 추적하면서 결과를 알려줍니다. 발생한 위치를 정확히 출력해줘서 제일 많이 쓰며 void를 반환합니다.
@@ -75,6 +87,8 @@ Throwable 클래스는 예외처리를 할 수 있는 최상위 클래스입니�
 <br>
 
 
+
+<br>
 
 ## try-catch-finally 구문
 예외 처리를 위해 try-catch-finally 구문을 사용합니다. try 블록에서 예외가 발생하면 catch 블록에서 예외를 처리하고, finally 블록에서는 예외 발생 여부와 상관없이 항상 실행되는 코드를 작성합니다.
@@ -90,6 +104,8 @@ try {
     // 일반적으로 자원을 해제하는 코드를 작성 out.close();
 }
 ```
+
+<br>
 
 ## try-with-resources 구문
 
@@ -133,10 +149,12 @@ public class TryWithResourcesExample {
 }
 ```
 
+<br>
+
 ## 다형성과 예외
 자바에서는 예외도 객체로 간주
 
-![Image](https://github.com/user-attachments/assets/733d888e-edc0-47a5-99fa-00382c4a1f6e)
+<img src="https://github.com/user-attachments/assets/733d888e-edc0-47a5-99fa-00382c4a1f6e" width="500">
 
 ```java
 try{
@@ -167,6 +185,8 @@ catch(NumberException e) {
     //TooSmallException을제외한나머지예외들이잡힌다. 
 }
 ```
+
+<br>
 
 ## throws 키워드
 throws는 Java에서 예외(Exception)를 선언하는 키워드로, 메서드의 시그니처에서 사용됩니다. 특정 메서드가 실행 중에 예외를 발생시킬 가능성이 있음을 호출하는 측에 알리는 역할을 합니다.
@@ -203,6 +223,8 @@ public class ThrowsExample {
     }
 }
 ```
+<br>
+
 ## thorw 키워드
 
 throw는 예외를 직접 발생시키는 키워드로, 메서드에서 예외를 발생시킬 때 사용됩니다. throw 키워드를 사용하여 예외를 발생시키면, 예외를 처리하는 측에 예외를 전달할 수 있습니다.
@@ -233,6 +255,8 @@ public class ThrowExample {
 }
 ```
 
+<br>
+
 ## throws와 throw의 차이
 - throws: 메서드에서 발생할 수 있는 예외를 선언하는 키워드
 - throw: 예외를 직접 발생시키는 키워드
@@ -245,14 +269,18 @@ void method() throws IOException {  // 예외를 선언 (throws)
 
 <br>
 
+<br>
+
 ## 계층적 예외 처리
 메소드 안에서 예외가 발생하면 런타임 시스템은 예외 처리기를 검색
 하고 예외 처리기가 없다면 호출스택(call stack)에 있는 상위메소드를 조사
 
-![Image](https://github.com/user-attachments/assets/388516b3-14c9-468a-9f55-236019003d17)
+<img src="https://github.com/user-attachments/assets/388516b3-14c9-468a-9f55-236019003d17" width="500">
 
-![Image](https://github.com/user-attachments/assets/d5b1b256-49f8-4909-a56d-fc29047ba8f5)
+<img src="https://github.com/user-attachments/assets/d5b1b256-49f8-4909-a56d-fc29047ba8f5" width="500">
 
+
+<br>
 
 ## 예외처리 가독성
 
@@ -303,6 +331,8 @@ voidreadFile() {
  }
 }
  ```
+
+<br>
 
 ## assert문
 

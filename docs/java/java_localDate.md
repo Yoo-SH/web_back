@@ -2,6 +2,8 @@
 
 Java에서는 날짜 및 시간을 다루기 위해 `LocalDate`, `LocalTime`, `LocalDateTime` 클래스를 제공합니다. 이 클래스들은 `java.time` 패키지에 속하며, 불변(immutable) 객체로 동작하여 안전한 날짜 및 시간 관리를 가능하게 합니다.
 
+<br>
+
 ## 1. LocalDate, LocalTime, LocalDateTime 소개
 
 ### LocalDate
@@ -13,7 +15,9 @@ Java에서는 날짜 및 시간을 다루기 위해 `LocalDate`, `LocalTime`, `L
 ### LocalDateTime
 `LocalDateTime`은 날짜(`LocalDate`)와 시간(`LocalTime`)을 함께 관리할 수 있는 클래스입니다. 날짜와 시간을 함께 처리해야 할 경우 유용합니다.
 
----
+
+
+<br>
 
 ## 2. LocalDate, LocalTime, LocalDateTime 비교
 
@@ -23,7 +27,9 @@ Java에서는 날짜 및 시간을 다루기 위해 `LocalDate`, `LocalTime`, `L
 | `LocalTime`  | 시, 분, 초, 나노초 | `14:30:15.123` |
 | `LocalDateTime` | 연도, 월, 일, 시, 분, 초, 나노초 | `2023-02-07T14:30:15.123` |
 
----
+
+
+<br>
 
 ## 3. LocalDate 탐색 - 생성과 실행을 위한 메서드
 
@@ -50,7 +56,9 @@ LocalDate tomorrow = today.plusDays(1); // 하루 뒤 날짜
 LocalDate lastMonth = today.minusMonths(1); // 한 달 전 날짜
 ```
 
----
+
+
+<br>
 
 ## 4. LocalDate 비교와 특정 날짜 생성
 
@@ -78,7 +86,9 @@ System.out.println("연도: " + year + ", 월: " + month + ", 일: " + day);
 System.out.println("오늘의 요일: " + today.getDayOfWeek());
 ```
 
----
+
+
+<br>
 
 ## 5. LocalTime 탐색 - 생성과 실행을 위한 메서드
 
@@ -105,7 +115,9 @@ LocalTime later = now.plusHours(2); // 2시간 후
 LocalTime earlier = now.minusMinutes(30); // 30분 전
 ```
 
----
+
+
+<br>
 
 ## 6. LocalDateTime 탐색 - 생성과 실행을 위한 메서드
 
@@ -132,7 +144,9 @@ LocalDateTime futureDateTime = now.plusDays(5).plusHours(3); // 5일 후, 3시�
 LocalDateTime pastDateTime = now.minusWeeks(2).minusMinutes(45); // 2주 전, 45분 전
 ```
 
----
+
+
+<br>
 
 ## 7. 추가 학습 자료
 - 공식 문서: [Java LocalDate API](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html)

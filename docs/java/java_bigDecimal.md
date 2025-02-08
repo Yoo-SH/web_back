@@ -96,6 +96,5 @@ System.out.println(rounded); // 10.57
 
 <br>
 
-## 참고
-자세한 내용은 [공식 문서](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/math/BigDecimal.html)를 참고하세요.
-
+# 참고 자료
+- [Do it! 자바 완전 정복](https://www.youtube.com/playlist?list=PLG7te9eYUi7toebNnbA1cZNRDoUcHmsGd)

@@ -1,7 +1,11 @@
 # `JAVA 컬렉션 프레임워크`
 
+<br>
+
 ## 1. 개요
 Java Collection Framework는 데이터를 효율적으로 저장하고 조작할 수 있도록 설계된 표준화된 자료구조 라이브러리입니다. `java.util` 패키지에 포함되어 있으며, List, Set, Map 등의 다양한 인터페이스와 클래스를 제공합니다.
+
+<br>
 
 ## 2. Collection 계층 구조
 ```
@@ -25,8 +29,10 @@ java.util.Map (인터페이스)
 └── Hashtable
 
 ```
-![Image](https://github.com/user-attachments/assets/1663cdfb-4cd9-4372-83de-e57603339868)
----
+<img src="https://github.com/user-attachments/assets/1663cdfb-4cd9-4372-83de-e57603339868" width="500">
+
+
+<br>
 
 ## 3. 주요 인터페이스 및 구현 클래스
 ### 3.1 [List (순서 보장, 중복 허용)](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_collection_list.md)
@@ -37,7 +43,7 @@ java.util.Map (인터페이스)
 | `Vector<E>` | `ArrayList`와 유사하지만 동기화(Synchronized) 지원 |
 | `Stack<E>` | LIFO(Last In First Out) 구조 |
 
-![Image](https://github.com/user-attachments/assets/927f289d-d1fc-4b7d-a74e-7e082fad08a1)
+<img src="https://github.com/user-attachments/assets/927f289d-d1fc-4b7d-a74e-7e082fad08a1" width="500">
 
 #### 사용 예제
 ```java
@@ -91,7 +97,9 @@ map.put("Banana", 1500);
 System.out.println(map.get("Apple")); // 출력: 1000
 ```
 
----
+
+
+<br>
 
 ## 4. Collections 클래스 (유틸리티 기능)
 `java.util.Collections` 클래스는 Collection을 다룰 때 유용한 메서드를 제공합니다.
@@ -114,7 +122,9 @@ int index = Collections.binarySearch(numbers, 5);
 System.out.println(index); // 출력: 2 (5의 인덱스 위치)
 ```
 
----
+
+
+<br>
 
 ## 5. Stream API 활용
 Java 8부터 제공되는 **Stream API**를 사용하면 컬렉션을 더욱 효율적으로 처리할 수 있습니다.
@@ -127,6 +137,8 @@ list.stream()
     .forEach(System.out::println); // 출력: 2 4 6
 ```
 
+
+<br>
 
 ## 6. 정리
 | 컬렉션 유형 | 중복 허용 | 순서 보장 | 대표 클래스 |

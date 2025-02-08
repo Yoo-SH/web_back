@@ -1,8 +1,12 @@
 # `Java Record`
 
+<br>
+
 ## 개요
 `record`는 Java 14에서 프리뷰 기능으로 도입되었고, Java 16에서 정식 기능으로 추가된 새로운 클래스 유형입니다.
 `record`는 주로 불변 데이터 모델을 간결하게 정의하기 위해 사용됩니다.
+
+<br>
 
 ## 특징
 - **불변(Immutable)**: 모든 필드는 기본적으로 `final`이며, 생성 후 값 변경이 불가능합니다.
@@ -12,6 +16,8 @@
     - `equals()` 및 `hashCode()`
     - `toString()`
 - **간결한 선언**: 보일러플레이트 코드가 줄어들어 가독성이 향상됩니다.
+
+<br>
 
 ## 기본 문법
 ```java
@@ -41,6 +47,8 @@ public final class Person {
 }
 ```
 
+<br>
+
 ## 생성자 활용
 ### 1. 기본 생성자
 ```java
@@ -60,6 +68,8 @@ public record Person(String name, int age) {
 ```
 위처럼 생성자 본문을 추가하여 유효성 검사를 할 수 있습니다.
 
+<br>
+
 ## 메서드 정의
 `record`도 일반 클래스처럼 메서드를 추가할 수 있습니다.
 
@@ -70,6 +80,8 @@ public record Person(String name, int age) {
     }
 }
 ```
+
+<br>
 
 ## 인터페이스 구현
 `record`는 `interface`를 구현할 수 있습니다.
@@ -87,10 +99,14 @@ public record Person(String name, int age) implements Greetable {
 }
 ```
 
+<br>
+
 ## 제약 사항
 1. **상속 불가**: `record`는 `final`이므로 다른 클래스를 상속할 수 없습니다.
 2. **필드 변경 불가**: 모든 필드는 `final`이며, setter를 가질 수 없습니다.
 3. **명시적 상속 불가**: `extends` 키워드를 사용할 수 없습니다.
+
+<br>
 
 ## 활용 사례
 ### DTO (Data Transfer Object)
@@ -105,6 +121,8 @@ public record Point(int x, int y) {}
 ```java
 public record ApiResponse<T>(int status, String message, T data) {}
 ```
+
+<br>
 
 ## 결론
 `record`는 간결하고 불변성을 보장하는 데이터 구조를 쉽게 정의할 수 있도록 도와줍니다.

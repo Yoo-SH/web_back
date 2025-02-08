@@ -1,13 +1,17 @@
 # 자바 팁 14: 왜 Enum을 사용하는가? Enum 기초 - ordinal, values, name
 
----
+
+
+<br>
 
 ## 1. 왜 Enum을 사용하는가?
 
 Java에서 **Enum(열거형)**은 **상수들의 집합**을 나타내는 특별한 데이터 타입입니다.  
 즉, **한정된 개수의 값들 중에서 하나를 선택할 때 적합한 데이터 타입**입니다. Enum을 사용하면 코드 가독성이 향상되고, 실수를 줄이는 데 도움을 줍니다.
 
----
+
+
+<br>
 
 ## 2. Enum 기본 문법 및 작성법
 
@@ -22,7 +26,9 @@ enum Color {
 
 위 예제는 `Color`라는 열거형을 정의하며, `RED`, `GREEN`, `BLUE`가 각각의 상수입니다.
 
----
+
+
+<br>
 
 ## 3. Enum의 기본 제공 메서드 및 사용 예제
 
@@ -52,7 +58,7 @@ class EnumOrdinalExample {
 
 > **주의**: `ordinal()`의 반환값은 Enum 정의에서 선언된 순서에 의존하므로, 순서를 변경하면 결과값도 변경됩니다.
 
----
+
 
 ### 3.2 `values()` 예제
 `values()` 메서드는 Enum의 **모든 상수를 배열 형태**로 반환합니다. 이를 이용해 Enum 상수 값을 순회하거나 활용할 수 있습니다.
@@ -75,7 +81,7 @@ class EnumValuesExample {
 **출력**: RED ordinal: 0 GREEN ordinal: 1 BLUE ordinal: 2
 
 
----
+
 
 ### 3.3 `name()` 예제
 `name()` 메서드는 각 Enum 상수의 **이름(문자열 표현)**을 반환합니다.  
@@ -99,7 +105,9 @@ class EnumNameExample {
 **출력**: Color from valueOf: RED
 
 
----
+
+
+<br>
 
 ## 4. 설명 및 활용
 
@@ -144,7 +152,9 @@ class AdvancedEnumExample {
 **출력**: Status: STARTED, Ordinal: 0 Status: IN_PROGRESS, Ordinal: 1 Status: COMPLETED, Ordinal: 2 Task is completed
 
 
----
+
+
+<br>
 
 ## 5. 요약
 
@@ -165,7 +175,7 @@ class AdvancedEnumExample {
     - Enum 상수 이름을 문자열로 받아 해당 상수를 반환.
     - 예: `Color.valueOf("RED")` → `Color.RED`
 
----
+
 
 ### Enum 사용으로 얻는 이점:
 1. **코드 가독성 증가**: 상수 값이 Enum으로 명확히 표현됨.

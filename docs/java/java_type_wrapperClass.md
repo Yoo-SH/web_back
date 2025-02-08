@@ -1,7 +1,11 @@
 # `Java Wrapper 클래스`
 
+<br>
+
 ## 1. 개요
 Java의 Wrapper 클래스는 기본 자료형(Primitive Type)을 객체(Object)로 다룰 수 있도록 해주는 클래스입니다. 기본 자료형을 객체로 감싸는 역할을 하기 때문에 "Wrapper(래퍼)" 클래스라고 불립니다.
+
+<br>
 
 ## 2. 기본 자료형과 Wrapper 클래스의 대응
 Java에서는 8개의 기본 자료형에 대해 각각 대응되는 Wrapper 클래스를 제공합니다.
@@ -17,7 +21,9 @@ Java에서는 8개의 기본 자료형에 대해 각각 대응되는 Wrapper 클
 | `char`     | `Character`   |
 | `boolean`  | `Boolean`     |
 
-![images](https://camo.githubusercontent.com/c049004bacaf2b26f86c5ab5e948e299bde94c820a98ed2e3dff80c7bb8d8d4d/687474703a2f2f7463707363686f6f6c2e636f6d2f6c656374757265732f696d675f6a6176615f626f78696e675f756e626f78696e672e706e67)
+<img src="https://camo.githubusercontent.com/c049004bacaf2b26f86c5ab5e948e299bde94c820a98ed2e3dff80c7bb8d8d4d/687474703a2f2f7463707363686f6f6c2e636f6d2f6c656374757265732f696d675f6a6176615f626f78696e675f756e626f78696e672e706e67" width="500">
+<br>
+
 ## 3. 왜 Wrapper 클래스를 사용하는가?
 ### (1) 객체가 필요한 경우
 - Java의 컬렉션 프레임워크(List, Set, Map 등)는 기본 자료형을 저장할 수 없고, 객체만 저장할 수 있습니다.
@@ -44,6 +50,8 @@ Java에서는 8개의 기본 자료형에 대해 각각 대응되는 Wrapper 클
   Integer num = 10;  // Autoboxing (int → Integer)
   int value = num;   // Unboxing (Integer → int)
   ```
+
+<br>
 
 ## 4. Wrapper 클래스의 주요 사용처
 ### (1) 컬렉션 프레임워크 (List, Set, Map 등)
@@ -112,6 +120,8 @@ public class StringConversion {
 ```
 
 
+<br>
+
 ## 5. 장점 및 단점
 ### ✅ 장점
 - 기본 자료형을 객체로 다룰 수 있어 객체 지향적인 프로그래밍이 가능
@@ -121,6 +131,8 @@ public class StringConversion {
 ### ❌ 단점
 - 기본 자료형보다 메모리를 더 많이 사용
 - 성능 저하 가능 (Boxing/Unboxing 과정에서 추가적인 연산 발생)
+
+<br>
 
 ## 6. 결론
 Wrapper 클래스는 Java에서 객체로 데이터를 다뤄야 하는 경우 필수적입니다. 성능이 중요한 경우 기본 자료형을 직접 사용하는 것이 좋지만, 객체로 다루어야 하는 경우에는 Wrapper 클래스를 활용하여 편리한 프로그래밍이 가능합니다.

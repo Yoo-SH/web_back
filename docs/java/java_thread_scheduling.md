@@ -2,6 +2,8 @@
 
 Java에서 스레드의 실행 순서와 타이밍을 제어하는 주요 메서드는 다음과 같습니다.
 
+<br>
+
 ## 1. `sleep(milliseconds)`
 - 현재 실행 중인 스레드를 지정된 시간(ms) 동안 일시 정지(Timed Waiting) 상태로 만듭니다.
 - 시간이 지나면 다시 실행 가능(Ready) 상태로 돌아갑니다.
@@ -29,7 +31,9 @@ public void scheduledTask() throws InterruptedException {
 }
 ```
 
----
+
+
+<br>
 
 ## 2. `join()`
 - 특정 스레드가 종료될 때까지 현재 스레드를 대기시키는 역할
@@ -78,7 +82,9 @@ public void executeTasks() throws Exception {
 }
 ```
 
----
+
+
+<br>
 
 ## 3. `yield()`
 - 현재 실행 중인 스레드의 실행을 양보하여 다른 스레드가 실행될 기회를 줌
@@ -101,7 +107,9 @@ thread.start();
 - 거의 사용되지 않지만, CPU 리소스를 효율적으로 사용하고 싶은 경우 고려할 수 있음
 - 다만, Spring Boot에서는 보통 `ExecutorService`나 `@Async`를 사용하여 비동기 작업을 관리하기 때문에 `yield()`를 직접 사용할 일은 많지 않음
 
----
+
+
+<br>
 
 ## 4. `interrupt()`
 - 실행 중인 스레드에 인터럽트 신호를 보내서 중단할 수 있도록 함
@@ -152,7 +160,9 @@ public void stopTask(Thread thread) {
 }
 ```
 
----
+
+
+<br>
 
 ## thread 메서드 정리
 

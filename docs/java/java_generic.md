@@ -1,5 +1,7 @@
 # `JAVA 제네릭`
 
+<br>
+
 ## 1. 제네릭(Generic)이란?
 다양한 종류의 데이터를 처리할 수 있는 클래스와 메소드를 작성하는 방법. 클래스를 정의할 때 자료형을 T로 표현
 
@@ -74,6 +76,8 @@ public class Test {
 }
 ```
 
+<br>
+
 ## 차이점 정보
 | 비교 항목 | Object | Generic |
 |-----------|--------|---------|
@@ -89,6 +93,8 @@ public class Test {
 - **가능하면 Generic을 사용하는 것이 더 안전하고 유지보수에 유리**
 
 
+
+<br>
 
 ## Generic 메서드 (Generic Method)
 Generic 메서드는 메서드 레벨에서 타입을 제네릭하게 정의할 수 있도록 해줍니다.
@@ -114,6 +120,8 @@ public class GenericMethodExample {
 }
 ```
 
+<br>
+
 ## 한정된 제네릭 (Bounded Generics)
 한정된 제네릭은 제네릭 타입을 특정 클래스의 하위 클래스로 제한하는 방법입니다.
 
@@ -138,6 +146,8 @@ public class BoundedGenericsExample {
     }
 }
 ```
+
+<br>
 
 ## Java Generic의 상속
 
@@ -170,7 +180,9 @@ class StringChild extends Parent<String> { // 부모의 T를 String으로 고정
 }
 ```
 
----
+
+
+<br>
 
 ## 2. **제네릭 타입 경계(Bounded Type)**
 제네릭 타입에 **상속 관계를 강제**하려면 `extends` 키워드를 사용합니다.
@@ -241,7 +253,7 @@ class FileManager<T> implements Readable<T>, Writable<T> {
 }
 ```
 
----
+
 
 ### 5. **제네릭과 배열**
 제네릭 타입의 배열은 만들 수 없습니다.
@@ -253,7 +265,7 @@ T[] array = new T[10]; // ❌ 컴파일 오류
 T[] array = (T[]) Array.newInstance(clazz, 10);
 ```
 
----
+
 
 ### 6. **제네릭과 다형성**
 제네릭 타입은 **다형성(Polymorphism)과 다르게 동작**합니다.
@@ -268,6 +280,8 @@ List<Object> objectList = stringList; // ❌ 컴파일 오류
 ```java
 List<? extends Object> objectList = stringList; // ✅ 가능
 ```
+
+<br>
 
 ## 7. **정리**
 | 개념 | 설명 |
