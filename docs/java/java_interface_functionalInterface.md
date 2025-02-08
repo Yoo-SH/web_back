@@ -3,14 +3,18 @@
 **Functional Interface**란, 단 하나의 **추상 메서드(abstract method)** 만을 가지는 인터페이스를 의미합니다.  
 자바 8에서 도입되었으며, 람다 표현식(lambda expression)과 함께 사용되어 **코드의 간결성**과 **가독성**을 높이는 데 도움을 줍니다.
 
----
+
+
+<br>
 
 ## 1. Functional Interface의 특징
 - 단 하나의 **추상 메서드**만 가질 수 있음.
 - 여러 개의 **default** 또는 **static** 메서드는 가질 수 있음.
 - `@FunctionalInterface` 어노테이션을 사용하면 컴파일러가 **단일 추상 메서드 여부**를 체크함.
 
----
+
+
+<br>
 
 ## 2. Functional Interface 예제
 
@@ -23,7 +27,9 @@ interface MyFunctionalInterface {
 ```
 위와 같은 인터페이스는 단 하나의 추상 메서드만 가지므로 Functional Interface로 사용할 수 있습니다.
 
----
+
+
+<br>
 
 ## 3. Functional Interface 사용 예제
 
@@ -57,7 +63,9 @@ public class Main {
 ```
 ✅ 람다 표현식을 사용하면 코드가 훨씬 짧아지고 가독성이 좋아집니다.
 
----
+
+
+<br>
 
 ## 4. 자바에서 제공하는 주요 Functional Interface
 
@@ -71,7 +79,9 @@ public class Main {
 | `Function<T, R>`     | `R apply(T t)`     | 입력을 받아서 출력 값을 반환                         |
 | `Predicate<T>`       | `boolean test(T t)`| 입력 값을 조건으로 검사 후 `true/false`를 반환       |
 
----
+
+
+<br>
 
 ## 5. 주요 Functional Interface 사용 예제
 
@@ -92,14 +102,18 @@ public class Main {
 **Functional Interface**란, 단 하나의 **추상 메서드(abstract method)** 만을 가지는 인터페이스를 의미합니다.  
 자바 8에서 도입되었으며, 람다 표현식(lambda expression)과 함께 사용되어 **코드의 간결성**과 **가독성**을 높이는 데 도움을 줍니다.
 
----
+
+
+<br>
 
 ## 1. Functional Interface의 특징
 - 단 하나의 **추상 메서드**만 가질 수 있음.
 - 여러 개의 **default** 또는 **static** 메서드는 가질 수 있음.
 - `@FunctionalInterface` 어노테이션을 사용하면 컴파일러가 **단일 추상 메서드 여부**를 체크함.
 
----
+
+
+<br>
 
 ## 2. Functional Interface 예제
 
@@ -112,7 +126,9 @@ interface MyFunctionalInterface {
 ```
 위와 같은 인터페이스는 단 하나의 추상 메서드만 가지므로 Functional Interface로 사용할 수 있습니다.
 
----
+
+
+<br>
 
 ## 3. Functional Interface 사용 예제
 
@@ -146,7 +162,9 @@ public class Main {
 ```
 ✅ 람다 표현식을 사용하면 코드가 훨씬 짧아지고 가독성이 좋아집니다.
 
----
+
+
+<br>
 
 ## 4. 자바에서 제공하는 주요 Functional Interface
 
@@ -160,7 +178,9 @@ public class Main {
 | `Function<T, R>`     | `R apply(T t)`     | 입력을 받아서 출력 값을 반환                         |
 | `Predicate<T>`       | `boolean test(T t)`| 입력 값을 조건으로 검사 후 `true/false`를 반환       |
 
----
+
+
+<br>
 
 ## 5. 주요 Functional Interface 사용 예제
 
@@ -210,7 +230,9 @@ public class Main {
 ```
 ➡️ `Predicate<T>`는 조건을 검사하여 `true` 또는 `false`를 반환합니다.
 
----
+
+
+<br>
 
 ## 6. Functional Interface와 메서드 참조
 Functional Interface는 **메서드 참조(Method Reference)** 와 함께 사용할 수 있습니다.
@@ -243,7 +265,9 @@ public class Main {
 }
 ```
 
----
+
+
+<br>
 
 ## 7. 결론
 - **Functional Interface**는 단 하나의 추상 메서드를 가지는 인터페이스로, 람다 표현식과 함께 사용하기 적합합니다.

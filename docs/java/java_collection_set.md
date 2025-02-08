@@ -2,7 +2,9 @@
 
 Spring Boot에서 `Set` 인터페이스와 다양한 구현 클래스들을 사용하는 방법을 정리합니다. 특히 `HashSet`과 `TreeSet`에 대한 사용 예제를 중심으로 설명합니다.
 
----
+
+
+<br>
 
 ## 1. **`HashSet`을 사용하는 예제**
 `HashSet`은 **순서를 보장하지 않는** 컬렉션으로, 중복되지 않는 고유한 값을 저장합니다. 내부적으로 해시 테이블(Hash Table)을 사용하여 요소를 관리합니다.
@@ -43,7 +45,9 @@ public class HashSetController {
     - 삽입 순서를 보장하지 않음.
     - `null` 값을 허용.
 
----
+
+
+<br>
 
 ## 2. **`TreeSet`을 사용하는 예제**
 `TreeSet`은 **정렬된 순서**로 요소를 저장하며, 내부적으로 **이진 검색 트리**를 사용하여 관리합니다. 기본적으로는 요소의 자연 순서를 따르며, 사용자 정의 `Comparator`도 지원합니다.
@@ -84,7 +88,9 @@ public class TreeSetController {
     - 삽입이 느릴 수 있지만, 데이터 검색과 탐색을 효율적으로 처리.
     - `null` 값을 허용하지 않음.
 
----
+
+
+<br>
 
 ## 3. **`LinkedHashSet`을 사용하는 예제**
 `LinkedHashSet`은 **삽입된 순서를 보장**하는 컬렉션입니다. 내부적으로는 `HashSet`의 해싱 기능과 이중 연결 리스트를 조합하여 순서를 유지합니다.
@@ -124,7 +130,9 @@ public class LinkedHashSetController {
     - 삽입 순서를 유지.
     - `HashSet`보다 메모리를 더 사용하며, 약간 느릴 수 있음.
 
----
+
+
+<br>
 
 ## 주요 `Set` 구현 클래스 요약
 
@@ -134,7 +142,7 @@ public class LinkedHashSetController {
 | `TreeSet`              | 이진 검색 트리 기반으로 저장. 정렬된 순서를 보장.                   |
 | `LinkedHashSet`        | 삽입된 순서를 보장하며, `HashSet`의 기능을 확장.                    |
 
----
+
 
 ### 추가 참고 사항:
 - 기본적으로 `Set`은 중복 데이터를 허용하지 않습니다.

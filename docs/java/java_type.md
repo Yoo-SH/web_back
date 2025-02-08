@@ -1,5 +1,7 @@
 # `JAVA 자료형`
 
+<br>
+
 ## 이름 규칙
 
 - 변수명, 메서드명
@@ -13,6 +15,8 @@
 
 
 
+<br>
+
 ## JAVA 자료형 구분
 
 - 기본 자료형(Primitive Type)
@@ -23,23 +27,29 @@
 - 참조 자료형(Reference Type)
     - 클래스, 인터페이스, 배열 등
 
-![Image](https://github.com/user-attachments/assets/bce2e7b8-65cf-4a23-b030-5d0f20fd4521)
+<img src="https://github.com/user-attachments/assets/bce2e7b8-65cf-4a23-b030-5d0f20fd4521" width="500">
+<br>
+
 ## 자료형과 메모
 - 메모리의3가지영역
     - 클래스(class)/정적(static)/상수(final)/메서드(method) 영역
     - 스택(stack) 영역: 변수 저장
     - 힙(heap) 영역: 객체 저장리
 
-![Image](https://github.com/user-attachments/assets/a14d0b8b-842c-4dcb-8a25-887385757386)
+<img src="https://github.com/user-attachments/assets/a14d0b8b-842c-4dcb-8a25-887385757386" width="500">
+
+<br>
 
 ## 기본자료형의 메모리크기 및 저장값의 범위
 
-![Image](https://github.com/user-attachments/assets/f7ef5978-9cfb-4d64-a6d0-6281d2f53e81)
+<img src="https://github.com/user-attachments/assets/f7ef5978-9cfb-4d64-a6d0-6281d2f53e81" width="500">
 
 참고 사항
 - byte: -128 ~ 127  
 - float: 대략 7자리까지 표현 가능
 - double: 대략 15자리까지 표현 가능
+
+<br>
 
 ## 리터럴(literal)과 변수(variable)
 
@@ -57,6 +67,8 @@ __2. 변수(Variable)__
 ```java
 int a = 10; // 10은 리터럴, a는 변수
 ```
+
+<br>
 
 ## JAVA 명시적 타입 변환 (Explicit Type Conversion, Casting)
 
@@ -79,11 +91,11 @@ byte byteValue = intValue;
 
 위의 경우 intValue에 저장된 1이라는 값은 byte 데이터 타입에도 저장 가능한 값입니다. 그렇지만, 위 코드를 실행하면 컴파일 에러가 발생합니다. 그 이유는 저장될 값 1에 상관없이 int 데이터 타입이 byte 데이터 타입보다 메모리 크기가 크기 때문입니다. 그림으로 보자면,
 
-![Image](https://github.com/user-attachments/assets/e91e7aca-bb3c-46f9-bd08-c9c5fcb55604)
+<img src="https://github.com/user-attachments/assets/e91e7aca-bb3c-46f9-bd08-c9c5fcb55604" width="500">
 
 이와 같은 그림이 나옵니다. int 데이터 타입에 저장된 정수 1의 값은 실제 메모리에 저장될 때 00000000 00000000 00000000 00000001 의 값을 가집니다. 이 값을 byte 데이터 타입에 끝에 1byte(00000001) 영역만 넣자니 앞에있는 3byte (00000000 00000000 00000000) 값이 날아갑니다. 그림으로 보면 이렇습니다.
 
-![Image](https://github.com/user-attachments/assets/8905c3ae-0a33-4490-86a2-3db3e89a5921)
+<img src="https://github.com/user-attachments/assets/8905c3ae-0a33-4490-86a2-3db3e89a5921" width="500">
 
 앞에 3byte의 공간을 삭제하는 시점에서 많은 데이터가 날아가 정상적인 값이 저장될 수 없을 것입니다. 이와 같이 메모리 크기가 큰 int 데이터 타입에서 메모리 크기가 작은 byte 데이터 타입으로 자동 형변환(Promotion)이 된다면, 정상적이지 않은 값이 나올 수 있기 때문에 Java에서 자동 형변환(Promotion)을 하지 않습니다. 하지만, 우리가 형변환 하려는 정수 값은 1 이므로 byte 데이터 타입 범위 안에 충분히 들어가는 값입니다. 우린 그걸 머릿속으로 알고 있기 때문에 byte 데이터 타입으로 변환된다 하더라도 값이 정상적일 거라고 판단할 수 있습니다. 이럴 때 강제 형변환은 아래와 같이 해주시면 됩니다.
 
@@ -94,6 +106,8 @@ byte byteValue = (byte) intValue;
 
 <br>
 
+
+<br>
 
 ## Java 자동 타입 변환 (Implicit Type Conversion, Promotion)
 

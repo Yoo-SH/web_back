@@ -1,9 +1,13 @@
 # Java Stream API
 
+<br>
+
 ## 1. Stream이란?
 Java의 **Stream API**는 컬렉션(List, Set 등) 데이터를 효율적으로 처리하기 위한 기능으로, Java 8에서 도입되었습니다. 함수형 프로그래밍 스타일을 지원하여 가독성이 높고 유지보수가 쉬운 코드를 작성할 수 있습니다.
 
----
+
+
+<br>
 
 ## 2. Stream vs Collection
 | 비교 항목 | Collection | Stream |
@@ -20,7 +24,9 @@ Java의 **Stream API**는 컬렉션(List, Set 등) 데이터를 효율적으로 
 - **연산 방식**: Collection의 연산은 즉시 수행되며 변경된 상태를 저장하지만, Stream은 연산이 **필요할 때만 실행(Lazy Evaluation)** 되어 불필요한 계산을 줄일 수 있습니다.
 - **원본 변경 여부**: Collection은 데이터를 직접 수정할 수 있지만, Stream은 원본 데이터를 변경하지 않고 **새로운 데이터를 생성**하여 반환하는 **불변(Immutable)** 방식으로 동작합니다.
 
----
+
+
+<br>
 
 ## 3. Stream 생성 방법
 ### (1) 컬렉션에서 생성
@@ -42,7 +48,9 @@ Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5);
 Stream<Integer> infiniteStream = Stream.iterate(0, n -> n + 2);
 ```
 
----
+
+
+<br>
 
 ## 4. Stream 연산 종류
 
@@ -71,7 +79,7 @@ List<String> result = words.stream()
 System.out.println(result); // [APPLE, AVOCADO]
 ```
 
----
+
 
 ### (2) 최종 연산 (Terminal Operation)
 - 스트림을 닫고 결과를 반환
@@ -100,7 +108,9 @@ int sum = numbers.stream()
 System.out.println(sum); // 15
 ```
 
----
+
+
+<br>
 
 ## 5. 병렬 스트림 (Parallel Stream)
 - `parallelStream()`을 사용하면 멀티코어 CPU에서 병렬 처리 가능
@@ -116,7 +126,9 @@ words.parallelStream()
 
 ⚠ **주의**: 병렬 스트림은 순서가 중요한 작업에서는 적절하지 않을 수 있음
 
----
+
+
+<br>
 
 ## 6. Collector를 사용한 결과 변환
 - `collect()` 메서드는 결과를 리스트, 세트, 맵 등의 컬렉션으로 변환 가능
@@ -137,7 +149,9 @@ String result = words.stream()
 System.out.println(result); // apple, banana, cherry
 ```
 
----
+
+
+<br>
 
 ## 7. 정리
 ✅ `Stream`은 **반복문을 대체**하는 강력한 API  

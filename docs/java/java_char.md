@@ -19,7 +19,6 @@ System.out.println(isVowel('A')); // true
 System.out.println(isVowel('b')); // false
 ```
 
----
 
 <br>
 
@@ -38,7 +37,6 @@ System.out.println(isDigit('5')); // true
 System.out.println(isDigit('A')); // false
 ```
 
----
 
 <br>
 
@@ -57,7 +55,6 @@ System.out.println(isConsonant('B')); // true
 System.out.println(isConsonant('e')); // false
 ```
 
----
 
 <br>
 
@@ -82,7 +79,6 @@ System.out.println(listUpperCase());
 // 출력: [A, B, C, D, E, ..., Z]
 ```
 
----
 
 <br>
 
