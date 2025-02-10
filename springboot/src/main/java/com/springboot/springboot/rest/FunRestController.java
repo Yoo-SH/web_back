@@ -13,7 +13,7 @@ public class FunRestController {
 
     @GetMapping("/test")
     public String test() {
-        System.out.println("test");
+        System.out.println("testZ");
         return "Hell";
     }
 
