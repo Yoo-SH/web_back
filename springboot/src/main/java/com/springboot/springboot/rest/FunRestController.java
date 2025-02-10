@@ -8,6 +8,14 @@ public class FunRestController {
 
     @GetMapping("/")
     public String SayHello() {
-        return "Hello World";
+        return "Hello World test";
     }
+
+    @GetMapping("/test")
+    public String test() {
+        System.out.println("test");
+        return "Hell";
+    }
+
+
 }
