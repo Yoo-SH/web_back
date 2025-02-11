@@ -115,6 +115,16 @@ Spring에서 IoC를 구현하는 방식 중 하나가 바로 **Dependency Inject
 
 ---
 
+```java
+// 사용 권고 x
+@Component
+   class Car {
+       @Autowired
+       private Engine engine;
+
+   }
+```
+
 ## IoC + DI의 동작 과정
 1. **Spring Container가 실행되면서 필요한 Bean을 생성**
 2. **의존성이 필요한 객체를 찾고, DI(Dependency Injection) 방식에 따라 주입**
