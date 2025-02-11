@@ -1,4 +1,4 @@
-package com.springCore.springCore.common;
+package scanTest;
 
 public interface Coach {
 

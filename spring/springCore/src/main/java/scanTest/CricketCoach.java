@@ -1,4 +1,4 @@
-package com.springCore.springCore.common;
+package scanTest;
 import org.springframework.stereotype.Component;
 
 @Component
