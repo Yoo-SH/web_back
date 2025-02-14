@@ -1,4 +1,4 @@
-package restApi.crud.rest;
+package restApi.exception.rest;
 
 
 public class StudentErrorResponse {

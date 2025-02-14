@@ -1,4 +1,4 @@
-package restApi.crud.rest;
+package restApi.exception.rest;
 
 
 
@@ -6,7 +6,7 @@ import jakarta.annotation.PostConstruct;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import restApi.crud.entity.Student;
+import restApi.exception.entity.Student;
 
 import java.util.ArrayList;
 import java.util.List;

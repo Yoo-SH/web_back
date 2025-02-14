@@ -1,4 +1,4 @@
-package restApi.crud.rest;
+package restApi.exception.rest;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

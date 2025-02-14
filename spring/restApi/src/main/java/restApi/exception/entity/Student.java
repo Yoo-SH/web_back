@@ -1,4 +1,4 @@
-package restApi.crud.entity;
+package restApi.exception.entity;
 
 public class Student {
 
