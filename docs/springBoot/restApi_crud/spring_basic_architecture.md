@@ -2,7 +2,8 @@ entity manager
 ![Image](https://github.com/user-attachments/assets/6cfdfe6e-1e4b-4b4f-a480-5e9c4e94823e)
 
 jparepository
-![img.png](img.png)
+
+![Image](https://github.com/user-attachments/assets/e24df745-5f49-47d5-9683-0c8c805ce1ed)
 
 
 DAOImpl 구현은 entitymanger가 아닌 jparepository를 사용하면 기본 crud를 제공하기에 따로 직접 구현할 필요성이 없음.
