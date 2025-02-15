@@ -19,7 +19,7 @@ public class EmployeeRestController {
     }
 
     // expose "/employees" and return a list of employees
-    @GetMapping("/employees")
+        @GetMapping("/employees")
     public List<Employee> findAll() {
         return employeeService.findAll();
     }
