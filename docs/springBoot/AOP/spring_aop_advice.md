@@ -58,6 +58,8 @@ public void afterThrowingAdvice(JoinPoint joinPoint, Exception ex) {
     logger.error("Exception in " + joinPoint.getSignature().getName() + ": " + ex.getMessage());
 }
 ```
+![Image](https://github.com/user-attachments/assets/4537c799-e28c-4465-931b-8445c5e29b8e)
+
 
 ### After (Finally) Advice
 - **사용 시점**: 메서드 실행 후 (정상/예외 상관없이)
@@ -100,7 +102,7 @@ public Object aroundAdvice(ProceedingJoinPoint joinPoint) throws Throwable {
     }
 }
 ```
-
+![Image](https://github.com/user-attachments/assets/ba4dec13-d112-4fe8-b5af-af7bcd37497b)
 ## 선택 가이드라인
 
 1. **Before Advice 선택 시**:
