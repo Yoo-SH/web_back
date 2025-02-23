@@ -5,7 +5,7 @@
 - [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> ☕Java </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> ☕Java </strong></summary>
 
 
 * ### Flatform
@@ -81,7 +81,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> 🍃Spring </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> 🍃Spring </strong></summary>
 
 * ### Spring Boot 3
     - [Spring Boot Actuator 설정 및 보안 적용](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_actuator.md)
@@ -152,7 +152,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> 🌐Network </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> 🌐Network </strong></summary>
 
 -  [Http/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
 - [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
@@ -167,7 +167,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> Node </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> Node </strong></summary>
 
 -  [Javascript, Typescript 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/javascript%26typescript.md)
 -  [Node framework 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nodejs_framework.md)
@@ -178,7 +178,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> Server </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> Server </strong></summary>
 
 -  [API 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/api.md)
 -  [Rendering 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
@@ -191,7 +191,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;"> 📁 Database </span></strong></summary>
+  <summary style="font-size: 20px;"><strong> 📁 Database </strong></summary>
 
 -  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
 -  [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
@@ -202,7 +202,7 @@
 
 
 <details>
-  <summary><strong><span style="font-size: 25px;">📦 Deploy </span></strong></summary>
+  <summary style="font-size: 20px;"><strong>📦 Deploy </strong></summary>
 
 -  [Docker 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
 -  [Deploy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)
