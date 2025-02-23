@@ -1,6 +1,13 @@
 # `proxy(프록시)란?`
 __클라이언트와 서버 사이에 중계 역할을 하는 서버__
 
+## 목차
+- [forward proxy(포워드 프록시)](#forward-proxy포워드-프록시)
+- [reverse proxy(리버스 프록시)](#reverse-proxy리버스-프록시)
+- [Load Balancer(로드 밸런서)](#load-balancer로드-밸런서)
+- [참고 자료](#참고-자료)
+
+
 ## forward proxy(포워드 프록시)
 - 클라이언트들을 보호
 - 클라이언트들이 인터넷에 접근할 때 중간에 위치하여 클라이언트들의 요청을 받아서 인터넷에 접근하는 서버
@@ -8,7 +15,7 @@ __클라이언트와 서버 사이에 중계 역할을 하는 서버__
     - 클라이언트들의 IP를 숨길 수 있다.(익명성 유지)
     - 캐싱을 통해 빠른 속도를 제공할 수 있다.
     - 콘텐츠를 필터링 할 수 있다.
-![Image](https://github.com/user-attachments/assets/c0daeaf4-73b6-49f7-940d-684e93c832b0)
+<img src=https://github.com/user-attachments/assets/c0daeaf4-73b6-49f7-940d-684e93c832b0 width=500px>
 
 ## reverse proxy(리버스 프록시)
 - 서버들을 보호
@@ -17,7 +24,7 @@ __클라이언트와 서버 사이에 중계 역할을 하는 서버__
     - 서버들의 IP를 숨길 수 있다.(보안 강화)
     - 캐싱을 통해 빠른 속도를 제공할 수 있다.
     - 부하 분산을 통해 서버의 안정성을 높일 수 있다.(로드 밸런싱)
-![Image](https://github.com/user-attachments/assets/c3d07205-7b42-40fe-93d5-096edfde9c08)
+<img src=https://github.com/user-attachments/assets/c3d07205-7b42-40fe-93d5-096edfde9c08 width=500px>
 
 ## Load Balancer(로드 밸런서)
 __여러대의 서버가 요청을 분산 처리할 수 있도록 나눠주는 서비스__

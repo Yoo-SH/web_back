@@ -1,10 +1,24 @@
 # Spring Inversion of Control (IoC)
 
+
+## 목차
+- [개요](#개요)
+- [IoC란?](#ioc란)
+- [Spring Container와 IoC](#spring-container와-ioc)
+  - [Spring Container의 역할](#spring-container의-역할)
+  - [대표적인 Spring Container](#대표적인-spring-container)
+- [IoC와 Dependency Injection (DI)의 관계](#ioc와-dependency-injection-di의-관계)
+    - [Dependency Injection(DI)란?](#dependency-injectiondi란)
+    - [DI의 주요 방식](#di의-주요-방식)
+- [IoC + DI의 동작 과정](#ioc--di의-동작-과정)
+- [IoC & DI의 장점](#ioc--di의-장점)
+- [결론](#결론)
+
 ## 개요
 Spring Framework의 핵심 개념 중 하나인 **Inversion of Control(IoC)** 는 객체의 생성 및 관리 권한을 개발자가 아닌 **Spring Container** 가 담당하도록 하는 디자인 패턴입니다.  
 이를 통해 **객체 간의 결합도를 낮추고**, 유지보수성과 테스트 용이성을 높일 수 있습니다.
 
----
+
 
 ## IoC란?
 **Inversion of Control (제어의 역전)** 은 애플리케이션의 흐름을 개발자가 직접 제어하는 것이 아니라, 프레임워크나 컨테이너가 대신 제어하는 것을 의미합니다.
@@ -39,7 +53,7 @@ class Car {
 }
 ```
 
----
+
 
 ## Spring Container와 IoC
 Spring에서 IoC를 구현하는 핵심 요소는 **Spring Container** 입니다.  
@@ -65,7 +79,7 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.cl
 Car car = context.getBean(Car.class);
 ```
 
----
+
 
 ## IoC와 Dependency Injection (DI)의 관계
 Spring에서 IoC를 구현하는 방식 중 하나가 바로 **Dependency Injection(DI, 의존성 주입)** 입니다.
@@ -113,7 +127,7 @@ Spring에서 IoC를 구현하는 방식 중 하나가 바로 **Dependency Inject
    ```
     - 선택적으로 의존성을 주입할 때 유용하지만, 객체의 상태가 변경될 수 있어 주의가 필요합니다.
 
----
+
 
 ```java
 // 사용 권고 x
@@ -148,7 +162,7 @@ ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.cl
 Car car = context.getBean(Car.class);
 ```
 
----
+
 
 ## IoC & DI의 장점
 1. **객체 간의 결합도 감소** → 유지보수 용이
@@ -156,7 +170,7 @@ Car car = context.getBean(Car.class);
 3. **DI(Dependency Injection)와 함께 사용 가능** → 의존성 관리 강화
 4. **테스트 용이성 증가** → Mock 객체 활용 가능
 
----
+
 
 ## 결론
 Spring IoC는 **Spring Container가 객체를 생성 및 관리하는 개념** 으로, 애플리케이션의 결합도를 낮추고 유지보수성과 확장성을 높입니다.  

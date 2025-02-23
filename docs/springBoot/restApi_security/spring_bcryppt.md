@@ -1,5 +1,19 @@
 # Spring에서 BCrypt 사용하기
 
+## 목차
+- [개요](#개요)
+- [BCrypt란?](#bcrypt란)
+- [Spring Boot에서 BCrypt 적용하기](#spring-boot에서-bcrypt-적용하기)
+  - [1. 의존성 추가 (Maven)](#1-의존성-추가-maven)
+  - [2. BCryptPasswordEncoder 빈 등록](#2-bcryptpasswordencoder-빈-등록)
+  - [3. 비밀번호 해싱 및 검증](#3-비밀번호-해싱-및-검증)
+  - [4. BCrypt의 강도 조절](#4-bcrypt의-강도-조절)
+- [비밀번호 솔팅 (Salting)](#비밀번호-솔팅-salting)
+- [비밀번호 변경 기능 구현](#비밀번호-변경-기능-구현)
+- [데이터베이스 고려 사항](#데이터베이스-고려-사항)
+- [결론](#결론)
+
+
 ## 개요
 BCrypt는 보안성이 뛰어난 암호 해싱 함수로, Spring Security에서 비밀번호를 안전하게 저장하는 데 널리 사용됩니다. 본 문서에서는 BCrypt의 개념과 Spring Boot에서의 사용법을 설명합니다.
 

@@ -39,7 +39,7 @@ public class Member {
 ## 매핑 타입별 기본값
 
 | 연관관계 | 기본 Fetch Type |
-|---------|----------------|
+||-|
 | @ManyToOne | EAGER |
 | @OneToOne | EAGER |
 | @OneToMany | LAZY |

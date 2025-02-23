@@ -2,7 +2,14 @@
 
 이 `StudentNotFoundException` 클래스는 사용자 정의 예외(Custom Exception)를 만들기 위한 코드입니다. Spring Boot에서 특정 상황에서만 발생하는 예외를 만들고 싶을 때, 이렇게 예외 클래스를 직접 정의할 수 있습니다.
 
-이제 코드 하나씩 설명해 줄게요! 🚀
+## 목차
+- [StudentNotFoundException의 역할](#1-studentnotfoundexception의-역할)
+- [RuntimeException을 상속받는 이유](#2-runtimeexception을-상속받는-이유)
+- [생성자 3개가 존재하는 이유](#3-생성자-3개가-존재하는-이유)
+- [`super(message)`가 하는 역할](#4-supermessage가-하는-역할)
+- [실제 사용 예시](#5-실제-사용-예시)
+- [정리](#6-정리)
+
 
 ## 1. StudentNotFoundException의 역할
 📌 존재하지 않는 학생을 조회할 때 발생하는 예외
@@ -47,7 +54,7 @@ public Student getStudent(int studentId) throws StudentNotFoundException {
 📌 예외를 발생시킬 때 다양한 방식으로 메시지를 전달할 수 있도록 여러 개의 생성자를 제공한 것입니다.
 
 | 생성자 | 설명 | 예제 |
-|--------|------|------|
+|--|||
 | `StudentNotFoundException(String message)` | 에러 메시지만 포함 | `throw new StudentNotFoundException("학생 없음!");` |
 | `StudentNotFoundException(String message, Throwable cause)` | 메시지 + 원인 예외 포함 | `throw new StudentNotFoundException("DB 연결 오류", e);` |
 | `StudentNotFoundException(Throwable cause)` | 원인 예외만 포함 | `throw new StudentNotFoundException(e);` |

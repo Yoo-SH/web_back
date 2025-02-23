@@ -1,11 +1,30 @@
 # `Docker 기본 이해`
 
+## 목차 
+- [도커 기본 이해](#docker-기본-이해)
+  - [Docker란 무엇인가?](#1-docker란-무엇인가)
+  - [Docker의 구성 요소](#2-docker의-구성-요소)
+  - [Docker의 작동 원리](#3-docker의-작동-원리)
+  - [Docker 명령어 기본 사용법](#4-docker-명령어-기본-사용법)
+  - [Volumes와 Bind Mount](#5-volumes와-bind-mount)
+  - [Docker Networking](#6-docker-networking)
+  - [Docker의 장점](#7-docker의-장점)
+  - [Docker 사용 사례](#8-docker-사용-사례)
+  - [Docker와 가상 머신 비교](#9-docker와-가상-머신-비교)
+- [🐳 Dockerfile 명령어 설명](#-dockerfile-명령어-설명)
+  - [Dockerfile 주요 명령어](#dockerfile-주요-명령어)
+  - [Docker Compose 주요 명령어](#docker-compose-주요-명령어)
+- [Docker 배포 프로세스 정리](#docker-배포-프로세스-정리)
+  - [Docker 배포 프로세스](#docker-배포-프로세스)
+  - [Docker 배포 멀티스테이지 빌드](#docker-배포-멀티스테이지-빌드)
+
+
 ## 1. Docker란 무엇인가?
 
 Docker는 애플리케이션을 컨테이너라고 하는 독립된 실행 환경에서 실행할 수 있도록 해주는 플랫폼입니다. 컨테이너는 운영 체제(OS)의 커널을 공유하지만, 애플리케이션과 그 의존성, 라이브러리 등을 포함한 독립적인 실행 환경을 제공합니다. 이는 애플리케이션을 어디서나 일관되게 실행할 수 있게 해 줍니다.
 
-![Image](https://github.com/user-attachments/assets/47bfa1c7-6dc0-4544-adea-bb55e6210648)
-![Image](https://github.com/user-attachments/assets/27c71416-b8f4-46eb-af5f-fa4a222b68d7)
+<img src=https://github.com/user-attachments/assets/47bfa1c7-6dc0-4544-adea-bb55e6210648 width=500px>
+<img src=https://github.com/user-attachments/assets/27c71416-b8f4-46eb-af5f-fa4a222b68d7 width=500px>
 
 
 ### Docker의 주요 특징:
@@ -24,11 +43,11 @@ Docker는 다음과 같은 주요 구성 요소로 이루어져 있습니다.
 
 - commit은 주로 백업을 위해 사용되며, build는 이미지를 만들기 위해 사용됨.
 
-![Image](https://github.com/user-attachments/assets/56f9d23f-67f3-4c75-8554-c0be5ac89fda)
+<img src=https://github.com/user-attachments/assets/56f9d23f-67f3-4c75-8554-c0be5ac89fda width=500px>
 
 - commit를 활용한 이미지 생성
 
-![Image](https://github.com/user-attachments/assets/64fe2b29-f8ec-4d8a-a38f-110557d70842)
+<img src=https://github.com/user-attachments/assets/64fe2b29-f8ec-4d8a-a38f-110557d70842 width=500px>
 
 ### 2. Docker 컨테이너 (Container)
 - 컨테이너는 실행 중인 이미지를 기반으로 생성된 실행 환경입니다.
@@ -68,7 +87,7 @@ Docker는 이미지에서 컨테이너를 생성하여 애플리케이션을 실
 - `docker rm <container_id>`: 중지된 컨테이너를 삭제합니다.
 - `docker run -d --name container_name --rm <image_name>`: 이미지를 기반으로 새 컨테이너를 실행합니다.(-d는 detache 옵션, --name은 container 이름 지정, --rm은 컨테이너가 종료되면 자동으로 삭제)
 - `docker run -p port1:port2 images`: (-p는 publish, host포트:container포트, 외부포트에 내부포트를 publish함. 포트포워딩)
-![Image](https://github.com/user-attachments/assets/50d19bec-f08d-4b28-9a27-82ff7dec36a9)
+<img src=https://github.com/user-attachments/assets/50d19bec-f08d-4b28-9a27-82ff7dec36a9 width=500px>
 
 
 - `docker run -i -t images`: (-i는 인터렉티브 모드, -t는 가상 터미널 모드, 사용자의 값을 입력받아야할 때 사용) 

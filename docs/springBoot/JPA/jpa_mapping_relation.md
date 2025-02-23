@@ -1,5 +1,18 @@
 # JPA Entity Relationship Guide
 
+## 목차
+- [관계 매핑 종류](#1-관계-매핑-종류)
+    - [OneToOne (1:1)](#onetoone-11)
+    - [OneToMany (1:N)](#onetomany-1n)
+    - [ManyToOne (N:1)](#manytoone-n1)
+    - [ManyToMany (N:M)](#manytomany-nm)
+- [연관관계 설정 가이드](#2-연관관계-설정-가이드)
+    - [단방향 vs 양방향](#단방향-vs-양방향)
+    - [연관관계의 주인 선정](#연관관계의-주인-선정)
+    - [Cascade 옵션 선택 가이드](#cascade-옵션-선택-가이드)
+    - [페치 전략 선정](#페치-전략-선정)
+- [실무 Best Practices](#3-실무-best-practices)
+
 ## 1. 관계 매핑 종류
 
 ### OneToOne (1:1)

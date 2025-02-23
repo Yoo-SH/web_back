@@ -1,5 +1,17 @@
 # JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 이유
 
+## 목차
+- [개요](#개요)
+- [Fetch Type의 한계](#fetch-type의-한계)
+- [Fetch Join이란?](#fetch-join이란)
+- [Fetch Join을 사용해야 하는 이유](#fetch-join을-사용해야-하는-이유)
+- [JPA Fetch Join 사용 가이드](#jpa-fetch-join-사용-가이드)
+    - [N+1 문제 해결](#n1-문제-해결)
+    - [불필요한 데이터 로딩 방지](#불필요한-데이터-로딩-방지)
+    - [연관 데이터 한 번에 조회 가능](#연관-데이터-한-번에-조회-가능)
+- [Fetch Join 사용 시 주의할 점](#fetch-join-사용-시-주의할-점)
+- [결론](#결론)
+
 ## 1. 개요
 JPA에서 연관 관계를 가져올 때 `FetchType`을 지정할 수 있지만, `fetch join`을 사용하는 것이 필수적인 경우가 많습니다. `FetchType`만으로 해결할 수 없는 문제들이 존재하며, 이를 해결하기 위해 `fetch join`이 필요합니다. 본 문서에서는 그 이유를 설명합니다.
 

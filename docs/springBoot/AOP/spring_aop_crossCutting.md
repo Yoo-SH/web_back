@@ -1,8 +1,14 @@
 # Spring Cross-Cutting Concerns
 
+## 목차 
+- [Cross-Cutting Concerns란?](#주요-cross-cutting-concerns)
+- [Spring AOP를 활용한 Cross-Cutting Concerns 적용](#spring-aop를-활용한-cross-cutting-concerns-적용)
+- [결론](#결론)
+
 Spring 프레임워크에서 "Cross-Cutting Concerns"는 여러 모듈이나 계층에서 공통적으로 사용되는 기능을 의미합니다. 일반적으로 애플리케이션 전반에 걸쳐 적용되어야 하는 기능으로, AOP(Aspect-Oriented Programming)를 활용하여 효율적으로 관리할 수 있습니다.
 
-![Image](https://github.com/user-attachments/assets/7a17be10-0423-47d5-9d7e-8d1cf99ccf36)
+<img src=https://github.com/user-attachments/assets/7a17be10-0423-47d5-9d7e-8d1cf99ccf36 width=500px>
+
 ## 주요 Cross-Cutting Concerns
 
 ### 1. **로깅(Logging)**

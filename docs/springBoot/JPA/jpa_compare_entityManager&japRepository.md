@@ -1,9 +1,20 @@
 # Spring Data JPA: JpaRepository vs EntityManager
 
+## 목차
+- [개요](#1-개요)
+- [JpaRepository](#2-jparepository)
+    - [개념](#개념)
+    - [주요 기능](#주요-기능)
+    - [사용 예시](#사용-예시)
+    - [장점](#장점)
+    - [단점](#단점)
+- [EntityManager](#3-entitymanager)
+- [JpaRepository vs EntityManager 비교](#4-jparepository-vs-entitymanager-비교)
+- [결론](#5-결론)
+
 ## 1. 개요
 Spring Data JPA에서 데이터를 다룰 때 `JpaRepository`와 `EntityManager` 두 가지 방법을 사용할 수 있습니다. 이 문서는 두 방식의 차이점을 비교하고 각각의 장단점을 설명합니다.
 
----
 
 ## 2. JpaRepository
 ### 개념
@@ -33,7 +44,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
 - 복잡한 쿼리 작성 시 한계가 있음
 - 성능 최적화가 필요한 경우 EntityManager보다 유연성이 부족할 수 있음
 
----
+
 
 ## 3. EntityManager
 ### 개념
@@ -71,19 +82,19 @@ public class UserDao {
 - 직접적인 쿼리 작성 필요 → 코드량 증가
 - 트랜잭션 및 영속성 컨텍스트 관리가 필요함
 
----
+
 
 ## 4. JpaRepository vs EntityManager 비교
 
 | 비교 항목       | JpaRepository | EntityManager |
-|----------------|--------------|--------------|
+|-|--|--|
 | 사용 편의성    | 인터페이스 기반으로 간단하게 사용 가능 | 코드량이 많아질 수 있음 |
 | 기본 CRUD 지원 | 기본 제공 (`save`, `delete`, `findAll` 등) | 직접 작성해야 함 |
 | 복잡한 쿼리 작성 | 제한적 (Native Query 사용 가능하지만 불편함) | 자유롭게 작성 가능 |
 | 성능 최적화    | 기본적인 최적화 제공 | 직접 튜닝 가능 |
 | 트랜잭션 관리  | Spring이 자동 관리 | 직접 관리해야 할 수도 있음 |
 
----
+
 
 ## 5. 결론
 - **JpaRepository**는 기본적인 CRUD, 페이징, 간단한 쿼리 작성에 적합하며, 빠른 개발을 원할 때 유용합니다.

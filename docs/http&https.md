@@ -1,5 +1,16 @@
 # `HTTP(HyperText Transfer Protocol)`
 
+## 목차
+- [HTTP(HyperText Transfer Protocol)](#httphypertext-transfer-protocol)
+  - [개요](#개요)
+  - [HTTP의 특징](#http의-특징)
+  - [HTTP 요청(Request) 구조](#http-요청request-구조)
+  - [HTTP 응답(Response) 구조](#http-응답response-구조)
+  - [HTTP와 HTTPS 차이점](#http와-https-차이점)
+  - [HTTP 버전별 차이](#http-버전별-차이)
+  - [추가 개념](#추가-개념)
+- [HTTPS란?](#https란)
+- [참고자료](#참고자료)
 ## 개요
 HTTP(HyperText Transfer Protocol)는 웹에서 하이퍼텍스트 문서를 전송하기 위한 프로토콜입니다. 클라이언트와 서버 간의 요청(Request)과 응답(Response)을 처리하는 방식으로 동작하며, 주로 HTML 문서, 이미지, 동영상 등의 리소스를 전송하는 데 사용됩니다.
 

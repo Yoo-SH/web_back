@@ -1,5 +1,15 @@
 # SSL/TLS 인증서 정리
 
+## 목차
+- [SSL/TLS 개요](#-ssl-tls-개요)
+- [SSL/TLS 인증서란?](#-ssl-tls-인증서란)
+- [SSL과 TLS의 차이점](#-ssl과-tls의-차이점)
+- [TLS 버전별 특징](#-tls-버전별-특징)
+- [SSL/TLS 인증서 종류](#-ssl-tls-인증서-종류)
+- [SSL/TLS 인증서 작동 원리](#-ssl-tls-인증서-작동-원리)
+- [SSL/TLS 인증서 설치 및 확인 방법](#-ssl-tls-인증서-설치-및-확인-방법)
+- [SSL/TLS 인증서 발급 기관 (CA)](#-ssl-tls-인증서-발급-기관-ca)
+
 ## 🔹 SSL/TLS 개요
 SSL(Secure Sockets Layer)과 TLS(Transport Layer Security)는 인터넷에서 데이터를 안전하게 전송하기 위한 암호화 프로토콜입니다. SSL은 TLS의 이전 버전이며, 현재는 보안상의 이유로 TLS가 권장됩니다.
 
@@ -39,7 +49,7 @@ SSL/TLS 인증서는 웹사이트와 사용자의 데이터 암호화를 보장�
 3. **클라이언트가 인증서를 검증** (신뢰할 수 있는 CA 발급 여부 확인)
 4. **암호화된 세션 키 생성 및 교환**
 5. **안전한 데이터 전송 시작**
-![Image](https://github.com/user-attachments/assets/f9a8d30a-d3b3-47ca-beb0-60b88686dfa8)
+<img src=https://github.com/user-attachments/assets/f9a8d30a-d3b3-47ca-beb0-60b88686dfa8 width=500px>
 ## 🔹 SSL/TLS 인증서 설치 및 확인 방법
 1. **인증서 발급 받기** (CA에서 신청 후 발급)
 2. **웹 서버에 설치** (Apache, Nginx, IIS 등)

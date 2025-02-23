@@ -2,6 +2,13 @@
 
 Spring Boot에서 설정값을 가져오는 방법으로 `@Value` 애너테이션과 `Environment` 객체를 사용하는 방식이 있습니다. 두 방식의 차이점을 정리합니다.
 
+## 목차
+- [`@Value` 애너테이션](#1-value-애너테이션)
+- [`Environment` 객체](#2-environment-객체)
+- [주요 차이점 비교](#3-주요-차이점-비교)
+- [언제 사용해야 할까?](#4-언제-사용해야-할까)
+- [결론](#5-결론)
+
 ## 1. `@Value` 애너테이션
 
 `@Value` 애너테이션은 `application.properties` 또는 `application.yml` 등의 설정 파일에서 값을 주입받을 때 사용됩니다.
@@ -41,7 +48,7 @@ public String getPropertyValue() {
 ## 3. 주요 차이점 비교
 
 | 항목 | `@Value` | `Environment` |
-|------|---------|-------------|
+|||-|
 | 주입 시점 | Bean 생성 시점 | 실행 시점 |
 | 기본값 설정 | 가능 (`@Value("${key:default}")`) | 불가능 (`getProperty("key", "default")`으로 처리 필요) |
 | 동적 접근 | 불가능 (컴파일 시점) | 가능 (런타임 시점) |

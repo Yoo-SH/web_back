@@ -3,7 +3,16 @@
 Spring에서 **Bean LifeCycle(빈 생명주기)** 는 스프링 컨테이너에서 관리되는 빈이 생성되고 소멸되기까지의 과정을 의미합니다.
 이 과정에서 스프링이 자동으로 빈을 초기화하고 필요한 경우 정리 작업도 수행할 수 있도록 여러 가지 콜백 메서드를 제공합니다.
 
----
+## 목차
+- [Bean LifeCycle의 주요 과정](#1-bean-lifecycle의-주요-과정)
+- [@PostConstruct와 @PreDestroy가 필요한 이유](#2-postconstruct와-predestroy가-필요한-이유)
+- [Bean LifeCycle 콜백 메서드 예제](#3-bean-lifecycle-콜백-메서드-예제)
+- [XML 기반 초기화 및 소멸 메서드 설정](#4-xml-기반-초기화-및-소멸-메서드-설정)
+- [`InitializingBean` & `DisposableBean` 인터페이스 사용](#5-initializingbean--disposablebean-인터페이스-사용)
+- [`@Bean(initMethod, destroyMethod)` 방식](#6-beaninitmethod-destroymethod-방식)
+- [Bean LifeCycle을 커스텀하고 싶다면? (BeanPostProcessor)](#7-bean-lifecycle을-커스텀하고-싶다면-beanpostprocessor)
+- [정리](#8-정리)
+
 
 ## **1. Bean LifeCycle의 주요 과정**
 Spring 컨테이너에서 빈이 생성되고 사용되며 제거되는 과정은 다음과 같습니다.
@@ -35,7 +44,7 @@ Spring 컨테이너에서 빈이 생성되고 사용되며 제거되는 과정�
 6. **객체 소멸 (Destruction)**
     - 빈이 제거되고, GC(가비지 컬렉터)에 의해 최종적으로 소멸됨.
 
----
+
 
 ## **2. @PostConstruct와 @PreDestroy가 필요한 이유**
 ### **1) @PostConstruct (초기화 콜백)**
@@ -48,7 +57,7 @@ Spring 컨테이너에서 빈이 생성되고 사용되며 제거되는 과정�
 - 예를 들어, **DB 연결 해제, 파일 정리, 쓰레드 종료, 로그 저장** 등의 작업을 수행할 수 있습니다.
 - 명확한 정리 작업을 수행하면 **메모리 누수 방지 및 리소스 낭비를 줄이는 효과**를 얻을 수 있습니다.
 
----
+
 
 ## **3. Bean LifeCycle 콜백 메서드 예제**
 ```java
@@ -75,7 +84,7 @@ public class MyBean {
 }
 ```
 
----
+
 
 ## **4. XML 기반 초기화 및 소멸 메서드 설정**
 ```xml
@@ -93,7 +102,7 @@ public class MyBean {
 }
 ```
 
----
+
 
 ## **5. `InitializingBean` & `DisposableBean` 인터페이스 사용**
 ```java
@@ -117,7 +126,7 @@ public class MyBean implements InitializingBean, DisposableBean {
 ```
 > 하지만, 인터페이스를 직접 구현하는 방식은 강한 결합도를 초래하므로 `@PostConstruct` 및 `@PreDestroy`를 사용하는 것이 더 권장됩니다.
 
----
+
 
 ## **6. `@Bean(initMethod, destroyMethod)` 방식**
 ```java
@@ -144,7 +153,7 @@ class MyBean {
 }
 ```
 
----
+
 
 ## **7. Bean LifeCycle을 커스텀하고 싶다면? (BeanPostProcessor)**
 Spring에서는 `BeanPostProcessor`를 이용하여 빈의 초기화 과정 전후에 원하는 로직을 실행할 수 있습니다.
@@ -172,11 +181,11 @@ public class CustomBeanPostProcessor implements BeanPostProcessor {
 
 이렇게 하면 스프링 컨테이너가 **모든 빈의 초기화 전후에 자동으로 로직을 실행**해 줍니다.
 
----
+
 
 ## **8. 정리**
 | 단계 | 설명 | 주요 메서드 |
-|------|------|----------|
+|||-|
 | **1. 객체 생성** | 빈 객체가 생성됨 | 생성자 호출 |
 | **2. 의존성 주입** | 필요한 의존성이 주입됨 | `@Autowired` 등 |
 | **3. 초기화** | 빈의 초기화 작업 수행 | `@PostConstruct`, `afterPropertiesSet()` |

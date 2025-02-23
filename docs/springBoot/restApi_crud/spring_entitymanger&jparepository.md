@@ -1,7 +1,3 @@
-![Image](https://github.com/user-attachments/assets/db328df4-8381-4a94-99ae-22982ba3002b)
-
-![Image](https://github.com/user-attachments/assets/bf3e713c-b6f6-4022-8f65-56547ad01913)
-
 # Spring Data JPA: EntityManager vs JpaRepository 비교
 
 ## 목차
@@ -48,6 +44,13 @@ public class UserDaoEntityManager {
 
 ## JpaRepository 방식
 JpaRepository는 Spring Data JPA에서 제공하는 인터페이스로, 일반적인 CRUD 작업을 위한 추상화된 인터페이스입니다.
+
+
+__jpa repository를 사용하면 기본 crud를 제공하기에 따로 직접 구현할 필요성이 없음__
+<img src=https://github.com/user-attachments/assets/db328df4-8381-4a94-99ae-22982ba3002b width=500px>
+
+__jpa interface__
+<img src=https://github.com/user-attachments/assets/bf3e713c-b6f6-4022-8f65-56547ad01913 width=500px>
 
 ### 특징
 - 기본 CRUD 메서드 자동 제공(구현할 필요가 없음)

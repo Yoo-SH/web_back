@@ -1,5 +1,15 @@
 # Spring에서 @Configuration과 @Bean
 
+## 목차 
+- [@Configuration과 @Bean이란?](#1-configuration과-bean이란)
+  - [@Configuration](#11-configuration)
+  - [@Bean](#12-bean)
+- [@Configuration과 @Bean이 필요한 이유](#2-configuration과-bean이-필요한-이유)
+- [사용 예시](#3-사용-예시)
+  - [기본적인 @Configuration과 @Bean 예제](#31-기본적인-configuration과-bean-예제)
+  - [빈을 주입하는 예제](#32-빈을-주입하는-예제)
+  - [스프링 컨테이너에서 빈 가져오기](#33-스프링-컨테이너에서-빈-가져오기)
+- [정리](#4-정리)
 ## 1. @Configuration과 @Bean이란?
 Spring 프레임워크에서는 객체를 생성하고 관리하는 방법으로 다양한 빈(Bean) 설정 방식이 존재합니다. 그중에서 `@Configuration`과 `@Bean` 어노테이션을 사용하면 자바 기반 설정(Java-based Configuration) 방식으로 스프링 컨테이너에 빈을 등록할 수 있습니다.
 

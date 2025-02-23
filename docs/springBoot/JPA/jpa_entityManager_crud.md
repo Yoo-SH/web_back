@@ -1,5 +1,15 @@
 # EntityManager를 이용한 CRUD 예제
 
+## 목차
+- [개요](#개요)
+- [환경 설정](#환경-설정)
+  - [`application.properties` 설정 예제](#applicationproperties-설정-예제)
+- [Entity 정의](#entity-정의)
+- [EntityManager를 이용한 CRUD 구현](#entitymanager를-이용한-crud-구현)
+- [서비스 계층 추가 (선택사항)](#서비스-계층-추가-선택사항)
+- [사용 예제](#사용-예제)
+- [결론](#결론)
+
 ## 개요
 Spring에서 `EntityManager`를 이용하여 데이터베이스에 대한 CRUD(Create, Read, Update, Delete) 작업을 수행하는 방법을 설명합니다.
 

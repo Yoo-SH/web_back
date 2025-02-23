@@ -1,5 +1,22 @@
 # JPA Cascade (영속성 전이)
 
+## 목차 
+- [개요](#개요)
+- [Cascade 종류](#cascade-종류)
+- [사용법 예시](#사용법-예시)
+- [Cascade 사용이 권장되는 상황](#cascade-사용이-권장되는-상황)
+- [Cascade 사용을 피해야 하는 상황](#cascade-사용을-피해야-하는-상황)
+- [주의사항](#주의사항)
+- [모범 사례](#모범-사례)
+- [JPA Cascade 유형별 상세 예제](#jpa-cascade-유형별-상세-예제)
+    - [1. CascadeType.ALL 예제](#1-cascadetypeall-예제)
+    - [2. CascadeType.PERSIST 예제](#2-cascadetypepersist-예제)
+    - [3. CascadeType.MERGE 예제](#3-cascadetypemerge-예제)
+    - [4. CascadeType.REMOVE 예제](#4-cascadetyperemove-예제)
+    - [5. CascadeType.REFRESH 예제](#5-cascadetyperefresh-예제)
+    - [6. CascadeType.DETACH 예제](#6-cascadetypedetach-예제)
+- [결론](#결론)
+
 ## 개요
 JPA Cascade는 엔티티의 상태 변화를 연관된 엔티티에도 함께 적용하는 기능입니다. 부모 엔티티의 변경이 자식 엔티티에도 전파되도록 설정할 수 있습니다.
 

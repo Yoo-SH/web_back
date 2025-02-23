@@ -1,5 +1,23 @@
 # `Nginx 기본 이해`
 
+## 목차
+- [소개](#소개)
+- [특징](#특징)
+- [설치 방법](#설치-방법)
+- [기본 사용법](#기본-사용법)
+- [기본 설정 예제](#기본-설정-예제)
+- [Nginx 설정 파일 위치](#nginx-설정-파일-위치)
+- [주요 명령어](#주요-명령어)
+- [설정 파일 구조](#설정-파일-구조)
+- [Nginx 보안 고려사항](#nginx-보안-고려사항)
+  - [1. Brute Force 방지를 위한 Rate Limit 설정](#1-brute-force-방지를-위한-rate-limit-설정)
+  - [2. Nginx 버전 숨기기](#2-nginx-버전-숨기기)
+  - [3. Clickjacking 방지를 위한 X-Frame-Options 설정](#3-clickjacking-방지를-위한-x-frame-options-설정)
+  - [4. Cross-Site Scripting (XSS) 방지를 위한 X-XSS-Protection 설정](#4-cross-site-scripting-xss-방지를-위한-x-xss-protection-설정)
+- [적용방법](#적용방법)
+- [Nginx 추가 활용 방법](#nginx-추가-활용-방법)
+  - [1. http basic auth 설정](#1-http-basic-auth-설정)
+- [참고 자료](#참고-자료)
 ## 소개
 Nginx(Nginx)는 고성능 [웹 서버](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)이자 [리버스 프록시 서버](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md), 그리고 `로드 밸런서 및 HTTP 캐시 역할을 수행하는 오픈 소스 소프트웨어`입니다. 높은 동시 접속 처리 능력을 갖추고 있으며, 가벼운 리소스 사용과 빠른 응답 속도로 널리 사용됩니다.
 
@@ -159,9 +177,6 @@ Nginx의 기본 설정 파일은 `/etc/nginx/nginx.conf`에 위치하며, 주요
 - `/var/log/nginx/access.log` : 액세스 로그 파일
 - `/var/log/nginx/error.log` : 에러 로그 파일
 
-
-## Nginx 요약
-Nginx는 가볍고 빠르며 확장성이 뛰어난 웹 서버로, 다양한 웹 애플리케이션에서 사용되고 있습니다. 기본적인 설정을 이해하고 필요에 맞게 구성하면, 더욱 효율적인 웹 서비스를 운영할 수 있습니다.
 
 
 

@@ -1,19 +1,3 @@
-entity manager
-![Image](https://github.com/user-attachments/assets/6cfdfe6e-1e4b-4b4f-a480-5e9c4e94823e)
-
-jparepository
-
-![Image](https://github.com/user-attachments/assets/e24df745-5f49-47d5-9683-0c8c805ce1ed)
-
-
-DAOImpl 구현은 entitymanger가 아닌 jparepository를 사용하면 기본 crud를 제공하기에 따로 직접 구현할 필요성이 없음.
-![Image](https://github.com/user-attachments/assets/db328df4-8381-4a94-99ae-22982ba3002b)
-
-
-serviceImple 구현은 HATEOAS를 사용하면 구현할 필요가 없음
-![Image](https://github.com/user-attachments/assets/220ae7f2-5e88-41d6-a3f2-b77f8d34e99b)
-
-
 # Spring MVC CRUD 가이드
 
 ## 목차
@@ -46,6 +30,22 @@ Spring MVC CRUD 아키텍처는 다음과 같은 계층으로 구성됩니다:
     - 데이터베이스 접근
     - CRUD 연산 실행
     - JPA/Hibernate 활용
+
+
+<img src=https://github.com/user-attachments/assets/e24df745-5f49-47d5-9683-0c8c805ce1ed width=500px>
+
+
+
+DAOImpl 구현은 entitymanger가 아닌 jparepository를 사용하면 기본 crud를 제공하기에 따로 직접 구현할 필요성이 없음.
+<img src=https://github.com/user-attachments/assets/db328df4-8381-4a94-99ae-22982ba3002b width=500px>
+
+
+serviceImple 구현은 HATEOAS를 사용하면 구현할 필요가 없음
+<img src=https://github.com/user-attachments/assets/220ae7f2-5e88-41d6-a3f2-b77f8d34e99b width=500px>
+
+__비교: entity manager를 사용한 crud 구현__
+
+<img src=https://github.com/user-attachments/assets/6cfdfe6e-1e4b-4b4f-a480-5e9c4e94823e width=500px>
 
 ## 구현 가이드
 
@@ -203,7 +203,7 @@ spring.jpa.properties.hibernate.format_sql=true
 ## API 엔드포인트
 
 | 메소드 | URL | 설명 |
-|--------|-----|------|
+|--|--||
 | POST | /api/users | 새 사용자 생성 |
 | GET | /api/users | 모든 사용자 조회 |
 | GET | /api/users/{id} | 특정 사용자 조회 |

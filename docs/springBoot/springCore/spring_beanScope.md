@@ -1,5 +1,15 @@
 # Spring Bean & Bean Scope
 
+## 목차
+- [Bean이란?](#1-bean이란)
+- [Bean Scope란?](#2-bean-scope)
+- [1) Singleton (기본값)](#1-singleton-기본값)
+- [2) Prototype](#2-prototype)
+- [3) Request (웹 애플리케이션 전용)](#3-request-웹-애플리케이션-전용)
+- [4) Session (웹 애플리케이션 전용)](#4-session-웹-애플리케이션-전용)
+- [5) Application (웹 애플리케이션 전용)](#5-application-웹-애플리케이션-전용)
+- [참고](#참고)
+
 ## 1. Bean이란?
 Spring에서 **Bean**은 Spring IoC (Inversion of Control) 컨테이너가 관리하는 객체를 의미합니다. 일반적으로 `@Component`, `@Service`, `@Repository`, `@Controller` 같은 어노테이션을 사용하거나 `@Configuration` 클래스에서 `@Bean`을 통해 객체를 정의하고 관리할 수 있습니다.
 
@@ -14,7 +24,7 @@ public class MyBean {
 
 위와 같이 `@Component`를 사용하면 Spring 컨테이너가 자동으로 해당 클래스를 Bean으로 등록합니다.
 
----
+
 
 ## 2. Bean Scope란?
 **Bean Scope(빈의 범위)**는 Spring 컨테이너에서 Bean이 생성되고 관리되는 방식을 결정합니다. Spring은 여러 가지 Bean Scope를 제공하는데, 대표적인 것들을 살펴보겠습니다.
@@ -76,7 +86,7 @@ public class ApplicationBean {
 ### 참고
 "prototype" 범위 빈의 경우, Spring은 destroy 메서드를 호출하지 않습니다. 헐!
 
----
+
 
 다른 범위와 달리 Spring은 프로토타입 빈의 전체 수명 주기를 관리하지 않습니다 . 컨테이너는 프로토타입 객체를 인스턴스화하고, 구성하고, 그 밖의 방법으로 조립한 다음 이를 클라이언트에 전달하며, 해당 프로토타입 인스턴스에 대한 추가 기록은 없습니다.
 

@@ -1,5 +1,15 @@
 # Spring JPA CRUD 가이드
 
+## 목차
+- [개요](#개요)
+- [프로젝트 설정](#프로젝트-설정)
+- [엔티티(Entity) 생성](#엔티티entity-생성)
+- [리포지토리(Repository) 생성](#리포지토리repository-생성)
+- [서비스(Service) 계층 구현](#서비스service-계층-구현)
+- [컨트롤러(Controller) 생성](#컨트롤러controller-생성)
+- [애플리케이션 실행 및 테스트](#애플리케이션-실행-및-테스트)
+- [결론](#결론)
+
 ## 개요
 Spring Boot와 JPA를 사용하여 CRUD (Create, Read, Update, Delete) 기능을 구현하는 방법을 설명합니다.
 

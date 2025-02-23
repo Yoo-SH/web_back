@@ -2,6 +2,17 @@
 
 Spring Boot 프로젝트에서 사용되는 주요 `application.properties` 설정을 영역별로 정리했습니다.
 
+## 목차
+- [Core 설정](#1-core-설정)
+- [Web 설정](#2-web-설정)
+- [Security 설정](#3-security-설정)
+- [Data (JPA, Database) 설정](#4-data-jpa-database-설정)
+- [Actuator 설정](#5-actuator-설정)
+- [Integration 설정](#6-integration-설정)
+- [DevTools 설정](#7-devtools-설정)
+- [Testing 설정](#8-testing-설정)
+- [참고 자료](#참고-자료)
+
 ## 1. Core 설정
 Spring Boot의 핵심 설정 값들입니다.
 ```properties

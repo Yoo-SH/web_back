@@ -1,5 +1,18 @@
 # `Redis`
 
+## 목차
+- [개요](#개요)
+- [주요 특징](#주요-특징)
+- [redis design 방법론](#redis-design-방법론)
+- [redis design 고려사항](#redis-design-고려사항)
+- [설치 및 실행](#설치-및-실행)
+- [기본 명령어](#기본-명령어)
+- [다양한 자료 형태와 사용 사례](#다양한-자료-형태와-사용-사례)
+- [Redis Key Naming Convention](#redis-key-naming-convention)
+- [Redis에서 직렬화와 역직렬화가 필요한 상황](#redis에서-직렬화와-역직렬화가-필요한-상황)
+- [Redis 모듈 가이드](#redis-모듈-가이드)
+- [참고자료](#참고자료)
+
 ## 개요
 Redis(Remote Dictionary Server)는 오픈 소스, `인메모리 데이터 저장소`로, 높은 성능과 `다양한 데이터 구조를 지원하는 NoSQL 데이터베이스`입니다. 주로 캐싱, 세션 관리, 실시간 분석 및 메시지 브로커 역할을 수행합니다.
 
