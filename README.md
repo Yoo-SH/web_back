@@ -4,7 +4,9 @@
 - [2025년 DevOps, SRE 또는 기타 운영 역할에 대한 단계별 가이드](https://roadmap.sh/devops)
 - [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
 
-# Java
+<details>
+  <summary><strong><span style="font-size: 25px;"> ☕Java </span></strong></summary>
+
 
 * ### Flatform
   -  [Java 실행환경 ](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_env.md)
@@ -69,42 +71,140 @@
 
 <br>
 
+
 - ### [Java 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/java/java_source.md)
 
-# Spring 6
+</details>
 
-# Spring Boot 3
-
-# Spring Security
-
-
-# Spring JPA & Hibernate
+---
 
 
 
+<details>
+  <summary><strong><span style="font-size: 25px;"> 🍃Spring </span></strong></summary>
 
-# Network 
--  [Htp/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
+* ### Spring Boot 3
+    - [Spring Boot Actuator 설정 및 보안 적용](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_actuator.md)
+    - [Spring Boot Application Properties Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_application_property.md)
+    - [Spring Boot @Value vs Environment (env) 차이점](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_valueAnnotation.md)
+    - [Spring Boot 애플리케이션 실행 방법 (IDE 없이 실행)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_executionCommand.md)
+* ### Spring Core
+    - [Spring Bean & Bean Scope
+](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanScope.md)
+    - [Spring Bean LifeCycle](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanLifecycle.md)
+    - [Spring에서 @Configuration과 @Bean](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanConfiguration.md)
+    - [@Autowired in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_autowired.md)
+    - [@Primary in Spring ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_primary.md)
+    - [@Lazy in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_lazy.md)
+    - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)
+    - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
+* ### Spring Web
+    - #### MVC    
+      - [Spring MVC 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc.md)
+      - [Spring MVC 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc_crud.md)
+      - [Spring MVC CRUD 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_basic_architecture.md)
+      - [Spring MVC Validation](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc_validation.md)
+      - [Spring HATEOAS](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_hateoas.md)
+    
+    - #### Exception
+      - [Spring Framework Exception 처리 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_excepctionGuid.md)
+      - [Spring Exception Handling 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_exceptionHandling.md)
+      - [Spring Custrom Exception](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_customException.md)
+      - [Spring Data Binding & Jackson Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_dataBinding.md)
+
+* ### Spring Security
+  - [Spring에서 BCrypt 사용하기](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_bcryppt.md)
+  - [Spring Security UserDetailsManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_userDetailsManager.md)
+  - [Spring Boot Security 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_security.md)
+  - [Spring Security 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_security_config.md)
+  
+* ### Spring JPA & Hibernate
+  - #### JPA CRUD
+    - [Spring JPA 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa.md)
+    - [Spring JPA CRUD 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_jpaRepository_crud.md)
+    - [EntityManager를 이용한 CRUD 예제](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_entityManager_crud.md)
+    - [JpaRepository vs EntityManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_compare_entityManager%26japRepository.md)
+    - [Spring 테이블 자동 생성 및 삭제 기능](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_table.md)
+  - #### Mapping
+    - [JPA Entity Relationship Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_relation.md)
+    - [JPA 단방향/양방향 관계 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_direction.md)
+    - [JPA Cascade (영속성 전이)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_cascade.md)
+    - [JPA Fetch Types 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchType.md)
+    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 이유](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
+    - [JPA 순환참조 (Circular Reference) 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_circularReference.md)
+
+* ### Spring AOP
+  - [Spring Cross-Cutting Concerns](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_crossCutting.md)
+  - [Spring AOP와 AspectJ 비교](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_srpingAop%26aspectJ.md)
+  - [Spring AOP Advice 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_advice.md)
+  - [Spring AOP Pointcuts 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_pointCut.md)
+  - [Spring AOP Join Point 활용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_joinPoint.md)
+  - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
+  - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)
+  
+
+  
+* ### [Spring 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/srping_source.md)
+
+</details>
+
+---
+
+
+<details>
+  <summary><strong><span style="font-size: 25px;"> 🌐Network </span></strong></summary>
+
+-  [Http/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
 - [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
 - [Protocol 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
 -  [Proxy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
 -  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
 -  [Nginx 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
 
-# Framework
+</details>
+
+---
+
+
+<details>
+  <summary><strong><span style="font-size: 25px;"> Node </span></strong></summary>
+
 -  [Javascript, Typescript 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/javascript%26typescript.md)
 -  [Node framework 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nodejs_framework.md)
 
-# Server
+</details>
+
+--- 
+
+
+<details>
+  <summary><strong><span style="font-size: 25px;"> Server </span></strong></summary>
+
 -  [API 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/api.md)
 -  [Rendering 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/csr%26ssr.md)
 -  [Security 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/security.md)
 -  [Server type 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/server_type.md)
 
-# Database
+</details>
+
+---
+
+
+<details>
+  <summary><strong><span style="font-size: 25px;"> 📁 Database </span></strong></summary>
+
 -  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
 -  [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
 
-# Deploy
+</details>
+
+---
+
+
+<details>
+  <summary><strong><span style="font-size: 25px;">📦 Deploy </span></strong></summary>
+
 -  [Docker 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/docker.md)
 -  [Deploy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/deploy.md)
+
+</details>
