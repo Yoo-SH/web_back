@@ -57,37 +57,37 @@ Spring MVC는 다음과 같은 주요 구성 요소로 이루어져 있습니다
 Spring MVC에서는 다양한 어노테이션을 활용하여 애플리케이션을 개발할 수 있습니다.
 
 ### 1. 요청 매핑 관련 어노테이션
-| 어노테이션 | 설명 |
-||--|
-| `@RequestMapping` | 특정 URL과 메서드를 매핑 |
-| `@GetMapping` | HTTP GET 요청을 처리 |
-| `@PostMapping` | HTTP POST 요청을 처리 |
-| `@PutMapping` | HTTP PUT 요청을 처리 |
-| `@DeleteMapping` | HTTP DELETE 요청을 처리 |
+| 어노테이션               | 설명 |
+|---------------------|--|
+| `@RequestMapping`   | 특정 URL과 메서드를 매핑 |
+| `@GetMapping`       | HTTP GET 요청을 처리 |
+| `@PostMapping`      | HTTP POST 요청을 처리 |
+| `@PutMapping`       | HTTP PUT 요청을 처리 |
+| `@DeleteMapping`    | HTTP DELETE 요청을 처리 |
 
 ### 2. 데이터 바인딩 및 전달
-| 어노테이션 | 설명 |
-||--|
-| `@RequestParam` | 쿼리 파라미터 값을 바인딩 |
-| `@PathVariable` | URL 경로 변수 값을 바인딩 |
+| 어노테이션             | 설명 |
+|-------------------|--|
+| `@RequestParam`   | 쿼리 파라미터 값을 바인딩 |
+| `@PathVariable`   | URL 경로 변수 값을 바인딩 |
 | `@ModelAttribute` | 폼 데이터를 객체로 매핑 |
-| `@RequestBody` | JSON 요청 데이터를 객체로 변환 |
+| `@RequestBody`    | JSON 요청 데이터를 객체로 변환 |
 
 ### 3. 응답 처리
-| 어노테이션 | 설명 |
-||--|
-| `@ResponseBody` | 메서드 반환 값을 HTTP 응답 본문으로 사용 |
+| 어노테이션             | 설명 |
+|-------------------|--|
+| `@ResponseBody`   | 메서드 반환 값을 HTTP 응답 본문으로 사용 |
 | `@RestController` | `@Controller` + `@ResponseBody` 역할 수행 |
 
 ### 4. 유효성 검사
-| 어노테이션 | 설명 |
-||--|
-| `@Valid` | Java Bean Validation을 수행 |
+| 어노테이션        | 설명 |
+|--------------|--|
+| `@Valid`     | Java Bean Validation을 수행 |
 | `@Validated` | Spring의 유효성 검사를 수행 |
 
 ### 5. 기타
-| 어노테이션 | 설명 |
-||--|
+| 어노테이션               | 설명 |
+|---------------------|--|
 | `@ExceptionHandler` | 특정 예외 발생 시 예외 처리 메서드 실행 |
 | `@ControllerAdvice` | 전역 예외 처리 및 공통 데이터 설정 |
 

@@ -1,8 +1,11 @@
 # Backend Roadmap
 
 - [2025년 현대적 백엔드 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/backend)
+- [2025년 Java 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/java)
+- [2025년 Spring Boot 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/spring-boot)
 - [2025년 DevOps, SRE 또는 기타 운영 역할에 대한 단계별 가이드](https://roadmap.sh/devops)
 - [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
+
 
 <details>
   <summary style="font-size: 20px;"><strong> ☕Java </strong></summary>
@@ -89,6 +92,7 @@
     - [Spring Boot @Value vs Environment (env) 차이점](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_valueAnnotation.md)
     - [Spring Boot 애플리케이션 실행 방법 (IDE 없이 실행)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_executionCommand.md)
 * ### Spring Core
+    - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
     - [Spring Bean & Bean Scope
 ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanScope.md)
     - [Spring Bean LifeCycle](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanLifecycle.md)
@@ -97,7 +101,7 @@
     - [@Primary in Spring ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_primary.md)
     - [@Lazy in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_lazy.md)
     - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)
-    - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
+    
 * ### Spring Web
     - #### MVC    
       - [Spring MVC 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc.md)

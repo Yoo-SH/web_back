@@ -47,17 +47,17 @@ public String getPropertyValue() {
 
 ## 3. 주요 차이점 비교
 
-| 항목 | `@Value` | `Environment` |
-|||-|
-| 주입 시점 | Bean 생성 시점 | 실행 시점 |
-| 기본값 설정 | 가능 (`@Value("${key:default}")`) | 불가능 (`getProperty("key", "default")`으로 처리 필요) |
-| 동적 접근 | 불가능 (컴파일 시점) | 가능 (런타임 시점) |
-| Type-Safe | X | X |
-| SpEL 지원 | O | X |
-| 시스템 환경 변수 접근 | X | O |
+| 항목 | `@Value`                          | `Environment` |
+|---|-----------------------------------|-|
+| 주입 시점 | Bean 생성 시점                        | 실행 시점 |
+| 기본값 설정 | 가능 (`@Value("${key:default}")`)   | 불가능 (`getProperty("key", "default")`으로 처리 필요) |
+| 동적 접근 | 불가능 (컴파일 시점)                      | 가능 (런타임 시점) |
+| Type-Safe | X                                 | X |
+| SpEL 지원 | O                                 | X |
+| 시스템 환경 변수 접근 | X                                 | O |
 
 ## 4. 언제 사용해야 할까?
-- **`@Value`**: 간단한 설정값을 주입할 때, SpEL을 사용할 때 유용
+- **`@Value`**: 간단한 설정값을 주입할 때, SpEL(spring expression language)을 사용할 때 유용
 - **`Environment`**: 동적으로 값을 가져와야 하거나, 시스템 환경 변수까지 접근해야 할 때 유용
 
 ## 5. 결론

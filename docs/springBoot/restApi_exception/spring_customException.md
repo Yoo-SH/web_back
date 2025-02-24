@@ -53,11 +53,11 @@ public Student getStudent(int studentId) throws StudentNotFoundException {
 ## 3. 생성자 3개가 존재하는 이유
 📌 예외를 발생시킬 때 다양한 방식으로 메시지를 전달할 수 있도록 여러 개의 생성자를 제공한 것입니다.
 
-| 생성자 | 설명 | 예제 |
-|--|||
-| `StudentNotFoundException(String message)` | 에러 메시지만 포함 | `throw new StudentNotFoundException("학생 없음!");` |
-| `StudentNotFoundException(String message, Throwable cause)` | 메시지 + 원인 예외 포함 | `throw new StudentNotFoundException("DB 연결 오류", e);` |
-| `StudentNotFoundException(Throwable cause)` | 원인 예외만 포함 | `throw new StudentNotFoundException(e);` |
+| 생성자                                                         | 설명               | 예제                                          |
+|-------------------------------------------------------------|------------------|---------------------------------------------|
+| `StudentNotFoundException(String message)`                  | 에러 메시지만 포함       | `throw new StudentNotFoundException("학생 없음!");` |
+| `StudentNotFoundException(String message, Throwable cause)` | 메시지 + 원인 예외 포함   | `throw new StudentNotFoundException("DB 연결 오류", e);` |
+| `StudentNotFoundException(Throwable cause)`                 | 원인 예외만 포함        | `throw new StudentNotFoundException(e);`    |
 
 ## 4. `super(message)`가 하는 역할
 
