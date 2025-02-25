@@ -1,4 +1,4 @@
-# JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 이유
+# JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 경우
 
 ## 목차
 - [개요](#개요)

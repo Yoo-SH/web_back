@@ -134,14 +134,14 @@
     - [JPA 단방향/양방향 관계 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_direction.md)
     - [JPA Cascade (영속성 전이)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_cascade.md)
     - [JPA Fetch Types 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchType.md)
-    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 이유](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
+    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 경우](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
     - [JPA 순환참조 (Circular Reference) 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_circularReference.md)
 
 * ### Spring AOP
   - [Spring Cross-Cutting Concerns](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_crossCutting.md)
   - [Spring AOP와 AspectJ 비교](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_srpingAop%26aspectJ.md)
-  - [Spring AOP Advice 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_advice.md)
   - [Spring AOP Pointcuts 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_pointCut.md)
+  - [Spring AOP Advice 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_advice.md)
   - [Spring AOP Join Point 활용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_joinPoint.md)
   - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
   - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)
