@@ -121,7 +121,8 @@
   - [Spring Security UserDetailsManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_userDetailsManager.md)
   - [Spring Boot Security 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_security.md)
   - [Spring Security 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_security_config.md)
-  
+  - [Spring Security SecurityContextHolder 구조 설명](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_securityContextHolder.md)
+  - [Spring Security SecurityContextHolder와 Authentication 객체](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_securityContextHolder_authentication.md)
 * ### Spring JPA & Hibernate
   - #### JPA CRUD
     - [Spring JPA 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa.md)
@@ -145,8 +146,10 @@
   - [Spring AOP Join Point 활용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_joinPoint.md)
   - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
   - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)
+  - [Spring AOP transactional 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_transactional.md)
   
-
+* ### Spring Utility Libarary
+  - [Spring LomBok 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_lombok.md)
   
 * ### [Spring 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/srping_source.md)
 
