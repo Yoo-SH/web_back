@@ -1,8 +1,11 @@
 # Backend Roadmap
 
 - [2025년 현대적 백엔드 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/backend)
+- [2025년 Java 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/java)
+- [2025년 Spring Boot 개발자가 되기 위한 단계별 가이드](https://roadmap.sh/spring-boot)
 - [2025년 DevOps, SRE 또는 기타 운영 역할에 대한 단계별 가이드](https://roadmap.sh/devops)
 - [대규모 시스템을 설계하는 데 필요한 모든 정보.](https://roadmap.sh/system-design)
+
 
 <details>
   <summary style="font-size: 20px;"><strong> ☕Java </strong></summary>
@@ -89,6 +92,7 @@
     - [Spring Boot @Value vs Environment (env) 차이점](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_valueAnnotation.md)
     - [Spring Boot 애플리케이션 실행 방법 (IDE 없이 실행)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_executionCommand.md)
 * ### Spring Core
+    - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
     - [Spring Bean & Bean Scope
 ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanScope.md)
     - [Spring Bean LifeCycle](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanLifecycle.md)
@@ -97,7 +101,7 @@
     - [@Primary in Spring ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_primary.md)
     - [@Lazy in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_lazy.md)
     - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)
-    - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
+    
 * ### Spring Web
     - #### MVC    
       - [Spring MVC 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc.md)
@@ -130,14 +134,14 @@
     - [JPA 단방향/양방향 관계 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_direction.md)
     - [JPA Cascade (영속성 전이)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_cascade.md)
     - [JPA Fetch Types 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchType.md)
-    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 이유](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
+    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 경우](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
     - [JPA 순환참조 (Circular Reference) 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_circularReference.md)
 
 * ### Spring AOP
   - [Spring Cross-Cutting Concerns](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_crossCutting.md)
   - [Spring AOP와 AspectJ 비교](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_srpingAop%26aspectJ.md)
-  - [Spring AOP Advice 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_advice.md)
   - [Spring AOP Pointcuts 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_pointCut.md)
+  - [Spring AOP Advice 사용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_advice.md)
   - [Spring AOP Join Point 활용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_joinPoint.md)
   - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
   - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)

@@ -38,12 +38,12 @@ public class Member {
 
 ## 매핑 타입별 기본값
 
-| 연관관계 | 기본 Fetch Type |
-||-|
-| @ManyToOne | EAGER |
-| @OneToOne | EAGER |
-| @OneToMany | LAZY |
-| @ManyToMany | LAZY |
+| 연관관계         | 기본 Fetch Type |
+|--------------|-|
+| @ManyToOne   | EAGER |
+| @OneToOne    | EAGER |
+| @OneToMany   | LAZY |
+| @ManyToMany  | LAZY |
 
 ### 기본값 설정 이유
 - **@ManyToOne, @OneToOne**: 단일 객체 참조이므로 즉시 로딩이 기본값
