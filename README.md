@@ -93,8 +93,9 @@
     - [Spring Boot 애플리케이션 실행 방법 (IDE 없이 실행)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_executionCommand.md)
 * ### Spring Core
     - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
-    - [Spring Bean & Bean Scope
-](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanScope.md)
+    - [Spring Container](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_container.md)
+    - [Spring Component & Bean](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_component&bean.md)
+    - [Spring Bean & Bean Scope](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanScope.md)
     - [Spring Bean LifeCycle](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanLifecycle.md)
     - [Spring에서 @Configuration과 @Bean](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_beanConfiguration.md)
     - [@Autowired in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_autowired.md)
