@@ -200,8 +200,6 @@
 <details>
   <summary style="font-size: 20px;"><strong> 📁 Database </strong></summary>
 
--  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
--  [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
 # Database
 * ### 데이터베이스 내부 이해
   - [데이터베이스 저장 구조 분석](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_disk.md)
@@ -214,11 +212,11 @@
 * ### 데이터베이스 시스템 설계
 
 * ### ACID
-  - [Transaction](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_transaction.md)
-  - [Atomicity](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_atomicity.md)
-  - [Consistency](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_consistency.md)
-  - [Isolation](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_isolataion.md)
-  - [Durability](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_durability.md)
+  - [트랜젝션(Transaction)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_transaction.md)
+  - [원자성(Atomicity)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_atomicity.md)
+  - [일관성(Consistency)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_consistency.md)
+  - [격리성(Isolation)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_isolataion.md)
+  - [지속성(Durability)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_durability.md)
 
 * ### 인덱싱
   - [인덱싱 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_indexing_concept.md)
@@ -243,11 +241,11 @@
   - [샤딩 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Sharding/DB_Sharding_concept.md)
 
 * ### 동시성 제어
- - [커넥션 풀 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_concept.md)
- - [커넥션 풀 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_example.md)
- - [락 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_concept.md)
- - [락 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_guide.md)
- - [락 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_example.md)
+   - [커넥션 풀 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_concept.md)
+   - [커넥션 풀 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_example.md)
+   - [락 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_concept.md)
+   - [락 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_guide.md)
+   - [락 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_example.md)
 
 * ### 복제
   - [동기화 복제 vs 비동기화 복제](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Replication/DB_Replcation_Synchronization&NonSynchronization.md)
@@ -258,8 +256,8 @@
 
 
 
-# REDIS  
-- ### [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
+## REDIS  
+  - [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
 
 
 * ###  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
