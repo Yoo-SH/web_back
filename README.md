@@ -204,7 +204,9 @@
 -  [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
 # Database
 * ### 데이터베이스 내부 이해
-
+  - [데이터베이스 저장 구조 분석](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_disk.md)
+  - [데이터베이스 키(Keys) 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_key.md)
+  - [Row-Oriented vs Column-Oriented](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_row&column.md)
 * ### 데이터베이스 엔진
 
 * ### 데이터베이스 커서
@@ -219,24 +221,48 @@
   - [Durability](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID_durability.md)
 
 * ### 인덱싱
+  - [인덱싱 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_indexing_concept.md)
+  - [블룸 필터](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_BloomFilter.md)
+  - [복합 인덱스](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_indexing_composite.md)
+  - [Index Scan vs Index Only Scan](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_indexScanning&indexOnlyScanning.md)
+  - [key vs non-key](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_key&non-key.md)
+  - [인덱스 옵티마이저](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_optimiser.md)
+  - [postgres scanningModel](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_postgresScanningModel.md)
+  - [postgres explain을 이용한 인덱스 성능측정](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Index/DB_Index_postgresql_explain.md)
 
 * ### B-tree vs B+tree
+  - [Btree vs B+tree](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Btrees/DB_BTrees_B+Tree.md)
+  - [BTrees DBMS](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Btrees/DB_BTrees_DBMS.md)
+  - [BTrees storageCost](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Btrees/DB_BTrees_storageCost.md)
 
 * ### 파티셔닝
-
+  - [파티셔닝 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Partitioning/DB_Partitioning_concept.md)
+  - [파티셔닝 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Partitioning/DB_Partitioning_guid.md)
+  - [파티셔닝 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Partitioning/DB_partitioning_spring.md)
 * ### 샤딩
+  - [샤딩 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Sharding/DB_Sharding_concept.md)
 
 * ### 동시성 제어
+ - [커넥션 풀 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_concept.md)
+ - [커넥션 풀 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_ConnectionPool_example.md)
+ - [락 개념](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_concept.md)
+ - [락 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_guide.md)
+ - [락 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Concurrency/DB_Lock_example.md)
 
 * ### 복제
-
+  - [동기화 복제 vs 비동기화 복제](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Replication/DB_Replcation_Synchronization&NonSynchronization.md)
+  - [마스터 - 스탠바이 복제](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Replication/DB_Replcation_master&standby.md)
+  - [다중 마스터 복제](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Replication/DB_Replcation_Multiple_Master.md)
+  - [복제 실전활용](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Replication/DB_Replcation_example.md)
 * ### DB 보안 
 
 
-- ###  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
 
 # REDIS  
 - ### [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
+
+
+* ###  [Database 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/database.md)
 
 </details>
 
