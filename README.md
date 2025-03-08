@@ -161,9 +161,23 @@
 <details>
   <summary style="font-size: 20px;"><strong> 🌐Network </strong></summary>
 
+* ### 백엔드 통신 패턴
+  - [백엔드 통신 패턴 비교표](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/compareTable.md)
+  - [Request vs Response](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/req%26res.md)
+  - [Stateful vs Stateless](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/statefull%26stateless.md)
+  - [multiplexing vs demultiplexing](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/mulitplexing%26demultiplexing.md)
+  - [Sync vs Async](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/sync%26async.md)
+  - [Push pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/push.md)
+  - [short polling pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/shortPolling.md)
+  - [long polling pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/longPolling.md)
+  - [Server-Sent Events(SSE) pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/sse.md)
+  - [publish - subscribe pattern](https://github.com/Yoo-SH/web_back/tree/main/docs/Network/BackendCommunicationPattern)
+  - [Sidecar Pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/sidecar.md)
+
+
 -  [Http/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
-- [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
-- [Protocol 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
+-  [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
+-  [Protocol 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
 -  [Proxy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
 -  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
 -  [Nginx 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
