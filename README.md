@@ -194,9 +194,9 @@
 * ### SSL/TLS 참고문서
   -  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
 
-</details>
+* ### [Network 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/sorce.md)
 
-* ### [network 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/sorce.md)
+</details>
 
 ---
 
@@ -284,7 +284,7 @@
 
 
 
-## REDIS  
+* ### REDIS  
   - [Redis 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/redis.md)
 
 
