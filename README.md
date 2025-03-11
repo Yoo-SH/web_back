@@ -186,7 +186,6 @@
   
 * ### 프로토콜(Protocol)
 -  [Http/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
--  [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
 
 * ### 프록시 참조문서(Proxy)
 -  [Proxy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
