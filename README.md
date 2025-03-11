@@ -162,7 +162,6 @@
   <summary style="font-size: 20px;"><strong> 🌐Network </strong></summary>
 
 * ### 백엔드 통신 패턴
-  - [백엔드 통신 패턴 비교표](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/compareTable.md)
   - [Request vs Response](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/req%26res.md)
   - [Stateful vs Stateless](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/statefull%26stateless.md)
   - [multiplexing vs demultiplexing](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/mulitplexing%26demultiplexing.md)
@@ -170,17 +169,31 @@
   - [Push pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/push.md)
   - [short polling pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/shortPolling.md)
   - [long polling pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/longPolling.md)
-  - [Server-Sent Events(SSE) pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/sse.md)
+  - [stream](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/stream.md)
   - [publish - subscribe pattern](https://github.com/Yoo-SH/web_back/tree/main/docs/Network/BackendCommunicationPattern)
   - [Sidecar Pattern](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationPattern/sidecar.md)
 
-
+* ### 백엔드 통신 방법
+  - [백엔드 통신 패턴 방법 비교표](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/compareTable.md)
+  - [REST API](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/RestAPI.md)
+  - [WebSocket](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/WebSocket.md)
+  - [Server-Sent Events(SSE)](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/SSE.md)
+  - [Message Queue](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/MessageQueue.md)
+  - [Webhook](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/WebHook.md)
+  - [GraphQL](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/GraphQL.md)
+  - [gRPC](https://github.com/Yoo-SH/web_back/blob/main/docs/Network/BackendCommunicationWay/gRPC.md)
+  
+  
+* ### 프로토콜(Protocol)
 -  [Http/HTTPS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/http&https.md)
 -  [Web Server 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/webServer.md)
--  [Protocol 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/protocol.md)
+
+* ### 프록시 참조문서(Proxy)
 -  [Proxy 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/proxy.md)
--  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
 -  [Nginx 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/nginx.md)
+
+* ### SSL/TLS 참고문서
+-  [SSL/TLS 참고문서](https://github.com/Yoo-SH/web_back/blob/main/docs/ssl&tls.md)
 
 </details>
 
