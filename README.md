@@ -91,7 +91,9 @@
     - [Spring Boot Application Properties Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_application_property.md)
     - [Spring Boot @Value vs Environment (env) 차이점](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_valueAnnotation.md)
     - [Spring Boot 애플리케이션 실행 방법 (IDE 없이 실행)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springBoot3/spring_executionCommand.md)
+
 * ### Spring Core
+    - [Spring 주요 에노테이션 정리](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_Core_Annotaion.md)
     - [Spring Inversion of Control (IoC)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_ioc.md)
     - [Spring Container](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_container.md)
     - [Spring Component & Bean](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_component&bean.md)
@@ -101,7 +103,7 @@
     - [@Autowired in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_autowired.md)
     - [@Primary in Spring ](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_primary.md)
     - [@Lazy in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_lazy.md)
-    - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)
+    - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)    
     
 * ### Spring Web
     - #### MVC    
@@ -151,7 +153,7 @@
   
 * ### Spring Utility Libarary
   - [Spring LomBok 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_lombok.md)
-  
+  - [Spring jakarta 가이트]((https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_jakarta.md))
 * ### [Spring 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/srping_source.md)
 
 </details>
