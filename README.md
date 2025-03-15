@@ -304,7 +304,12 @@
 * ### [DevOps 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/DevOps/source.md)
 </details>
 
+---
+
 <details>
-  <summary style="font-size: 20px;"><strong>기타</strong></summary>
+  <summary style="font-size: 20px;"><strong>💻Others</strong></summary>
+
+## OSS
+
 
 </details>
