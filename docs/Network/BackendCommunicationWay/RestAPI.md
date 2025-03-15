@@ -18,9 +18,12 @@
 - [일반적인 오류](#일반적인-오류)
 - [도구 및 리소스](#도구-및-리소스)
 
+
 ## 소개
 
 REST(Representational State Transfer)는 웹 서비스를 위한 아키텍처 스타일로, 분산 환경에서 시스템 간의 통신을 위한 가벼운 인터페이스를 제공합니다. 이 문서는 효과적인 REST API를 설계하고 구현하는 데 필요한 모든 정보를 제공합니다.
+
+<Image src="https://github.com/user-attachments/assets/dda07471-0b88-4a74-a04c-0e56eb457291" width= 500px>
 
 ## REST 아키텍처
 
@@ -30,6 +33,57 @@ REST(Representational State Transfer)는 웹 서비스를 위한 아키텍처 �
 4. **계층화 시스템(Layered System)**: 클라이언트는 중간 계층의 존재 여부를 알 필요가 없습니다.
 5. **통일된 인터페이스(Uniform Interface)**: 시스템 아키텍처를 단순화하고 가시성을 향상시킵니다.
 6. **자체 서술적 메시지**: 각 메시지는 자신을 처리하는 방법에 대한 충분한 정보를 포함해야 합니다.
+
+
+##  Resource & Routing
+
+Request URL= https://cologger.shopping.naver.com/api/v1/validexpose/biz/MALL_NAME_LINK/expsTrtr/001179/adCntsSeqs=8732273&inflowCd=sbml&cntsTypeCd=K54001&expsPage=1
+
+
+ - URL: https://cologger.shopping.naver.com/
+ - Routing: api/v1/validexpose/biz/MALL_NAME_LINK/expsTrtr/001179
+ - data: adCntsSeqs=8732273 & inflowCd=sbml & cntsTypeCd=K54001 & expsPage=1
+
+ Data part는 항상 Key=Value 형식! 즉, 이는 JSON과 호환 가능하다!
+
+```json
+[
+  {
+    "adCntsSeqs": 8732273,
+    "inflowCd": "sbml",
+    "cntsTypeCd": "K54001",
+    "expsPage": 1,
+  }
+]
+```
+
+## Data Part
+
+request 객체는 API를 컨트롤 하기 위한 메소드로 3가지를 포함한다.
+
+### param
+ - 주소에서 포함된 변수를 담는다.
+ - path parameter는 엔드포인트의 일부
+ - 서버에서 Path Variable 로 부름.
+ - 원하는 조건의 데이터들 혹은 하나의 데이터에 대한 정보를 받아올때 적절
+ - 예시) /service/myresource/user/{user}/bicycles/{bicycleId}
+
+### query
+
+ - 엔드포인트에서 물음표(?)뒤에 등장하며,변수를 담는다.
+ - key=value로 이루어져 있고 &으로 연결할 수 있다.
+ - 조건을 줘서 정제된 결과물을 얻을 수 있다.
+ - filtering, sorting, searching에 적절.
+ - 서버에서 Query parameter로 칭한다.
+ - 예시) /surfreport?days=3&units=metric&time=1400
+ 
+### body
+
+ - URL에는 보이지 않는 오브젝트 데이터(XML, JSON, MultiForm)를 담는다.
+ - 보통 POST를 사용하여 JSON오브젝트를 request body 안에 넣어 보낸다.
+ - request body에 key-value 데이터 쌍을 포함한다.
+ - 기본적으로 정의되어 있지 않아 express.json(), express.urlencoded() 등의 미들웨어를 사용해야 한다
+
 
 ## REST API 디자인 원칙
 
@@ -44,13 +98,17 @@ https://api.example.com/users/123/posts // 특정 사용자의 게시물
 
 ### 리소스 표현
 리소스는 다양한 형식(JSON, XML, HTML 등)으로 표현될 수 있으며, 클라이언트는 Accept 헤더를 통해 원하는 표현 형식을 요청할 수 있습니다.
+그리고,  URI에 파일의 확장자(예를들어 .json , .JPGE)를 포함 시키지 않습니다.
 
 ### 자원 조작 방법
 HTTP 메서드를 사용하여 리소스를 조작합니다.
 
 ## HTTP 메소드
 
-REST API는 다음과 같은 HTTP 메소드를 사용하여 CRUD(Create, Read, Update, Delete) 작업을 수행합니다:
+REST API는 다음과 같은 HTTP 메소드를 사용하여 CRUD(Create, Read, Update, Delete) 작업을 수행합니다.
+
+<br>
+<Image src= "https://github.com/user-attachments/assets/4f821c7b-d1e6-4be7-9d8d-885c567d9c81" width=500px>
 
 | 메소드 | 설명 | 특징 |
 |--------|------|------|
@@ -60,7 +118,9 @@ REST API는 다음과 같은 HTTP 메소드를 사용하여 CRUD(Create, Read, U
 | PATCH | 리소스 부분 수정 | 비 멱등성, 캐시 불가능, 안전하지 않음 |
 | DELETE | 리소스 삭제 | 멱등성, 캐시 불가능, 안전하지 않음 |
 
-> **멱등성(Idempotent)**: 동일한 요청을 여러 번 수행해도 결과가 달라지지 않는 성질
+ **멱등성(Idempotent)**: 동일한 요청을 여러 번 수행해도 결과가 달라지지 않는 성질
+
+
 
 ## 상태 코드
 
@@ -131,6 +191,7 @@ REST API는 응답 상태를 표현하기 위해 표준 HTTP 상태 코드를 �
    /products?sort=price_asc&page=2
    ```
 
+__RESTful API는 그 자체만으로도 API의 목적이 무엇인지 쉽게 알 수 있게 설계해야 합니다__
 ## 요청과 응답 형식
 
 ### 콘텐츠 타입
@@ -390,4 +451,29 @@ if __name__ == "__main__":
 2. **Grafana**: 데이터 시각화 및 모니터링
 3. **New Relic**: 애플리케이션 성능 모니터링
 4. **Datadog**: 인프라 및 애플리케이션 모니터링
+
+## Q&A
+
+ Q1. GET 메서드로 요청할 때는 왜 Body에 데이터를 안 실을까?
+
+ GET은 리소스를 요청하기 위해 만들어 졌다. URL의 URI가 자원이 위치한 곳을 나타낸다. 메시지 
+바디에 데이터를 실어야 하는 상황은 거의 없다.따라서,일반적인 서버에서는 GET요청의 메시지 
+바디를 확인하지 않는다.실제로 메시지 바디에 데이터가 있더라도 처리되지 
+않을 확률이 높다.
+
+Q2. POST 메서드는 언제 사용할까?
+
+
+- HTML 양식으로 입력된 데이터 블록을 리소스 로직에 제공
+  - 예)HTML FORM에 입력한 정보로 회원 가입,주문 등에서 사용
+- 서버가 아직 식별하지 않은 새 리소스 생성
+  - 예)신규 주문 생성
+- 기존 자원에 데이터 추가
+  - 예)한 문서 끝에 내용 추가하기
+- 단순히 데이터를 생성하거나,변경하는 것을 넘어서 프로세스를
+처리해야 하는 경우
+  - 예) 주문에서 결제완료 ->배달시작 ->배달완료 처럼 단순히 값 변경을 넘어 프로세스의 상태가 변경되
+는 경우.POST의 결과로 새로운 리소스가 생성되지 않을 수도 있다.
+- 기타
+  - 애매한 경우 POST를 사용한다. 예) JSON으로 조회 데이터를 넘겨야 하는데, GET 메서드를 사용하기 어려운 경우. POST는 사실상 모든지 할 수 있다
 
