@@ -311,7 +311,7 @@
   <summary style="font-size: 20px;"><strong>💻Others</strong></summary>
 
 ## OSS(Open Source Software)
- - [OSS 가이드 및 유의사항](https://github.com/Yoo-SH/web_back/blob/main/docs/OSS/oss_guidelines.md)
+ - [OSS 가이드 및 유의사항](https://github.com/Yoo-SH/web_back/blob/main/docs/Others/OSS/oss_guidelines.md)
 
 
 

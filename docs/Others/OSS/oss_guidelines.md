@@ -1,10 +1,26 @@
 # OSS 가이드 라인
 
+## 목차  
+1. [OSS란?](#OSS란)  
+2. [OSS를 사용하는 이유](#OSS를-사용하는-이유)  
+   - 개발자  
+   - 기업  
+3. [주요 OSS 재단](#주요-OSS-재단)  
+4. [OSS list 예시](#OSS-list-예시)  
+5. [OSI에서 제시하는 OSS의 10가지 조건](#OSI에서-제시하는-OSS의-10가지-조건)  
+6. [오픈소스 라이센스 정리](#오픈소스-라이센스-정리)  
+7. [OSS의 보안성](#OSS의-보안성)  
+8. [참고자료](#참고자료)  
+
+
 ## OSS란? 
 소프트웨어의 내용을 프로그래밍 언어로 나타낸 ‘소스코드’를 공개하여 
 누구나 개량·재배포할 수 있는 소프트웨어
 
 <Image src = "https://github.com/user-attachments/assets/77d8edd1-2c91-4257-a495-78ade9432949" width=500px>
+
+<br>
+
 
 ## OSS를 사용하는 이유
 
@@ -30,6 +46,8 @@
     - 초기 개발비용,유지관리 비용이 적음(Really?Notyetproved, I think)
 - 이미성공적인 “Business&SWdevelopmentmodel”로검증됨
 
+<br>
+
 ## 주요 OSS 재단  
 
 ### **Apache Software Foundation**  
@@ -39,11 +57,14 @@
 ### **Linux Foundation**  
 - Linux Kernel 관리. 최근 SDx, IoT, Embedded, Cloud 등의 다양한 기술 협력
 
+<br>
+
 ## OSS list 예시
 
 <Image src= "https://github.com/user-attachments/assets/24fd3da5-29f1-49b3-94b7-0cf3a1506edc" width=500px>
 
 
+<br>
 
 ## OSI (Open Source Initiative)에서 제시하고 있는 OSS의 10가지 조건
 
@@ -80,6 +101,7 @@
    - 라이선스는 개별 기술이나 인터페이스 형태를 단정해서는 안 됨.  
    - (해설: Click-wrap 같은 강제 조항을 사용하는 것을 방지. 동의 여부에 대해 팝업창을 띄워 명시적으로 승낙을 받는 행위 금지.)
 
+<br>
 
 ## 오픈소스 라이센스 정리(Apache, MIT, GPL, LGPL, BSD,  MPL, Eclipse)
 
@@ -121,6 +143,7 @@
 
 
 
+<br>
 
 ## OSS의 보안성: 항상 유의해야 함!  
 
@@ -129,11 +152,17 @@
 - 2016년 1,071개 SW에 대한 조사 결과, 96%가 OSS였으며, 그중 60%가 보안 취약점을 갖고 있었음.  
 - 또한 67%의 OSS 개발업체가 보안 취약점에 대한 모니터링을 수행하지 않음.
 
+<br>
+
 ## 참고자료
 - [카카오 오픈소스](https://github.com/kakao)
 - [네이버 오픈소스](https://github.com/naver)
 - [Revolution OS 2001 Korean subtitle](https://www.youtube.com/watch?v=4ZHloJVhcRY)
 - [오픈소스 라이센스 정리(GPL, LGPL, BSD, Apache, MIT, MPL, Eclipse)](https://blog.naver.com/occidere/220850682345)
+
+
+
+
 
 
 
