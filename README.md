@@ -219,6 +219,7 @@
 <details>
   <summary style="font-size: 20px;"><strong> 📁 Database </strong></summary>
 
+
 * ### 데이터베이스 내부 이해
   - [데이터베이스 저장 구조 분석](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_disk.md)
   - [데이터베이스 키(Keys) 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_Interior/DB_Interior_key.md)
@@ -228,6 +229,7 @@
 * ### 데이터베이스 커서
 
 * ### 데이터베이스 시스템 설계
+  - [데이터베이스 시스템](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_System_Design/DB_System.md)
 
 * ### ACID
   - [트랜젝션(Transaction)](https://github.com/Yoo-SH/web_back/blob/main/docs/DB/DB_ACID/DB_ACID_transaction.md)
