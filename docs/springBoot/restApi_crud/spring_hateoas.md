@@ -1,46 +1,62 @@
-# Spring HATEOAS
+# Spring HATEOAS 가이드
 
 ## 목차
-- [개요](#개요)
-- [특징](#특징)
-- [의존성 추가](#의존성-추가)
-- [주요 컴포넌트](#주요-컴포넌트)
-  - [RepresentationModel](#representationmodel)
-  - [EntityModel](#entitymodel)
-  - [CollectionModel](#collectionmodel)
-- [페이징과 정렬 기능](#페이징과-정렬-기능)
-    - [PagedModel 사용](#pagedmodel-사용)
-    - [페이징 요청 예시](#페이징-요청-예시)
-    - [응답 예시](#응답-예시)
-- [경로 변경 설정](#경로-변경-설정)
-    - [기본 경로 설정](#기본-경로-설정)
-    - [개별 리소스 경로 설정](#개별-리소스-경로-설정)
-    - [관계 경로 설정](#관계-경로-설정)
-- [정렬 설정](#정렬-설정)
-    - [기본 정렬 설정](#기본-정렬-설정)
-    - [다중 정렬 설정](#다중-정렬-설정)
-    - [정렬 가능 필드 제한](#정렬-가능-필드-제한)
-- [페이지 크기 설정](#페이지-크기-설정)
-    - [전역 페이지 크기 설정](#전역-페이지-크기-설정)
-    - [컨트롤러 레벨 페이지 크기 설정](#컨트롤러-레벨-페이지-크기-설정)
-- [장점](#장점)
-- [모범 사례](#모범-사례)
-- [주의사항](#주의사항)
-- [참고 자료](#참고-자료)
+- [HATEOAS란?](#hateoas란)
+- [HATEOAS를 사용하는 이유](#hateoas를-사용하는-이유)
+- [적합한 사용 상황](#적합한-사용-상황)
+- [Spring에서 HATEOAS 사용법](#spring에서-hateoas-사용법)
+  - [Entity와 Model의 관계](#entity와-model의-관계)
+- [대표 예제](#대표-예제)
+- [결론](#결론)
 
+## HATEOAS란?
+HATEOAS(Hypermedia As The Engine Of Application State)는 REST 아키텍처의 구성 요소 중 하나로, 클라이언트가 서버와 동적으로 상호작용할 수 있도록 하이퍼미디어 링크를 통해 애플리케이션의 상태를 관리하는 방식입니다. 간단히 말해, API 응답에 다음 가능한 액션에 대한 링크를 함께 제공하는 것입니다.
 
-## 개요
-Spring HATEOAS(Hypermedia As The Engine Of Application State)는 Spring Framework에서 REST API를 개발할 때 하이퍼미디어를 쉽게 생성할 수 있도록 도와주는 라이브러리입니다. HATEOAS를 통해 클라이언트는 서버로부터 동적으로 다음 작업에 필요한 URI 정보를 받을 수 있습니다.
+예를 들어, 사용자가 주문을 조회할 때 API는 다음과 같은 작업에 대한 링크를 함께 제공합니다:
+- 주문 취소하기
+- 배송 상태 확인하기
+- 결제 상세정보 보기
 
-## 특징
-- RESTful API의 성숙도 모델 중 Level 3 단계 구현 지원
-- 하이퍼미디어 기반의 동적 API 제공
-- 링크 생성 및 리소스 표현의 간편화
-- Spring MVC와의 완벹한 통합
+## HATEOAS를 사용하는 이유
 
-## 의존성 추가
+### 1. 클라이언트와 서버의 느슨한 결합
+클라이언트가 API의 URI 구조를 미리 알 필요가 없으며, 응답에 포함된 링크를 통해 다음 작업을 진행할 수 있습니다. 서버가 URI 구조를 변경해도 클라이언트 코드를 수정할 필요가 없습니다.
 
-### Maven
+### 2. API 탐색 가능성(Discoverability) 향상
+클라이언트는 초기 진입점만 알면 응답에 포함된 링크를 따라가며 전체 API를 탐색할 수 있습니다.
+
+### 3. 상태 전이의 명확한 표현
+현재 리소스에서 가능한 상태 전이(다음 작업)를 명확하게 표현합니다. 예를 들어, 결제가 완료된 주문은 '취소' 링크를 제공하지 않을 수 있습니다.
+
+### 4. API 버전 관리 용이성
+API 진화에 유연하게 대응할 수 있습니다. 새로운 기능이나 리소스를 추가할 때 기존 링크는 그대로 유지하면서 새로운 링크를 추가할 수 있습니다.
+
+### 5. 자기 설명적(Self-descriptive) API
+API 응답 자체에 다음 작업에 대한 정보가 포함되어 있어 API 문서에 의존도가 줄어듭니다.
+
+## 적합한 사용 상황
+
+HATEOAS는 다음과 같은 상황에서 특히 유용합니다:
+
+### 1. 복잡한 비즈니스 프로세스를 가진 API
+여러 단계의 작업이 필요한 복잡한 비즈니스 프로세스(예: 주문 처리, 결제 처리 등)에서 각 단계별로 가능한 작업을 명확히 제시할 수 있습니다.
+
+### 2. 공개 API
+외부 개발자들이 사용하는 공개 API에서는 API의 사용성과 발견 가능성을 높이기 위해 HATEOAS를 적용하는 것이 좋습니다.
+
+### 3. 상태에 따라 가능한 작업이 달라지는 경우
+리소스의 상태에 따라 수행할 수 있는 작업이 달라지는 경우 (예: 결제 완료 전/후, 배송 전/중/후 등) HATEOAS를 통해 현재 상황에서 가능한 작업만 제시할 수 있습니다.
+
+### 4. 장기적으로 확장될 API
+시간이 지남에 따라 기능이 추가되거나 변경될 가능성이 높은 API에서는 HATEOAS를 통해 유연성을 확보할 수 있습니다.
+
+## Spring에서 HATEOAS 사용법
+
+Spring에서는 `spring-boot-starter-hateoas` 의존성을 추가하여 HATEOAS를 쉽게 구현할 수 있습니다.
+
+### 의존성 추가
+
+**Maven:**
 ```xml
 <dependency>
     <groupId>org.springframework.boot</groupId>
@@ -48,255 +64,196 @@ Spring HATEOAS(Hypermedia As The Engine Of Application State)는 Spring Framewor
 </dependency>
 ```
 
-### Gradle
-```groovy
+**Gradle:**
+```gradle
 implementation 'org.springframework.boot:spring-boot-starter-hateoas'
 ```
 
-## 주요 컴포넌트
+### Entity와 Model의 관계
 
-### RepresentationModel
-- HATEOAS를 지원하는 리소스의 기본 클래스
-- 링크 정보를 포함하는 컨테이너 역할
+Spring HATEOAS에서 Entity와 Model의 관계를 이해하는 것이 중요합니다:
 
+#### Entity
+- 데이터베이스 테이블과 매핑되는 JPA 엔티티 클래스입니다.
+- 데이터의 저장과 관련된 로직을 담당합니다.
+- 링크 정보를 포함하지 않습니다.
+
+예:
 ```java
-public class UserModel extends RepresentationModel<UserModel> {
+@Entity
+public class Customer {
+    @Id @GeneratedValue
+    private Long id;
     private String name;
     private String email;
     
-    // 생성자, getter, setter
+    // getter, setter 등
 }
 ```
 
-### EntityModel
-- 단일 리소스를 감싸는 모델
-- 개별 리소스에 대한 링크 정보 추가 가능
+#### Model (Resource/RepresentationModel)
+- API 응답으로 클라이언트에게 전달되는 정보를 담는 객체입니다.
+- Entity의 데이터를 포함하면서 추가적으로 하이퍼미디어 링크를 포함합니다.
+- Spring HATEOAS에서는 `RepresentationModel`을 상속받아 구현합니다.
+
+예:
+```java
+public class CustomerModel extends RepresentationModel<CustomerModel> {
+    private Long id;
+    private String name;
+    private String email;
+    
+    // Entity로부터 Model을 생성하는 생성자
+    public CustomerModel(Customer customer) {
+        this.id = customer.getId();
+        this.name = customer.getName();
+        this.email = customer.getEmail();
+    }
+    
+    // getter, setter 등
+}
+```
+
+이렇게 Entity와 Model을 분리함으로써:
+1. 데이터베이스 엔티티와 API 응답을 분리할 수 있습니다.
+2. 엔티티 구조 변경이 API 응답 구조에 직접적인 영향을 미치지 않습니다.
+3. API 응답에만 필요한 링크 정보를 추가할 수 있습니다.
+
+### Spring HATEOAS 주요 클래스
+
+1. **RepresentationModel**: 링크 정보를 포함하는 기본 모델 클래스
+2. **EntityModel**: 단일 리소스를 표현하는 모델
+3. **CollectionModel**: 리소스 컬렉션을 표현하는 모델
+4. **PagedModel**: 페이지네이션된 리소스 컬렉션을 표현하는 모델
+5. **Link**: 하이퍼미디어 링크를 나타내는 클래스
+6. **WebMvcLinkBuilder**: 컨트롤러 메소드를 기반으로 링크를 생성하는 유틸리티
+
+## 대표 예제
+
+간단한 고객 관리 API를 통해 Spring HATEOAS 사용법을 알아보겠습니다.
+
+### 1. Entity 정의
 
 ```java
-@GetMapping("/users/{id}")
-public EntityModel<User> getUser(@PathVariable Long id) {
-    User user = userService.findById(id);
+@Entity
+public class Customer {
+    @Id @GeneratedValue
+    private Long id;
+    private String name;
+    private String email;
+    private String address;
     
-    return EntityModel.of(user,
-        linkTo(methodOn(UserController.class).getUser(id)).withSelfRel(),
-        linkTo(methodOn(UserController.class).getAllUsers()).withRel("users")
-    );
+    // 생성자, getter, setter 등
 }
 ```
 
-### CollectionModel
-- 리소스 컬렉션을 감싸는 모델
-- 목록에 대한 링크 정보 추가 가능
+### 2. Model 정의
 
 ```java
-@GetMapping("/users")
-public CollectionModel<EntityModel<User>> getAllUsers() {
-    List<User> users = userService.findAll();
+public class CustomerModel extends RepresentationModel<CustomerModel> {
+    private Long id;
+    private String name;
+    private String email;
     
-    List<EntityModel<User>> userModels = users.stream()
-        .map(user -> EntityModel.of(user,
-            linkTo(methodOn(UserController.class).getUser(user.getId())).withSelfRel())
-        )
-        .collect(Collectors.toList());
+    public CustomerModel(Customer customer) {
+        this.id = customer.getId();
+        this.name = customer.getName();
+        this.email = customer.getEmail();
+    }
     
-    return CollectionModel.of(userModels,
-        linkTo(methodOn(UserController.class).getAllUsers()).withSelfRel());
+    // getter, setter 등
 }
 ```
 
-## 페이징과 정렬 기능
-
-### PagedModel 사용
-- 페이징된 결과를 표현하는 특별한 모델
-- 페이지 메타데이터 포함
+### 3. 컨트롤러 구현
 
 ```java
-@GetMapping("/users")
-public PagedModel<EntityModel<User>> getUsers(
-        @PageableDefault(size = 20) Pageable pageable) {
-    Page<User> users = userService.findAll(pageable);
+@RestController
+@RequestMapping("/api/customers")
+public class CustomerController {
     
-    List<EntityModel<User>> userModels = users.stream()
-        .map(user -> EntityModel.of(user,
-            linkTo(methodOn(UserController.class).getUser(user.getId())).withSelfRel())
-        )
-        .collect(Collectors.toList());
+    private final CustomerRepository customerRepository;
     
-    PagedModel<EntityModel<User>> pagedModel = PagedModel.of(
-        userModels,
-        new PagedModel.PageMetadata(
-            users.getSize(),
-            users.getNumber(),
-            users.getTotalElements(),
-            users.getTotalPages()
-        )
-    );
+    public CustomerController(CustomerRepository customerRepository) {
+        this.customerRepository = customerRepository;
+    }
     
-    return pagedModel;
+    @GetMapping
+    public CollectionModel<EntityModel<CustomerModel>> getAllCustomers() {
+        List<EntityModel<CustomerModel>> customers = customerRepository.findAll().stream()
+            .map(customer -> new CustomerModel(customer))
+            .map(customerModel -> EntityModel.of(customerModel, 
+                linkTo(methodOn(CustomerController.class).getCustomer(customerModel.getId())).withSelfRel(),
+                linkTo(methodOn(CustomerController.class).getAllCustomers()).withRel("customers")))
+            .collect(Collectors.toList());
+            
+        return CollectionModel.of(customers, 
+            linkTo(methodOn(CustomerController.class).getAllCustomers()).withSelfRel());
+    }
+    
+    @GetMapping("/{id}")
+    public EntityModel<CustomerModel> getCustomer(@PathVariable Long id) {
+        Customer customer = customerRepository.findById(id)
+            .orElseThrow(() -> new ResourceNotFoundException("Customer not found"));
+            
+        CustomerModel customerModel = new CustomerModel(customer);
+        
+        return EntityModel.of(customerModel,
+            linkTo(methodOn(CustomerController.class).getCustomer(id)).withSelfRel(),
+            linkTo(methodOn(CustomerController.class).getAllCustomers()).withRel("customers"),
+            linkTo(methodOn(OrderController.class).getOrdersByCustomer(id)).withRel("orders"));
+    }
+    
+    @PostMapping
+    public ResponseEntity<EntityModel<CustomerModel>> createCustomer(@RequestBody Customer customer) {
+        Customer savedCustomer = customerRepository.save(customer);
+        CustomerModel customerModel = new CustomerModel(savedCustomer);
+        
+        EntityModel<CustomerModel> resource = EntityModel.of(customerModel,
+            linkTo(methodOn(CustomerController.class).getCustomer(savedCustomer.getId())).withSelfRel(),
+            linkTo(methodOn(CustomerController.class).getAllCustomers()).withRel("customers"));
+            
+        return ResponseEntity
+            .created(linkTo(methodOn(CustomerController.class).getCustomer(savedCustomer.getId())).toUri())
+            .body(resource);
+    }
+    
+    // 다른 엔드포인트들...
 }
 ```
 
-### 페이징 요청 예시
-```
-GET /users?page=0&size=20&sort=name,desc
-GET /users?page=1&size=10&sort=email,asc&sort=name,desc
-```
+### 4. 응답 예시
 
-### 응답 예시
 ```json
 {
-    "_embedded": {
-        "users": [
-            {
-                "name": "John Doe",
-                "email": "john@example.com",
-                "_links": {
-                    "self": {
-                        "href": "http://localhost:8080/users/1"
-                    }
-                }
-            }
-        ]
+  "id": 1,
+  "name": "홍길동",
+  "email": "hong@example.com",
+  "_links": {
+    "self": {
+      "href": "http://localhost:8080/api/customers/1"
     },
-    "_links": {
-        "self": {
-            "href": "http://localhost:8080/users?page=0&size=20"
-        },
-        "next": {
-            "href": "http://localhost:8080/users?page=1&size=20"
-        },
-        "last": {
-            "href": "http://localhost:8080/users?page=5&size=20"
-        }
+    "customers": {
+      "href": "http://localhost:8080/api/customers"
     },
-    "page": {
-        "size": 20,
-        "totalElements": 100,
-        "totalPages": 5,
-        "number": 0
+    "orders": {
+      "href": "http://localhost:8080/api/customers/1/orders"
     }
+  }
 }
 ```
 
-## 경로 변경 설정
+이 응답에는 다음과 같은 링크가 포함되어 있습니다:
+- `self`: 현재 고객 정보를 다시 조회할 수 있는 링크
+- `customers`: 모든 고객 목록을 조회할 수 있는 링크
+- `orders`: 이 고객의 주문 목록을 조회할 수 있는 링크
 
-### 기본 경로 설정
-application.properties 또는 application.yml에서 기본 경로 설정:
+클라이언트는 이러한 링크를 따라가며 API를 탐색할 수 있습니다.
 
-```yaml
-spring:
-  data:
-    rest:
-      base-path: /api/v1
-```
+## 결론
 
-### 개별 리소스 경로 설정
-```java
-@RepositoryRestResource(path = "members")  // /users 대신 /members로 경로 변경
-public interface UserRepository extends JpaRepository<User, Long> {
-}
-```
+Spring HATEOAS는 REST API를 보다 성숙한 수준으로 구현할 수 있게 해주는 강력한 도구입니다. HATEOAS를 통해 클라이언트는 API의 구조에 덜 의존적이 되고, 서버는 API를 보다 유연하게 발전시킬 수 있습니다.
 
-### 관계 경로 설정
-```java
-@Entity
-public class User {
-    @ManyToMany
-    @RestResource(path = "user-groups")  // /groups 대신 /user-groups로 경로 변경
-    private Set<Group> groups;
-}
-```
+하지만 HATEOAS는 모든 상황에 필요한 것은 아닙니다. 간단한 CRUD 작업만 필요한 내부 API나, 모바일 앱과 같이 대역폭 사용을 최소화해야 하는 경우에는 HATEOAS의 오버헤드가 단점이 될 수 있습니다.
 
-## 정렬 설정
-
-### 기본 정렬 설정
-```java
-@RepositoryRestResource
-public interface UserRepository extends JpaRepository<User, Long> {
-    // 기본 정렬 설정
-    @Override
-    @SortDefault(sort = "name", direction = Sort.Direction.ASC)
-    Page<User> findAll(Pageable pageable);
-}
-```
-
-### 다중 정렬 설정
-```java
-@GetMapping("/users")
-public PagedModel<EntityModel<User>> getUsers(
-        @SortDefault.SortDefaults({
-            @SortDefault(sort = "lastName", direction = Sort.Direction.DESC),
-            @SortDefault(sort = "firstName", direction = Sort.Direction.ASC)
-        }) Pageable pageable) {
-    // ... 구현 내용
-}
-```
-
-### 정렬 가능 필드 제한
-```java
-@Entity
-public class User {
-    @Id
-    private Long id;
-    
-    @QuerySortDefault.SortDefaults({  // 정렬 가능한 필드 지정
-        @QuerySortDefault(sort = "name", direction = Sort.Direction.ASC)
-    })
-    private String name;
-    
-    @JsonIgnore  // 정렬 불가능한 필드
-    private String password;
-}
-```
-
-## 페이지 크기 설정
-
-### 전역 페이지 크기 설정
-application.properties 또는 application.yml:
-
-```yaml
-spring:
-  data:
-    web:
-      pageable:
-        default-page-size: 20
-        max-page-size: 100
-```
-
-### 컨트롤러 레벨 페이지 크기 설정
-```java
-@GetMapping("/users")
-public PagedModel<EntityModel<User>> getUsers(
-        @PageableDefault(size = 15, page = 0) Pageable pageable) {
-    // ... 구현 내용
-}
-```
-
-## 장점
-1. 클라이언트와 서버의 느슨한 결합
-2. API 변경에 대한 유연한 대응
-3. API 탐색 가능성 향상
-4. 자동화된 API 문서화 지원
-5. 페이징과 정렬의 유연한 처리
-
-## 모범 사례
-1. 일관된 링크 관계 사용
-2. 의미 있는 링크 관계 이름 지정
-3. HAL 스펙 준수
-4. 적절한 HTTP 메서드 사용
-5. 페이지 크기 제한 설정
-6. 정렬 가능한 필드 명시적 정의
-
-## 주의사항
-- 불필요한 링크 정보 추가 지양
-- 성능 고려 (링크 생성에 따른 오버헤드)
-- 버전 관리 전략 수립
-- 보안 고려사항 검토
-- 과도한 페이지 크기 요청 제한
-- 정렬 필드 검증
-
-## 참고 자료
-- [Spring HATEOAS 공식 문서](https://docs.spring.io/spring-hateoas/docs/current/reference/html/)
-- [Richardson Maturity Model](https://martinfowler.com/articles/richardsonMaturityModel.html)
-- [Understanding HATEOAS](https://spring.io/understanding/HATEOAS)
-- [Spring Data REST 레퍼런스](https://docs.spring.io/spring-data/rest/docs/current/reference/html/)
+따라서 프로젝트의 특성과 요구사항을 고려하여 HATEOAS 적용 여부를 결정하는 것이 중요합니다. 복잡한 비즈니스 프로세스, 공개 API, 장기적으로 확장될 API에서는 HATEOAS의 이점을 충분히 활용할 수 있습니다.

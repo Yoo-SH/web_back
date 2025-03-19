@@ -119,6 +119,12 @@
       - [Spring Custrom Exception](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_customException.md)
       - [Spring Data Binding & Jackson Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_dataBinding.md)
 
+    - [Spring API Filter](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_api_filtering.md)
+    - [Spring API 버전 관리](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_apiVersion.md)
+    - [Spring API 컨트롤러 비교](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_controller_vs_restContoller.md)
+    - [Spring 리다이렉트 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_redirect.md)
+    - [Spring 양방향 바인딩](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_twoWayBinding.md)
+
 * ### Spring Security
   - [Spring에서 BCrypt 사용하기](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_bcryppt.md)
   - [Spring Security UserDetailsManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_userDetailsManager.md)
@@ -126,6 +132,8 @@
   - [Spring Security 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_security_config.md)
   - [Spring Security SecurityContextHolder 구조 설명](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_securityContextHolder.md)
   - [Spring Security SecurityContextHolder와 Authentication 객체](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_securityContextHolder_authentication.md)
+  - [Spring session 인증](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_session_auth.md)
+
 * ### Spring JPA & Hibernate
   - #### JPA CRUD
     - [Spring JPA 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa.md)
@@ -150,10 +158,15 @@
   - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
   - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)
   - [Spring AOP transactional 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_transactional.md)
-  
+  - [Spring logging 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_logging.md)
+
 * ### Spring Utility Libarary
   - [Spring LomBok 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_lombok.md)
-  - [Spring jakarta 가이트]((https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_jakarta.md))
+  - [Spring jakarta 가이트](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_jakarta.md)
+  - [Spring swagger 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_swagger.md)
+  - [Spring hal explorer 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_hal_explorer.md)
+
+
 * ### [Spring 참고 자료](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/srping_source.md)
 
 </details>
