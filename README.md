@@ -105,25 +105,19 @@
     - [@Lazy in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_lazy.md)
     - [@Qualifier in Spring](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/springCore/spring_qualifier.md)    
     
-* ### Spring Web
-    - #### MVC    
-      - [Spring MVC 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc.md)
-      - [Spring MVC 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc_crud.md)
-      - [Spring MVC CRUD 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_basic_architecture.md)
-      - [Spring MVC Validation](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc_validation.md)
-      - [Spring HATEOAS](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_hateoas.md)
-    
-    - #### Exception
-      - [Spring Framework Exception 처리 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_excepctionGuid.md)
-      - [Spring Exception Handling 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_exceptionHandling.md)
-      - [Spring Custrom Exception](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_customException.md)
-      - [Spring Data Binding & Jackson Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_dataBinding.md)
-
-    - [Spring API Filter](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_api_filtering.md)
-    - [Spring API 버전 관리](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_apiVersion.md)
+* ### Spring REST API
     - [Spring API 컨트롤러 비교](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_controller_vs_restContoller.md)
     - [Spring 리다이렉트 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_redirect.md)
     - [Spring 양방향 바인딩](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_twoWayBinding.md)
+    - [Spring HATEOAS](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_hateoas.md)
+    - [Spring API 버전 관리](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_apiVersion.md)
+    - [Spring MVC 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc.md)
+    - [Spring MVC CRUD 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_basic_architecture.md)
+    - [Spring MVC Validation](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/mvc/spring_mvc_validation.md)
+    - [Spring API Filter](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_crud/spring_api_filtering.md)
+    - [Spring Data Binding & Jackson Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_dataBinding.md)
+    - [Spring Exception Handling 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_exceptionHandling.md)
+    - [Spring Custrom Exception](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_exception/spring_customException.md)
 
 * ### Spring Security
   - [Spring에서 BCrypt 사용하기](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_bcryppt.md)
@@ -135,19 +129,16 @@
   - [Spring session 인증](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/restApi_security/spring_session_auth.md)
 
 * ### Spring JPA & Hibernate
-  - #### JPA CRUD
-    - [Spring JPA 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa.md)
-    - [Spring JPA CRUD 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_jpaRepository_crud.md)
-    - [EntityManager를 이용한 CRUD 예제](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_entityManager_crud.md)
-    - [JpaRepository vs EntityManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_compare_entityManager%26japRepository.md)
-    - [Spring 테이블 자동 생성 및 삭제 기능](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_table.md)
-  - #### Mapping
-    - [JPA Entity Relationship Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_relation.md)
-    - [JPA 단방향/양방향 관계 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_direction.md)
-    - [JPA Cascade (영속성 전이)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_cascade.md)
-    - [JPA Fetch Types 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchType.md)
-    - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 경우](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
-    - [JPA 순환참조 (Circular Reference) 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_circularReference.md)
+  
+  - [Spring JPA 개요](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa.md)
+  - [JpaRepository vs EntityManager](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_compare_entityManager%26japRepository.md)
+  - [테이블 자동 생성 및 삭제 기능](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_table.md)
+  - [JPA Entity Relationship Guide](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_relation.md)
+  - [JPA 단방향/양방향 관계 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_direction.md)
+  - [JPA Cascade (영속성 전이)](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_cascade.md)
+  - [JPA Fetch Types 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchType.md)
+  - [JPA에서 Fetch Type을 사용하지 않고 Fetch Join을 사용하는 경우](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_fetchJoin.md)
+  - [JPA 순환참조 (Circular Reference) 완벽 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/JPA/jpa_mapping_circularReference.md)
 
 * ### Spring AOP
   - [Spring Cross-Cutting Concerns](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_crossCutting.md)
@@ -157,8 +148,8 @@
   - [Spring AOP Join Point 활용 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_joinPoint.md)
   - [Spring AOP Order 어노테이션 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_order.md)
   - [Spring AOP 실전 예제 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_all.md)
-  - [Spring AOP transactional 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_transactional.md)
   - [Spring logging 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_logging.md)
+  - [Spring transactional 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/AOP/spring_aop_transactional.md)
 
 * ### Spring Utility Libarary
   - [Spring LomBok 가이드](https://github.com/Yoo-SH/web_back/blob/main/docs/springBoot/utiltity_library/spring_lombok.md)
