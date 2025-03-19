@@ -1,116 +1,119 @@
-# Java 람다식 (Lambda Expressions)
+오케이! 함수형 프로그래밍과 람다를 완전 쉽게 설명해볼게.  
 
-<br>
+---
 
-## 소개
-람다식(Lambda Expression)은 자바 8(Java 8)에서 도입된 기능으로, 익명 함수를 보다 간결하게 표현할 수 있도록 해줍니다. 이를 통해 코드의 가독성을 높이고 간결한 함수형 프로그래밍 스타일을 사용할 수 있습니다.
+### 1. 함수형 프로그래밍이 뭐야?  
+**"함수형 프로그래밍"**은 **`함수를 마치 변수처럼 사용하는 프로그래밍 스타일`**이야.  
+객체지향 프로그래밍(OOP)이 "객체"를 중심으로 프로그램을 짜는 거라면,  
+함수형 프로그래밍(FP)은 "함수"를 중심으로 프로그램을 짜는 거야.  
 
-<br>
+---
 
-## 람다식 기본 문법
 
-람다식의 기본적인 형태는 다음과 같습니다:
+### 2. 람다가 뭐야?  
+**람다(lambda)**는 **"이름 없는 함수"**야!  
+함수를 변수처럼 만들고, 한 줄로 간단하게 쓸 수 있어.  
 
+기존에는 메서드를 만들려면 이렇게 길게 써야 했지?  
 ```java
-(parameters) -> expression
-```
-
-또는 여러 문장을 포함할 경우:
-
-```java
-(parameters) -> {
-    statements;
+public int add(int a, int b) {
+    return a + b;
 }
 ```
-
-<br>
-
-## 예제
-
-### 1. 기본적인 람다식 예제
+하지만 **람다 표현식**을 쓰면 이렇게 짧아져!  
 ```java
-// 기존 익명 클래스 방식
-Runnable r1 = new Runnable() {
+(a, b) -> a + b
+```
+예를 들어, `Runnable`을 만들 때:  
+#### (1) 기존 방식
+```java
+Runnable r = new Runnable() {
     @Override
     public void run() {
-        System.out.println("Hello, Lambda!");
+        System.out.println("Hello, World!");
     }
 };
-
-// 람다식 사용
-Runnable r2 = () -> System.out.println("Hello, Lambda!");
-
-r1.run();
-r2.run();
 ```
-
-### 2. 함수형 인터페이스와 람다식
-람다식은 주로 **함수형 인터페이스**(Functional Interface)와 함께 사용됩니다.
-
-#### 함수형 인터페이스 예제
+#### (2) 람다 방식
 ```java
-@FunctionalInterface
-interface MyFunctionalInterface {
-    int add(int a, int b);
-}
+Runnable r = () -> System.out.println("Hello, World!");
+```
+✅ `()`는 매개변수(없으니까 비어있음)  
+✅ `->` 뒤에 실행할 코드  
 
-public class LambdaExample {
-    public static void main(String[] args) {
-        // 람다식 사용
-        MyFunctionalInterface sum = (a, b) -> a + b;
-        System.out.println(sum.add(10, 20));
+---
+
+
+### 3. 그럼, 왜 함수형 프로그래밍을 써야 해?  
+함수형 프로그래밍의 장점은:  
+✅ 코드가 짧고 간결해!  
+✅ 코드 재사용이 쉬워!  
+✅ 버그가 적어!  
+
+예를 들어, **전통적인 방법(OOP 스타일)**과 **함수형 프로그래밍 스타일**을 비교해볼게.  
+
+#### (1) 전통적인 방식 (for문 사용)
+```java
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+
+// 'A'로 시작하는 이름을 찾아서 출력하기
+for (String name : names) {
+    if (name.startsWith("A")) {
+        System.out.println(name);
     }
 }
 ```
 
-### 3. 자바 내장 함수형 인터페이스 활용
-자바 8에서는 `java.util.function` 패키지에 여러 가지 함수형 인터페이스가 제공됩니다.
-
-#### 주요 내장 함수형 인터페이스
-- `Consumer<T>` : 입력을 받고 반환값이 없음 (`void accept(T t)`)
-- `Supplier<T>` : 입력값 없이 결과 반환 (`T get()`)
-- `Function<T, R>` : 입력을 받고 변환하여 반환 (`R apply(T t)`)
-- `Predicate<T>` : 입력을 받고 boolean 반환 (`boolean test(T t)`)
-
-#### 예제
+#### (2) 함수형 프로그래밍 (람다 + 스트림 사용)
 ```java
-import java.util.function.*;
+names.stream()
+     .filter(name -> name.startsWith("A"))
+     .forEach(System.out::println);
+```
+**차이점:**  
+✅ `for문`을 안 써도 되고, 코드가 훨씬 깔끔해!  
+✅ `filter(name -> name.startsWith("A"))` 부분이 **람다 표현식**이야.  
 
-public class LambdaFunctionalInterfaces {
-    public static void main(String[] args) {
-        // Consumer 사용 예제
-        Consumer<String> printer = message -> System.out.println("Message: " + message);
-        printer.accept("Hello, Java!");
+---
 
-        // Supplier 사용 예제
-        Supplier<Double> randomSupplier = () -> Math.random();
-        System.out.println("Random Value: " + randomSupplier.get());
-
-        // Function 사용 예제
-        Function<String, Integer> stringLength = str -> str.length();
-        System.out.println("Length: " + stringLength.apply("Lambda"));
-
-        // Predicate 사용 예제
-        Predicate<Integer> isEven = number -> number % 2 == 0;
-        System.out.println("Is 10 even? " + isEven.test(10));
+### 4. 람다 활용 예제 🚀  
+#### (1) 리스트 정렬하기  
+기존 방식:
+```java
+Collections.sort(names, new Comparator<String>() {
+    @Override
+    public int compare(String s1, String s2) {
+        return s1.compareTo(s2);
+    }
+});
+```
+람다 방식:
+```java
+Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
+```
+#### (2) 리스트 필터링  
+기존 방식:
+```java
+List<String> result = new ArrayList<>();
+for (String name : names) {
+    if (name.length() > 3) {
+        result.add(name);
     }
 }
 ```
+람다 방식:
+```java
+List<String> result = names.stream()
+                           .filter(name -> name.length() > 3)
+                           .collect(Collectors.toList());
+```
+---
 
-<br>
+### 5. 정리! ✨  
+1️⃣ **함수형 프로그래밍(FP)**: "함수를 변수처럼 활용하는 방식"  
+2️⃣ **람다(lambda)**: "이름 없는 함수" (코드를 짧고 간결하게!)  
+3️⃣ **스트림 API**와 같이 쓰면 코드가 깔끔해짐!  
 
-## 람다식의 장점
-1. **코드 간결성**: 익명 클래스를 사용할 필요 없이 간단한 코드로 대체 가능
-2. **가독성 향상**: 불필요한 코드 제거로 가독성이 좋아짐
-3. **함수형 프로그래밍 지원**: 스트림 API와 결합하여 강력한 데이터 처리 가능
-
-<br>
-
-## 주의사항
-- 람다식은 **오직 하나의 메서드만 포함하는 함수형 인터페이스**에서만 사용 가능
-- 변수 캡처링 시 지역 변수는 **final** 또는 **사실상 final(Effectively Final)** 이어야 함
-
-<br>
-
-## 결론
-람다식을 활용하면 보다 간결하고 가독성 높은 코드를 작성할 수 있습니다. 특히, 자바 8 이후의 스트림 API 및 컬렉션 프레임워크와 함께 사용할 때 강력한 기능을 발휘합니다.
+함수형 프로그래밍을 쓰면 코드가 짧아지고, 가독성이 좋아지고, 유지보수가 편해져! 
+꼭 기억해야 할 것은 함수를 변수처럼 쓴다는 것이야.! 
+이제부터는 `for문`보다는 `람다`와 `스트림`을 한번 써보자! 🚀
